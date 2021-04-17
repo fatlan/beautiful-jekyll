@@ -288,6 +288,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.devto -%}
+  <li class="list-inline-item">
+    <a href="https://dev.to/{{ site.social-network-links.devto }}" title="Devto">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-devto fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Devto</span>
+    </a>
+  </li>
+{%- endif -%}  
+  
 {%- if site.social-network-links.itchio -%}
   <li class="list-inline-item">
     <a href="https://{{ site.social-network-links.itchio }}.itch.io/" title="Itchio">
