@@ -52,6 +52,7 @@ social-network-links:
   #patreon: 
   #youtube: 
   medium: aslanfatih
+  devto: aslanfatih
 #  reddit: yourname
   linkedin: fafatihaslan
 #  xing: yourname
@@ -80,6 +81,7 @@ share-links-active:
   twitter: false
   youtube: false
   medium: true
+  devto: true
   github: true
   facebook: false
   linkedin: true
