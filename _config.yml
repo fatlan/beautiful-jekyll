@@ -78,12 +78,12 @@ rss-description: Fatih ASLAN Bilgi Teknolojileri Alanında Aldığım Notlar
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
-  youtube: false
+  twitter: true
+  youtube: true
   medium: true
   devto: true
   github: true
-  facebook: false
+  facebook: true
   linkedin: true
   vk: false
 
