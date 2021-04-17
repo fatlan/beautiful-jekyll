@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Home
+title: HOME
 
 # Your name to show in the footer
 author: Fatih ASLAN
@@ -19,10 +19,11 @@ navbar-links:
   #  - Linux: "https://linux.fatlan.com"
   #  - Docker: "https://docker.fatlan.com/"
   #  - Kubernetes: "https://kubernetes.fatlan.com/"
-  Linkedin: "https://www.linkedin.com/in/fafatihaslan"
-  Github: "https://github.com/fatlan"
-  Medium: "https://medium.com/@aslanfatih" 
-  Dev.to: "https://dev.to/aslanfatih"
+  Url's:
+     - Linkedin: "https://www.linkedin.com/in/fafatihaslan"
+     - Github: "https://github.com/fatlan"
+     - Medium: "https://medium.com/@aslanfatih" 
+     - Dev.to: "https://dev.to/aslanfatih"
   #Author's home: "https://fatlan.com"
 
 # --- Logo --- #
