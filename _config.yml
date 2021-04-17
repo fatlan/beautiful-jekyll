@@ -19,8 +19,9 @@ navbar-links:
   #  - Linux: "https://linux.fatlan.com"
   #  - Docker: "https://docker.fatlan.com/"
   #  - Kubernetes: "https://kubernetes.fatlan.com/"
-  #Medium: "https://medium.com/@aslanfatih" 
-  #Dev.to: "https://dev.to/aslanfatih"
+  Linkedin: "https://www.linkedin.com/in/fafatihaslan"
+  Medium: "https://medium.com/@aslanfatih" 
+  Dev.to: "https://dev.to/aslanfatih"
   #Author's home: "https://fatlan.com"
 
 # --- Logo --- #
@@ -68,7 +69,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Fatih ASLAN Bilgi Teknolojileri Alanında Aldığım Notlar
 
 # --- General options --- #
 
@@ -185,7 +186,7 @@ footer-link-col: "#404040"
 # --- Misc --- #
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%-d %B, %Y"
 
 # Facebook App ID
 #fb_app_id: ""
