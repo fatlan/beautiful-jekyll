@@ -14,13 +14,13 @@ author: Fatih ASLAN
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  #About Me: "aboutme"
   #Eğitimler:
   #  - Linux: "https://linux.fatlan.com"
   #  - Docker: "https://docker.fatlan.com/"
   #  - Kubernetes: "https://kubernetes.fatlan.com/"
-  Medium: "https://medium.com/@aslanfatih" 
-  Dev.to: "https://dev.to/aslanfatih"
+  #Medium: "https://medium.com/@aslanfatih" 
+  #Dev.to: "https://dev.to/aslanfatih"
   #Author's home: "https://fatlan.com"
 
 # --- Logo --- #
