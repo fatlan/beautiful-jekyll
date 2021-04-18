@@ -1,7 +1,7 @@
 ---
 layout: post
-title: E: Unable TO Locate Package
-subtitle: Each post also has a subtitle
+title: E-Unable To Locate Package
+#subtitle: Each post also has a subtitle
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, follow]
 #cover-img: /assets/img/path.jpg
