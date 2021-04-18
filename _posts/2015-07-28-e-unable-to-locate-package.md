@@ -3,7 +3,7 @@ layout: post
 title: E-Unable To Locate Package
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
-gh-badge: [star, follow]
+gh-badge: [star,follow]
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
