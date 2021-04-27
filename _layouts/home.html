@@ -35,12 +35,12 @@ layout: page
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h3 class="post-title">{{ post.title }}</h3>
+      <h4 class="post-title">{{ post.title }}</h4>
 
       {% if post.subtitle %}
-        <h4 class="post-subtitle">
+        <h5 class="post-subtitle">
         {{ post.subtitle }}
-        </h4>
+        </h5>
       {% endif %}
     </a>
 
@@ -76,7 +76,7 @@ layout: page
     </div>
     {% endunless %}
 
-    {% if site.feed_show_tags != false and post.tags.size > 0 %}
+    {% if site.feed_show_tags != true and post.tags.size > 0 %}
     <div class="blog-tags">
       <span>Tags:</span>
       {% for tag in post.tags %}
