@@ -1,4 +1,4 @@
-assets---
+---
 layout: post
 title: IPv4 Class ve Subnetting Tablo
 #subtitle: Each post also has a subtitle
