@@ -12,7 +12,7 @@ comments: true
 ---
 **Selfsign ssl** kullanan **oVirt**, aşağıdaki görselden de anlaşılacağı üzere **trusted** değil.
 
-![Crepe](assets/img/ovirt42-ssl-con/ovirt42-ssl-co01.png)
+![Crepe](/assets/img/ovirt42-ssl-con/ovirt42-ssl-co01.png)
 
 Bunun yerine doğrulanmış, satın alınmış **ssl**’inizle değiştirebilirsiniz. Bunun için aşağıdaki adımları takip etmeniz yeterli. **Trusted ssl**’lerimizi “**/tmp/ssl/**” (ca, crt, key)dizini altına attık.
 
@@ -90,4 +90,4 @@ systemctl restart ovirt-engine.service
 
 Ve görünüm aşağıdaki gibidir.
 
-![Crepe](assets/img/ovirt42-ssl-con/ovirt42-ssl-co02.png)
+![Crepe](/assets/img/ovirt42-ssl-con/ovirt42-ssl-co02.png)

@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [openstack, cloud, linux, network, vlan, ubuntu]
 comments: true
 ---
-![Crepe](assets/img/u16-opnstcnet-conf/opnstck-net-c01.png)
+![Crepe](/assets/img/u16-opnstcnet-conf/opnstck-net-c01.png)
 
 İlk önce aşağıdaki komutla **apt repo**sunu güncelleyin.
 

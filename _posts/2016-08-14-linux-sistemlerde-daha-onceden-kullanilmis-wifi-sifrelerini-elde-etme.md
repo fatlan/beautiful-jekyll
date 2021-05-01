@@ -16,15 +16,15 @@ ilki **GUI** ile; ben işlemleri Ubuntu üzerinde göstereceğim, diğer dağıt
 
 ilk olarak sistemin sağ üst köşesinde bulunan **wi-fi** yayın işaretini tıklayıp ardından **Edit Connections...** sekmesini tıklayın.
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass01.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass01.png)
 
 Daha sonra kırmızı alanla listelenen **wi-fi** bağlantılarınızdan şifresine ulaşmak istediğiniz bağlantıyı tıklayarak **Edit** butonuna basın.
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass02.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass02.png)
 
 Ardından **Wi-Fi Security** sekmesini tıklayarak **Show password** seçeneğini **aktif** edin ve **şifre** görünür olacaktır.
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass03.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass03.png)
 
 İkinci yöntem ise **Terminal** kabuk aracılığı ile;
 
@@ -34,7 +34,7 @@ Aslında bağlandığınız **wi-fi**’ler şifrelenmemiş **text** dosyası ol
 cd /etc/NetworkManager/system-connections/
 ~~~
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass04.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass04.png)
 
 Ardından **ls -lash** komutu ile **wi-fi** bağlantılarını barındırdığı şifrelenmemiş **text** dosyalarını detaylı olarak listeliyoruz.
 
@@ -42,7 +42,7 @@ Ardından **ls -lash** komutu ile **wi-fi** bağlantılarını barındırdığı
 ls -lash
 ~~~
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass05.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass05.png)
 
 Daha sonra kırmızı alandaki **wi-fi** bağlantılarından şifresini elde etmek istediğimiz **clear text** dosyasını **cat** komutu ile okuyoruz. Ve **SSID**, Şifre ve ayrıca diğer bilgileri elde ettik.
 
@@ -50,4 +50,4 @@ Daha sonra kırmızı alandaki **wi-fi** bağlantılarından şifresini elde etm
 cat ‘wifi baglantiadi’
 ~~~
 
-![Crepe](assets/img/lin-wifi-pass-disc/lin-wifi-pass06.png)
+![Crepe](/assets/img/lin-wifi-pass-disc/lin-wifi-pass06.png)

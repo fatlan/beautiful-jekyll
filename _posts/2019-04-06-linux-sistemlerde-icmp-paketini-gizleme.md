@@ -18,7 +18,7 @@ Bu yapılandırma yukarıda güvenlik duvarları aracılığı ile yapılabilir 
 sysctl -a | egrep -ie “net.ipv4.icmp_echo_ignore_all”
 ~~~
 
-![Crepe](assets/img/lin-icmp/lin-icmp01.png)
+![Crepe](/assets/img/lin-icmp/lin-icmp01.png)
 
 Ardından aşağıdaki “**sysctl**” komutu ile değeri **1**’e çekilmelidir fakat bu işlem anlık geçerli olacaktır yani sistem yeniden başladığı zaman varsayılan değerine geri dönecektir.
 

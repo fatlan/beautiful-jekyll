@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [mysql, linux, database]
 comments: true
 ---
-![Crepe](assets/img/mysql-pass-re/m-p-res01.png)
+![Crepe](/assets/img/mysql-pass-re/m-p-res01.png)
 
 Yetkili bir kullanıcı ile **Mysql**‘e login olunur.
 

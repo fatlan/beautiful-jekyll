@@ -20,7 +20,7 @@ Sadece belirli bir kullanıcıda yapmak için, **.bashrc** yada **bash_profile(.
 export HISTTIMEFORMAT=”%F %T “
 ~~~
 
-![Crepe](assets/img/histr-tistamp/his-t-stam01.png)
+![Crepe](/assets/img/histr-tistamp/his-t-stam01.png)
 
 Daha sonra sistemi yeniden başlatın yada değişiklik yaptığınız dosyayı **source** edin, aşağıdaki gibi.
 
@@ -28,4 +28,4 @@ Daha sonra sistemi yeniden başlatın yada değişiklik yaptığınız dosyayı 
 source /etc/profile
 ~~~
 
-![Crepe](assets/img/histr-tistamp/his-t-stam02.png)
+![Crepe](/assets/img/histr-tistamp/his-t-stam02.png)

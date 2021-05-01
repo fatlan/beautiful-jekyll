@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ovirt, centos, redhat, virtualization, rhev]
 comments: true
 ---
-![Crepe](assets/img/ovirt-nested-conf/ov-nest-conf01.png)
+![Crepe](/assets/img/ovirt-nested-conf/ov-nest-conf01.png)
 
 Esasında **Open Virtualization Manager(oVirt)**, **Redhat** ya da **Oracle Virtualization Manager** gibi **hypervisor** ürünleri iç içe sanallaştırma yöntemini pek önermediğinden varsayılanda bu yapı kapalı gelmektedir.
 
@@ -20,11 +20,11 @@ Fakat bizim özellikle **KVM** ve benzeri hypervisorleri gerektiren **Docker Swa
 
 **Compute** – **Host** menüsünden Edit Host yapıp, Kernel tabından işaretlermeleri yapabiliriz.
 
-![Crepe](assets/img/ovirt-nested-conf/ov-nest-conf02.png)
+![Crepe](/assets/img/ovirt-nested-conf/ov-nest-conf02.png)
 
 Son olarak **Compute** – **Virtual Machines** menüsünden ilgili VM için **Edit Virtual Machine** yapıp, **Host** tabından “**Specific Host(s)**” seçeneğini aktif edip, “**Pass-Through Host CPU**” onay kutusunu işaretleyip bitiriyoruz.
 
-![Crepe](assets/img/ovirt-nested-conf/ov-nest-conf03.png)
+![Crepe](/assets/img/ovirt-nested-conf/ov-nest-conf03.png)
 
 
 Referans: [https://community.oracle.com/docs/DOC-1038581](https://community.oracle.com/docs/DOC-1038581) <br>

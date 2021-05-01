@@ -25,12 +25,12 @@ Neler yapacağız:
 4. Şimdi “**apt-get -qq -print-uris install nginx > nginx-paket-list**” komutu ile **nginx** servisine ait bağımlı paketlerle beraber tüm paketlerin listesini “**nginx-paket-list**” dosyasına yazdırdık.
 
     NoT: “**apt-get -qq -print-uris upgrade > upgrade-paket-list**” komutu ile **offline** olarak makineleri yükseltme işlemi bile yapabilirsiniz.
-    
+
 5. Şimdi yukarıdaki listeden de anlaşılacağı üzere listedeki paketleri ilgili linklerden otomatik olarak tek seferde indirebilmek için “**awk ‘{print “wget ” $1}’ < nginx-paket-list > nginx-paket-list.sh**” komutu çalıştırıyoruz.
 6. Oluşturduğumuz dosyaya “**chmod u+x nginx-paket-list.sh**” komutla çalıştırma yetkisi verelim.
 7. Son olarak sh dosyasının “**./nginx-paket-list.sh**” çalıştıralım. Ve tüm paketlerin indiğini görebilirsiniz.
 
-![Crepe](assets/img/ub-deb-offline-inst/udoffinst01.png)
+![Crepe](/assets/img/ub-deb-offline-inst/udoffinst01.png)
 
 İkinci olarak internetsiz (**INTRANET**) makinede, **OFFLINE** olarak **apt** ile kurulum yapabilmek için taşıma işlemleri yapacağız. **İnternetli makineden, internetsiz makineye doğru** herhangi bir şekilde(**usb**, **kopyalama**, **cd** **vs**);
 

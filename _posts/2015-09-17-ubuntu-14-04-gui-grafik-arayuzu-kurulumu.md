@@ -24,11 +24,11 @@ startx
 
 Ve başarılı kurulum sonrası sisteme **GUI** arayüzü ile login olalım.
 
-![Crepe](assets/img/u14gui/ugui01.png)
+![Crepe](/assets/img/u14gui/ugui01.png)
 
 Ve Ubuntu unity desktop
 
-![Crepe](assets/img/u14gui/ugui02.png)
+![Crepe](/assets/img/u14gui/ugui02.png)
 
 **Gnome** Klasik masaüstü kurulumu için ise aşağıdaki komutu kullanabilirsiniz. **Root** hakkına sahip olamayan bir user ile login olmuşsanız komut başına ‘**sudo**’ ekini ekleyin. **Login** olduğunuz **user**’ın şifresini tekrar soracaktır, girdikten sonra yükleme başlayacaktır.
 
@@ -39,9 +39,9 @@ sudo apt-get install gnome-session-fallback -y
 Kurulum bittikten sonra **logout** olun.
 Oturum açma ekranında aşağıda görüldüğü gibi küçük ubuntu logosuna tıkladıktan sonra masaüstü menüsü açılacaktır. Seçimi yapıp **login** olduktan sonra sistem klasik **GUI** ile açılacaktır.
 
-![Crepe](assets/img/u14gui/ugui03.png)
+![Crepe](/assets/img/u14gui/ugui03.png)
 
 Ve Ubuntu Gnome klasik desktop
 
-![Crepe](assets/img/u14gui/ugui04.png)
+![Crepe](/assets/img/u14gui/ugui04.png)
 

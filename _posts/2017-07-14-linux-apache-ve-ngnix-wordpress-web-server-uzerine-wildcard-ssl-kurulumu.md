@@ -46,9 +46,9 @@ SSL sertifika çeşitlerine gelince temelde iki daha sonra kendi aralarında ü�
     b : OV (Organization Validation) SSL : Organizasyon doğrulama tipi sertifikadır. Onay süreci kuruma ait belgelerle birlikte tamamlanır.
     c : EV (Extended Validation) SSL : Genişletilmiş doğrulama tipi sertifikadır. En gelişmiş sertifika ve pahalı bir sertifika türüdür. DV ve OV SSL sertifikalarının tüm özelliklerini barındırır, EV SSL sertifikaları web tarayıcılarında yeşil bar içerisinde kuruma ait unvanın da kullanıcılara gösterilmesini sağlarlar. Örnekler aşağıda belirtilmiştir.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin01.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin01.png)
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin02.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin02.png)
 
 2)Kullanım Alanına (Domain Tipine) Göre SSL Seritifikaları : yani domain yada bir yada birden fazla subdomain kullanıma göre değişen sertifika türüdür.
 
@@ -67,7 +67,7 @@ Mouse’la seçili olan alan *.google.com **wildcart ssl**’i **cer/crt**’ye 
     - Google Internet Authority G2
         - *.google.com ise pem dosyasına karşılık gelir.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin03.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin03.png)
 
 **Pem** dosyasını biraz daha açacak olursak birden fazla ssl dosyasının, içine aktarıldığı kapsayıcı ssl dosyasıdır. **Pem**’de **ssl** zinciri oluşturmanın kuralı vardır ve o kurala göre oluşturulur. **Pem** dosyası herhangi bir editör uygulamasıyla düzenlenebilir. **SSL** zinciri temel olarak aşağıdaki kurala göre bundle edilir. Google örnek olarak ele alınmıştır.
 
@@ -125,19 +125,19 @@ Tüm bunlara alternatif olarak da interaktif olarak yani komuttan sonra tek tek 
 
 Bunun için ilk önce [https://www.digicert.com/easy-csr/openssl.htm](https://www.digicert.com/easy-csr/openssl.htm) link’ini açıp, aşağıdaki resimden de görüldüğü üzere Certificate Details kısmını doldurup, Generate butonuna basıyorsunuz. Daha sonra **Information** bölümünde kullanacağınız komut seti oluşturuluyor. Siz bunu direk kopyalayıp ilgili sunucuda çalıştırdıktan sonra hem ***.key** hem ***. csr** dosyanız otomatik olarak oluşuyor. Tüm işlem bu kadar.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin04.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin04.png)
 
 Şimdi asıl konumuza geri dönecek olursak elimizde bir **Linux** Sunucu var ve bunda **Apache** yada **Nginx** kurulu ve içerik olarak **WordPress** kullanıyoruz (**WordPress** kısmı önemli bir kaç şeyi onun üzerinden değiştireceğiz yoksa ilgili kodda değişiklik yapmak gerekebilir) ve bu sunucuda ilgili **Domain** için **CSR** oluştu ve o **CSR** ile, ilgili domain için istediğimiz **SSL** Sertifikayı aldık ve Sunucuda **$DizinYolu/SSL** diye bir dizin oluşturup(siz farklı bir dizin de oluşturabilirsiniz) bu sertifikaları bu dizin içine kopyaladık varsayıyorum.
 
 Bu arada **Url**’inizi adres çubuğunda **fatlan.com** diye çağırdığınızda **www.fatlan.com** olarak gelmesini sağlamalısınız. Zaten bu bir standarttır. Yani screenshot’lardan anlaşılacağı üzere adres çubuğuna
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin05.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin05.png)
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin06.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin06.png)
 
 Bunun ayarı aşağıdaki screenshot’tan anlaşılacağı üzere **WordPress**’te **Ayarlar(Settings)- Genel(General)** sekmesine giderek aşağıdaki şekilde yapılabilir. Siteniz **WordPress** değilse kod tarafında bu değişikliği yapmalısınız. Daha sonra burada başka bir ayar daha yapacağız (**http- https url redirect**) onuda ilerde bahsedeceğim.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin07.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin07.png)
 
 **Apache için SSL kurulumu**;
 
@@ -187,7 +187,7 @@ Daha sonra **SSL** ile beraber **https(443)** için satırların eklenmiş hali;
 
 **İkincisi** : **< VirtualHost *:80 >** tanımındaki Redirect permanent satırı yani **80**’den **443**’e yönlendirme satırı, evet bu istediğimiz işlemi yapacaktır fakat bunun yerine site yapımız **WordPress** olduğu için bu kısmı **WordPress**’te Ayarlar(**Settings**)-Genel(**General**) sekmesine giderek aşağıdaki şekilde yapabiliriz ve aslında **< VirtualHost *:80 >** tanımını da VirtualHost dosyasından komple kaldırabiliriz. Zaten **WordPress**’te bu ayarlama yapıldığı vakit o işlemi **WordPress** yapacaktır. Ben her iki ayarı da aktif şekilde kullandım.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin08.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin08.png)
 
 **Nginx için SSL kurulumu**;
 
@@ -240,11 +240,11 @@ location / {
 
 Hepsi bu kadar, Tüm tanımlarımız tamamsa test edebiliriz. Buraya kadar her şey doğru ise siteye bağlanırken adres çubuğuna **fatlan.com** yazıp enter’a bastığımız zaman **https://www.fatlan.com** adresine bağlanıp sertifikayı aktif etmelidir ve adres çubuğunda **https**’ye kadar olan kısım **yeşil** görünmelidir. Aşağıdaki gibi.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin09.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin09.png)
 
 Her şey tamam fakat **yeşil** görünmüyorsa bir yerde bir şey vardır. Alttaki resimden de anlaşılacağı üzere, seçili alanda uyarıyı verecektir.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin10.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin10.png)
 
 Hatanın bir sebebi de **https(443)** olarak getirilen sitede sayfa içerisinde **http(80)** ile çağrılmaya çalışılan **url**’ler varsa bundan kaynaklı, sayfa **Insecure** görünüp **yeşil** gösterilmeyebilir. Bu linkleri düzeltip **https**’ye çevirmelisiniz.
 
@@ -254,10 +254,10 @@ Bunu için sayfayı açtıktan sonra alttaki screenshot’tan da anlaşılacağ�
 
 **Google Chrome** ise : sağ click – **Inspect** tıklayıp **Console** sekmesine geliyoruz. Evet bu bölümde **https(443)** ile çağırılan sayfada **http(80)** ile çağrılmaya çalışılan linkleri kızarık bir şekilde belirtecektir. Bu linkleri **https(443)** çevirdikten sonra yani kızarıklıkları yok ettikten sonra sayfada **ssl** kısmı **secure** görünüp **yeşil**‘lenecektir.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin11.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin11.png)
 
 Yukarda belirtmiştim tekrar belirtmekte fayda var **Wildcard** satın alırken örneğin ***.fatlan.com** için aldığınız **SSL**’e **alternatif** **name** olarak **fatlan.com**’unda bulunması gerekli yoksa şöyle bir şey söz konusu olabilir. Sitenize ilk defa bağlanan biri yada tüm çerezleri silip inatla manuel olarak **https://fatlan.com** yazarak siteye bağlanmaya çalıştığında **ssl https://www.fatlan.com** yönlendirirken çakılıp **fatlan.com comman name**’i bulamayacağı için **Insecure Connection** hatası verecektir. Aşağıdaki görselden de anlaşılabilir.
 
-![Crepe](assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin12.png)
+![Crepe](/assets/img/linux-apache-nginx-ssl-certs/ssl-cer-lin12.png)
 
 Aklıma gelenler bunlar, umarım faydalı olur. Eksik yada hatalı gördüğünüz kısımları belirtirseniz sevinirim ve düzeltmeye çalışırım.

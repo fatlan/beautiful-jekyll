@@ -16,17 +16,17 @@ Ne yapmak istiyorum.? Ortamda merkezi bir log server oluşturmak istiyorum. Yani
 
 Ben senaryoyu iki sanal Linux sunucuda **Syslog(rsyslog)** servisini kullanarak gerçekleştireceğim. Sunuculardan biri **client** olacak, log basacak diğeri de **log server** olacak ve log ları üstüne çekip barındıracak. Bunu kullanıcı tarafında ve Log server tarafında bir kaç ayarlama ve yapılandırmayla sağlayacağız.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog01.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog01.png)
 
 Ama öncesinde Log yapılarından, seviyelerin bahsedelim. Log'lar **facility** ve **severity** - **level** olarak iki sütunda inceleyecek olursak eğer **facility.level** olarak belirlesek yanlış olmaz. Yani **facility** olarak (**none, kernel, mail, cron, authpriv, user**) desek, level olarak (**emerg, critical, alert, err, info, debug**) olarak ele aldığımızda; örneğin sistemdeki tüm herşeyin sadece hata log'larını almak için (***.err** kullanabiliriz.) yada bilgi mesajları ve yukarı doğru içerdiği log'ları almak için (***.info** kullanabilirsiniz.). Yukarı doğru derken hemen onu da açıklayalım. Mesela **level- seviye** olarak **info** seçilmiş ise içinde(**emerg, critical, alert, err** uda barındırmaktadır.), Seviyelerden en konuşkanı **debug**'tır. Tüm her hareketi log'lar. **user.emerg** yada **user.err** yada **user.info** gibi gibi kullanabilirsiniz.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog02.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog02.png)
 
 Her Linux sistemde (“**/etc/rsyslog.conf**”) mevcut olan bir kaç satırdan bahsedeyim ve bahsedersek mevzu daha iyi anlaşılacaktır.
 
 ***.info;mail.none;authpriv.none;cron.none /var/log/messages** → Burada sistemdeki her **facility**'i (*) **info** seviyesinde al (***.info;**) fakat** mail,authpriv** ve **cron**'u alma, neden çünkü onları **/var/log/** içerisinde başka bir dosyaya aldıracak, yapılandırmayı yapacak. Aşağıdaki screenshot'ta durum daha net anlaşılacak.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog03.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog03.png)
 
 Ayrıca Linux ta log'lar için özelleştirilmiş **local soket**ler bulunmaktadır.
 
@@ -42,11 +42,11 @@ vim /etc/rsyslog.conf
 
 Bu dosyanın içerisinde; son iki satırda bulunan **Modload** ve **Input** satırlarındaki “**#**” işaretini siliyoruz.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog04.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog04.png)
 
 Durum aşağıdaki gibi olacak, dosyayı kaydedip çıkın.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog05.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog05.png)
 
 Ardından aşağıdaki komutla servisi **restart** edin.
 
@@ -64,7 +64,7 @@ Gene bir editör aracılığı ile “**/etc/rsyslog.conf**” yapılandırma do
 vim /etc/rsyslog.conf
 ~~~
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog06.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog06.png)
 
 **NOT**: bu log ları lokalde tutmak istemiyorsanız, dosyanın içindeki yapılandırma satırları silebilir ya da satırların başına “**#**” işareti koyarsanız, satılar yorum satırı olarak algılanacak ve log'lar sadece log'ları yönlendirdiğiniz sunucuda barınacaktır.
 
@@ -100,10 +100,10 @@ local5.* @192.168.2.150
 logger -p user.info “Bu mesajı info seviyesinde oluşturduk ve log sunucuda görmeliyiz.”
 ~~~
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog07.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog07.png)
 
 Şimdi Log sunucusunda görebildiğimizi teyit edelim.
 
-![Crepe](assets/img/rsyslog-slog/m-rsyslog08.png)
+![Crepe](/assets/img/rsyslog-slog/m-rsyslog08.png)
 
 Bu arada sunucular arasında network erişimi ve **514 port**’undan erişime açık olmalıdır.

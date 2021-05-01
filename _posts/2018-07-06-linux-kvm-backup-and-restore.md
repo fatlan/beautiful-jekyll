@@ -21,7 +21,7 @@ Aşağıdaki yönergeleri izleyerek KVM sanallarınızı yedekleyebilir ve yedek
 virsh list --all
 ~~~
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br01.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br01.png)
 
 Daha sonra yedekleyeceğimiz vm’i kapatalım.
 
@@ -35,7 +35,7 @@ Ardından makineleri tekrar listeleyelim ve kapalı olduğunu görelim.
 virsh list --all
 ~~~
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br02.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br02.png)
 
 Şimdi makineyi (XML dosyasını) aşağıdaki komut/yöntem ile yedekleyelim.
 
@@ -47,7 +47,7 @@ ya da
 
 default ta **XML** lerin tutulduğu “**/etc/libvirt/qemu**” dizinin altından ilgili **XLM**’i ilgili backup dizinine **cp** komutu ile kopyalayabilirsiniz.
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br03.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br03.png)
 
 Şimdi de disk dosyasını (**qcow2**) aşağıdaki komut/yöntem ile yedekleyelim.
 
@@ -60,7 +60,7 @@ virsh domblklist Ubuntu18
 ~~~
 komutu ile nerde olduğunu görebilirsiniz. İlgili yerden cp yada **scp** (remote) komutu ile backup klasörünüze kopyalayabilirsiniz.
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br04.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br04.png)
 
 ~~~
 cp /var/lib/libvirt/images/Ubuntu18.qcow2 /MyBackup/Ubuntu18.qcow2
@@ -72,7 +72,7 @@ Listeleyip tüm yedeklerimizi görelim.
 ls -lash
 ~~~
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br05.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br05.png)
 
 **NoT**: Backup işlemini makineleri kapatmadan da yapabilirsiniz fakat oluşabilecek hatalara yada veri kaybına karşın, kapatıp yapmak sağlıklı olacaktır. Tabi illaki makinenin hizmet kesintisi olmaması gerekiyorsa, dediğim gibi **vm** açıkkende **backup** alabilirsiniz.
 
@@ -88,13 +88,13 @@ ya da
 
 Sunucu özelliklerinin barındığı **XML** dosyası silinmiş olsun ve listelediğimizde makinenin gittiğini görebiliyoruz.
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br06.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br06.png)
 
 ~~~
 virsh list --all
 ~~~
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br07.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br07.png)
 
 Şimdi senaryoyu gerçekleştirmek için disk (**qcow2**) dosyasını silelim.
 
@@ -118,7 +118,7 @@ ya da
 
 Sunucu özelliklerinin barındığı **XML** dosyası bulunduğu dizine tekrar kopyalanmış olsun.
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br08.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br08.png)
 
 Ardından vm’i başlatarak işlemi tamamlayalım.
 
@@ -126,4 +126,4 @@ Ardından vm’i başlatarak işlemi tamamlayalım.
 virsh start Ubuntu18
 ~~~
 
-![Crepe](assets/img/kvm-bac-rest/kvm-br09.png)
+![Crepe](/assets/img/kvm-bac-rest/kvm-br09.png)

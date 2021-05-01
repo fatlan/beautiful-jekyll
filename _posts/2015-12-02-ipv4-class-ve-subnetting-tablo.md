@@ -1,4 +1,4 @@
----
+assets---
 layout: post
 title: IPv4 Class ve Subnetting Tablo
 #subtitle: Each post also has a subtitle
@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ip, network]
 comments: true
 ---
-![Crepe](assets/img/ipcss/ipclss01.png)
+![Crepe](/assets/img/ipcss/ipclss01.png)
 
 **IPv4** ait ip sınıfları, **subnet** adresleri ve **wilcard** numaraları gibi bilgilerin güzel bir şekilde tablo halinde hazırlanmış.
 

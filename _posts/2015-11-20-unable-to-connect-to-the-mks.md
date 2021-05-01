@@ -19,13 +19,13 @@ Genelde dönen hatalar aşağıdaki gibidir.
 - Error connecting: You need execute access in order to connect with the VMware console. Access denied for config file.
 - Unable to connect to MKS: failed to connect to server IP:903.
 
-![Crepe](assets/img/utocmks/utocmks01.png)
+![Crepe](/assets/img/utocmks/utocmks01.png)
 
-![Crepe](assets/img/utocmks/utocmks02.png)
+![Crepe](/assets/img/utocmks/utocmks02.png)
 
 Sorunun en basit çözümü olarak hostlarınıza(**FQDN**) ve **VCenter** sunucularınıza karşılık gelen **IP** adreslerini **HOST** dosyası içine yazarak giderebilirsiniz. Ben bu yöntemle sorunu çözdüm tabi onaylı bir yöntem olmamakla beraber yapılan bu işlem sadece o makina için geçerli olacaktır. **Vmware** bununla alakalı yayınladığı **KB** leri aşağıda paylaşıyor olacağım.
 
-![Crepe](assets/img/utocmks/utocmks03.png)
+![Crepe](/assets/img/utocmks/utocmks03.png)
 
 192.168.2.20 esxhost1
 192.168.2.21 esxhost1.yourdomain gibi...

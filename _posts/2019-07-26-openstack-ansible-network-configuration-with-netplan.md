@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [openstack, network, linux, ubuntu]
 comments: true
 ---
-![Crepe](assets/img/openstack-ansib-netplan-ubuntu/op-ub-net-conf01.png)
+![Crepe](/assets/img/openstack-ansib-netplan-ubuntu/op-ub-net-conf01.png)
 
 İlk önce aşağıdaki komutla apt reposunu güncelleyin.
 

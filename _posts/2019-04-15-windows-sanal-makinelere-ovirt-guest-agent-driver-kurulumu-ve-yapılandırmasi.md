@@ -18,8 +18,8 @@ Kurulum bittikten sonra,
 
 Network ayarını **e1000**’den **VirtIO**’ya çekin.
 
-![Crepe](assets/img/win-ovirt-agentinst/winovirt-agen01.png)
+![Crepe](/assets/img/win-ovirt-agentinst/winovirt-agen01.png)
 
 **Disk** ayarlarını ise **IDE**’den **VirtIO-SCSI** yapın.
 
-![Crepe](assets/img/win-ovirt-agentinst/winovirt-agen02.png)
+![Crepe](/assets/img/win-ovirt-agentinst/winovirt-agen02.png)

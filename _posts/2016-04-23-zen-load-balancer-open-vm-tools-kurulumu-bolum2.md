@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [zen, loadbalancer, proxy, linux, network]
 comments: true
 ---
-![Crepe](assets/img/zen-opvm-bolum2/zen-opvm-01.png)
+![Crepe](/assets/img/zen-opvm-bolum2/zen-opvm-01.png)
 
 Sisteme yetkili kullanıcı ile **login** olduktan sonra;
 

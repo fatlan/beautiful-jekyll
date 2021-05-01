@@ -26,7 +26,7 @@ comments: true
 
 Senaryomuz aşağıda şekildeki gibi,
 
-![Crepe](assets/img/ubuntu16-lacp-co/ubun16-lacp-c01.png)
+![Crepe](/assets/img/ubuntu16-lacp-co/ubun16-lacp-c01.png)
 
 **1- LACP ile Bonding yapılandırması**,
 
@@ -82,7 +82,7 @@ Ardından “**systemctl restart networking.service**” komutu ile network serv
 
 Ardından “**ip a**” komutu ile yapılan işlemleri kontrol edebilirsiniz.
 
-![Crepe](assets/img/ubuntu16-lacp-co/ubun16-lacp-c02.png)
+![Crepe](/assets/img/ubuntu16-lacp-co/ubun16-lacp-c02.png)
 
 Ayrıca **Bonding** yapılandırmalarına ait detayları aşağıdaki komutla elde edebilirsiniz.
 

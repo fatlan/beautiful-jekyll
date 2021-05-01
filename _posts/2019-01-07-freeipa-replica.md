@@ -42,13 +42,13 @@ ipa-client-install --domain=fatlan.local --realm=FATLAN.LOCAL --server=dc01.fatl
 -admin şifresi
 ~~~
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa01.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa01.png)
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa02.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa02.png)
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa03.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa03.png)
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa04.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa04.png)
 
 Şimdi **Master** **dc01.fatlan.local** sunucusunda aşağıdaki komutu çalıştırın. Böylelikle **dc02** sunucusu “**ipaservers**” grubuna dahil etmiş olacağız.
 
@@ -58,7 +58,7 @@ ipa-client-install --domain=fatlan.local --realm=FATLAN.LOCAL --server=dc01.fatl
 ipa hostgroup-add-member ipaservers --hosts dc02.fatlan.local
 ~~~
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa05.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa05.png)
 
 Şimdi son komutumuzu **Replica FreeIPA**(dc02.fatlan.local) da çalıştırarak kurulumu tamamlayalım.
 
@@ -67,7 +67,7 @@ ipa-replica-install
 -yes
 ~~~
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa06.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa06.png)
 
 İşlem bu kadar. Artık her iki, yani dc01 ve dc02 **FreeIPA** sunucuları aktif-aktif çalışcaktır. Herhangi birinde yaptığınız bir işlem diğerine de yansıyacaktır. Böylelikle hem yedeklilik hemde **HA** sağlamış oldunuz.
 
@@ -77,4 +77,4 @@ Son durumu aşağıdaki komut ile de kontrol edebilirsiniz.
 ipa-replica-manage list
 ~~~
 
-![Crepe](assets/img/freipa-rep-ol/fre-ipa07.png)
+![Crepe](/assets/img/freipa-rep-ol/fre-ipa07.png)

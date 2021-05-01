@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ibm, ipmitool, linux, ilo, remote]
 comments: true
 ---
-![Crepe](assets/img/ibm-ipmitool-use/ibm-ipmi-to01.png)
+![Crepe](/assets/img/ibm-ipmitool-use/ibm-ipmi-to01.png)
 
 **IBM** sunucular donanımsal olarak uzaktan kontrol edilebilir yapıdadır. Sunucunun fiziksel olarak yeniden başlatılması, kapatılması, açılması gereken durumlarda Web Konsol yerine **ipmitool** komutları kullanılabilinir. Hatta bağlantığınız konsoldan işletim sistemi seviyesine konsoluna geçip işlemler yapabilirsiniz. Bu işlemi öncesinde sunucuya **IPMITOOL IP SET** ile atadığımız ip’yi kullanarak yapacağız. Kullanıcı tarafında **ipmitool** paketini kurmalısınız.
 
@@ -26,7 +26,7 @@ Power ile ilgili neler yapılabileceğini görmek için aşağıdaki komut,
 ipmitool -I lanplus -H server_ip_address -U ADMIN -P admin power
 ~~~
 
-![Crepe](assets/img/ibm-ipmitool-use/ibm-ipmi-to02.png)
+![Crepe](/assets/img/ibm-ipmitool-use/ibm-ipmi-to02.png)
 
 Power durumunu görmek için aşağıdaki komut,
 
@@ -34,7 +34,7 @@ Power durumunu görmek için aşağıdaki komut,
 ipmitool -I lanplus -H server_ip_address -U ADMIN -P admin power status
 ~~~
 
-![Crepe](assets/img/ibm-ipmitool-use/ibm-ipmi-to03.png)
+![Crepe](/assets/img/ibm-ipmitool-use/ibm-ipmi-to03.png)
 
 **Power OFF** yapmak için aşağıdaki komut,
 
@@ -42,7 +42,7 @@ ipmitool -I lanplus -H server_ip_address -U ADMIN -P admin power status
 ipmitool -I lanplus -H server_ip_address -U ADMIN -P admin power off
 ~~~
 
-![Crepe](assets/img/ibm-ipmitool-use/ibm-ipmi-to04.png)
+![Crepe](/assets/img/ibm-ipmitool-use/ibm-ipmi-to04.png)
 
 **IPMI** Konsoluna düşmek için aşağıdaki komutu kullanabilirsiniz.
 

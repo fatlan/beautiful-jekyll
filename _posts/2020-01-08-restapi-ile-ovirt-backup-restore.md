@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [backup, vm, ovirt, rhev, virtualization]
 comments: true
 ---
-![Crepe](assets/img/restapi-ovirt-bac-res/rest-bac-res01.png)
+![Crepe](/assets/img/restapi-ovirt-bac-res/rest-bac-res01.png)
 
 Konu ile ilgili daha önceden Python ile yazılmış online full backup script’ini kullanarak bu işlemi gerçekleştireceğiz.
 [https://github.com/wefixit-AT/oVirtBackup](https://github.com/wefixit-AT/oVirtBackup) adresinden bu script’i indirebilirsiniz.
@@ -70,4 +70,4 @@ Artık VM’leriniz **Storage/Storage Domains/export_nfs** altına **crontab**�
 
 **Storage/Storage Domains/export_nfs** mevcut olan herhangi bir **virtual machine** seçili iken “**Import**” tıklayın. Akabinden aşağıdaki görselden de anlaşılacağı üzere **OK** tıklayıp, aktif ortama dahil edip **restore** işlemini tamamlamış olursunuz.
 
-![Crepe](assets/img/restapi-ovirt-bac-res/rest-bac-res02.png)
+![Crepe](/assets/img/restapi-ovirt-bac-res/rest-bac-res02.png)

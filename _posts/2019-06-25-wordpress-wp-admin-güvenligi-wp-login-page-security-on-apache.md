@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [security, wordpress, linux, apache]
 comments: true
 ---
-![Crepe](assets/img/wp-apache-losec/wp-a-losec01.png)
+![Crepe](/assets/img/wp-apache-losec/wp-a-losec01.png)
 
 WordPress blog’larınızın admin sayfasına yapılan bruteforce ataklarından oldukça sıkılmış olabilirsiniz ki varsayılan olarak wp-admin eki ile bağlandığınız admin panel sayfasının herkes için açılmasını yasaklamanız güvenlik adına yapmanız gereken en mantıklı hareketlerden biri olacaktır.
 

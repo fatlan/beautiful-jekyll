@@ -11,7 +11,7 @@ tags: [centos, linux, network]
 comments: true
 ---
 
-![Crepe](assets/img/ifc-com-n-fou/if-comn01.png)
+![Crepe](/assets/img/ifc-com-n-fou/if-comn01.png)
 
 CentOS 7 minimal yükleme seçeneğinde sistemde **ifconfig** çalışır vaziyete gelmez. O yüzden bu hata alınır. Alternatif olarak **ip** komutu kullanılabilir. Aşağıda örnek belirtilmiştir.
 
@@ -19,7 +19,7 @@ CentOS 7 minimal yükleme seçeneğinde sistemde **ifconfig** çalışır vaziye
 ip addr
 ~~~
 
-![Crepe](assets/img/ifc-com-n-fou/if-comn02.png)
+![Crepe](/assets/img/ifc-com-n-fou/if-comn02.png)
 
 **İfconfig** komutunu kullanabilmek için sisteme yüklemek gereklidir. Aşağıdaki komutu kullanarak bu işlemi gerçekleştirebilirsiniz.
 
@@ -27,10 +27,10 @@ ip addr
 yum install net-tools –y
 ~~~
 
-![Crepe](assets/img/ifc-com-n-fou/if-comn03.png)
+![Crepe](/assets/img/ifc-com-n-fou/if-comn03.png)
 
-![Crepe](assets/img/ifc-com-n-fou/if-comn04.png)
+![Crepe](/assets/img/ifc-com-n-fou/if-comn04.png)
 
 Daha sonra **ifconfig** komutunu çalıştırabilirsiniz.
 
-![Crepe](assets/img/ifc-com-n-fou/if-comn05.png)
+![Crepe](/assets/img/ifc-com-n-fou/if-comn05.png)

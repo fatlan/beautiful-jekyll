@@ -18,7 +18,7 @@ nmcli d
 
 Benim 1 interface’m var eno ile başlayan ve bağlı olmadığı gözükmekte alttaki resimden anlaşıldığı üzere,
 
-![Crepe](assets/img/cent7-net-conf/cnw01.png)
+![Crepe](/assets/img/cent7-net-conf/cnw01.png)
 
 Daha sonrasında işlemlere hızlıca başlayalım. İlk olarak interface ayarları için bir editör komutu kullanmak gerekir. Ben default’ta gelen vi komutunu kullanacağım, tavsiyem vim komutudur ama farklı editör komutlarıda kullanarak yapacağımız işlemleri gerçekleştirebilirsiniz. Tabi o komutları sisteme yükleyip entegre ettikten sonra kullanabilirsiniz, ismini bilmiyorsanız tab tuşu ile öğrenebilirsiniz.
 
@@ -45,7 +45,7 @@ ONBOOT=yes
 
 Neyse komutları ekledikten son **esc** tuşuna bastıktan sonra ‘**:x**’ enter tuşuna basın ve kaydedip çıkın. Aşağıdaki şekilde görüldüğü gibi.
 
-![Crepe](assets/img/cent7-net-conf/cnw02.png)
+![Crepe](/assets/img/cent7-net-conf/cnw02.png)
 
 Daha sonrasında aşağıdaki komutu çalıştırarak servisi **restart** edin.
 
@@ -83,11 +83,11 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ~~~
 
-![Crepe](assets/img/cent7-net-conf/cnw03.png)
+![Crepe](/assets/img/cent7-net-conf/cnw03.png)
 
 Daha sonra tüm ayarlarınız doğru olduğundan emin olmak için ve dns’in isim çözdüğünü görmek için herhangi bir domain’e **ping** atın.
 
-![Crepe](assets/img/cent7-net-conf/cnw04.png)
+![Crepe](/assets/img/cent7-net-conf/cnw04.png)
 
 Daha sonra konunun başındaki ilk komutu tekrar çalıştırın ve bağlı olduğunu görün.
 
@@ -95,4 +95,4 @@ Daha sonra konunun başındaki ilk komutu tekrar çalıştırın ve bağlı oldu
 nmcli d
 ~~~
 
-![Crepe](assets/img/cent7-net-conf/cnw05.png)
+![Crepe](/assets/img/cent7-net-conf/cnw05.png)

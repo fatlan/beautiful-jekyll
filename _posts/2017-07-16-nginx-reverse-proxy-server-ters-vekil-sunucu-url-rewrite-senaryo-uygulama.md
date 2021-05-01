@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [nginx, proxy, linux, reverse]
 comments: true
 ---
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy01.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy01.png)
 
 **Nginx nedir** : Rus yazılım mühendisi Igor Sysoev tarafından geliştirilen hafif, stabil, hızlı bir mail istemcisi olarak kodlanan daha sonraları geliştirilerek tüm sunucular için uygun hale getirilen bir web sunucusudur.
 
@@ -77,7 +77,7 @@ ls -l /etc/nginx/sites-enabled/webmin.test
 systemctl restart nginx.service
 ~~~
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy02.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy02.png)
 
 **3. Adım** :
 
@@ -89,24 +89,24 @@ Herşey tamam, şimdi sıra test etme aşamasında. Bunun için **webmin.test** 
 vi /etc/hosts
 ~~~
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy03.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy03.png)
 
 ~~~
 ping webmin.test
 ~~~
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy04.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy04.png)
 
 Şimdi sıra geldi tarayıcı üzerinden hizmete erişim. **Adres** çubuğuna **webmin.test/** yazıp **enter**’a basalım ve başarılı bir şekilde bağlandığımızı görelim.
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy05.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy05.png)
 
 Normalde işlem tamam ve istediğimiz senaryo gerçekleşti fakat burada bilgi amaçlı olarak şundan da bahsedelim **Webmin https(443)** üzerinden çalıştığı için kullanıcı adı ve şifreyi yazdığınız zaman **login** olamayacaksınız ve aşağıdaki uyarıyı alacaksınız.
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy06.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy06.png)
 
 Bu uyarıyı almamak ve **login** olabilmek için biz yukarıda “**return 301 https://192.168.1.100:10000;**” satırını ekledik. Yani bu satır eklenince **Webmin**’e login olunabiliniyor. Yani **Http(80)**’de çalışan bir servis olsaydı ne bu sorun olacaktı ne de bu satırı ekleyecektik. Aslında burada bir trik var **Nginx**’te **virtualhost** dosyasına **2. Adımda** yukarıdaki kadar satır eklemek yerine **Webmin** servisi zaten **443**’ten çalıştığı için “**return 301 https://192.168.1.100:10000**” **SADECE** bu satırla bile işimizi çözüyor olacaktık fakat adres çubuğunda, bağlantı gerçekleştiğinde **domain adı** değil de ip bilgileri yer alıyor olurdu. Aşağıdaki gibi. Halbuki **101** makinesine istek attık.
 
-![Crepe](assets/img/nginx-rev-prox-uy/nginx-rev-proxy07.png)
+![Crepe](/assets/img/nginx-rev-prox-uy/nginx-rev-proxy07.png)
 
 Daha fazla bilgi için [https://www.nginx.com/blog/creating-nginx-rewrite-rules/](https://www.nginx.com/blog/creating-nginx-rewrite-rules/) linkini ziyaret edebilirsiniz.

@@ -32,7 +32,7 @@ ExecStart=
 ExecStart=/usr/bin/dockerd -H fd:// --bip=10.10.100.1/24
 ~~~
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b01.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b01.png)
 
 Gerekli systemd ayarlamalarını yaptık ve şimdi normal akışında kurulumu yaparak işlemleri tamamlayacağız.
 
@@ -62,13 +62,13 @@ sudo apt-get install -y docker-ce
 
 Ardından gerekli kontrolleri sırasıyla yapıp, işlemlerimizi teyit edelim.
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b02.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b02.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b03.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b03.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b04.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b04.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b05.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b05.png)
 
 
 ***CentOS7/RedHat7 da customize subnet ile Docker kurulumu**
@@ -91,7 +91,7 @@ ExecStart=
 ExecStart=/usr/bin/dockerd --bip=10.10.100.1/24
 ~~~
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b06.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b06.png)
 
 Gerekli systemd ayarlamalarını yaptık ve şimdi normal akışında kurulumu yaparak işlemleri tamamlayacağız.
 
@@ -121,17 +121,17 @@ systemctl start docker.service
 systemctl status docker.service
 ~~~
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b07.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b07.png)
 
 Ardından gerekli kontrolleri sırasıyla yapıp, işlemlerimizi teyit edelim.
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b08.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b08.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b09.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b09.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b10.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b10.png)
 
-![Crepe](assets/img/u16-c7-r7-docker-cbridge/docker0-c-b11.png)
+![Crepe](/assets/img/u16-c7-r7-docker-cbridge/docker0-c-b11.png)
 
 Bu arada servisi daha önceden kurduysanız “**systemd**” yapılandırmasını yaptıktan sonra aşağıdaki komutları çalıştırdığınızda sizin belirlediğiniz **subnet overwrite** olacak.
 

@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ovirt, rhev, linux, virtualization]
 comments: true
 ---
-![Crepe](assets/img/ovirt-ad-pc/ov-pass-adc01.png)
+![Crepe](/assets/img/ovirt-ad-pc/ov-pass-adc01.png)
 
 Aşağıdaki komut ile internal admin kullanıcısının detaylarını görebilirsiniz. Yukarıdaki ss’de de durumu gözlemleyebilirsiniz.
 

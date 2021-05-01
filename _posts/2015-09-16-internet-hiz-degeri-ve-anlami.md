@@ -11,7 +11,7 @@ tags: [network, internet]
 comments: true
 ---
 
-![Crepe](assets/img/net-sp/net-sp01.png)
+![Crepe](/assets/img/net-sp/net-sp01.png)
 
 İlk önce BYTE(bayt) birimlerine bakalım
 

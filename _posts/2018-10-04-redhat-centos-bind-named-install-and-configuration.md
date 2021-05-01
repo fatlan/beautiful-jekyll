@@ -26,7 +26,7 @@ yum install bind bind-utils
 
 Şimdi asıl önemli olan yapılandırma kısmı ve ilk olarak “**/etc/named.conf**” dosyasını yapılandıracağız ama öncesinde “**named.conf**” dosyasının bir yedeğini alın. Varsayılan olarak “**named.conf**”un içeriği aşağıda ss gibidir.
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c01.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c01.png)
 
 Şimdi bir editör yardımıyla dosyayı edit’lemeden önce neler değişecek ya da eklenecek onlardan
 bahsedelim.
@@ -56,7 +56,7 @@ Eklenecek satırlar;
 
 Son ekran görüntüsü aşağıdaki gibidir.
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c02.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c02.png)
 
 Şimdi sıra **zone** dosyalarını yani **dns** kayıtlarının barındılacağı dosyaları oluşturmaya geldi. Bu **zone** ve **revzone** dosyalarını “**/var/named/**” dizininin içinde ve “**/etc/named.conf**” dosyasında belirttiğimiz zone isimlerinde oluşturmalıyız.
 
@@ -79,11 +79,11 @@ Son olarak herhangi bir editör aracılığı ile “**fatlan.com.zone**” ve �
 
 **fatlan.com.zone;**
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c03.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c03.png)
 
 **100.34.203.revzone;**
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c04.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c04.png)
 
 Şimdi buraya kadar herşey tamam gibi ama bundan sonra yapmamız gereken yapılan tüm bu ayarlamalarının doğruluğunu test etmek.
 
@@ -99,7 +99,7 @@ named-checkconf
 named-checkzone fatlan.com /var/named/fatlan.com.zone
 ~~~
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c05.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c05.png)
 
 Son olarakta **100.34.203.revzone** dosyasını kontrol edelim.
 
@@ -107,7 +107,7 @@ Son olarakta **100.34.203.revzone** dosyasını kontrol edelim.
 named-checkzone 100.34.203.in-addr.arpa /var/named/100.34.203.revzone
 ~~~
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c06.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c06.png)
 
 Herşey yolunda olduğuna göre **named** servisini başlatalım.
 
@@ -121,8 +121,8 @@ Son olarak **53** **port**unu dinlediğinden emin olalım. **Firewall**’dan **
 netstat -plntua | egrep -i named
 ~~~
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c07.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c07.png)
 
 Sunucu tarafında herşey bitti, şimdi bir kullanıcı makinasının **dns**’ini yeni sunucumuza yönlendirip kayıtları çözme durumunu kontrol edelim.
 
-![Crepe](assets/img/re-ce-named-insandconf/named-insta-c08.png)
+![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c08.png)

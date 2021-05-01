@@ -16,18 +16,18 @@ Bu işlemi ilgili interface, **subnet** yada ip için yapabilirsiniz.
 
 **Pfsense** **login** olduktan sonra “**Firewall / NAT / Port Forward**” sekmesine tıklayın.
 
-![Crepe](assets/img/pfse-dns-manpl/pf-dns-mpl01.png)
+![Crepe](/assets/img/pfse-dns-manpl/pf-dns-mpl01.png)
 
 Ardından “Add” diyerek nat kuralını oluşturmaya başlayın.
 
-![Crepe](assets/img/pfse-dns-manpl/pf-dns-mpl02.png)
+![Crepe](/assets/img/pfse-dns-manpl/pf-dns-mpl02.png)
 
 Ardından aşağıdaki ss gibi kural yapısını oluşturun.
 
-![Crepe](assets/img/pfse-dns-manpl/pf-dns-mpl03.png)
+![Crepe](/assets/img/pfse-dns-manpl/pf-dns-mpl03.png)
 
 **NoT** : Yalnız burada bir şey belirtmem gerek. **DNS** sunucu yada sunucularınız kuralı işlettiğiniz **subnet**in içinde ise “**Invert match.**” seçeneğini aktif edip o ip yada ip’leri belirterek hariç tutmanız gerekmektedir. Çünkü ağın içindeki **DNS** sunucuları hariç tutmazsanız yönlendirme yaptıktan sonra bu **DNS** sunucularda dışırıya **53** portundan çıkmayacağı için ve kendinde olmayan kayıtları **root** ve diğer global **DNS** sunuculardan öğrenemeyeceği için kullanıcılara yansıyacak ve dolayısıyla iç **DNS** sunucularınız kendinde olmayan kayıtları çözemeyeceği için kullanıcılarda ip'ye karşılık gelen domainleri çözemeyecektir.
 
 Aşağıda örnek gösterilmiştir.
 
-![Crepe](assets/img/pfse-dns-manpl/pf-dns-mpl04.png)
+![Crepe](/assets/img/pfse-dns-manpl/pf-dns-mpl04.png)

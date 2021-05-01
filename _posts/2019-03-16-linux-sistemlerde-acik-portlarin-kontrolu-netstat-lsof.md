@@ -16,11 +16,11 @@ comments: true
 netstat -plntua
 ~~~
 
-![Crepe](assets/img/lsof-net-ps/ps-lin-nl01.png)
+![Crepe](/assets/img/lsof-net-ps/ps-lin-nl01.png)
 
 ~~~
 lsof -i -n | egrep -i listen
 ~~~
 
-![Crepe](assets/img/lsof-net-ps/ps-lin-nl02.png)
+![Crepe](/assets/img/lsof-net-ps/ps-lin-nl02.png)
 

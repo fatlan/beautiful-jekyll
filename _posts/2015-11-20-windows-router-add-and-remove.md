@@ -10,13 +10,13 @@ gh-badge: [star, follow]
 tags: [windows, network]
 comments: true
 ---
-Herhangi makinada birden fazla NIC dahi olsa network kon gurasyonları için birden fazla gateway(geçityolu) adresi giremiyoruz. Bu gibi durumlarda herhagi bir ayar yada oluşturulan tunellemelerde istenilen network’ü istenilen gateway’e yönlendirmek için route’leme işlemi kullanılır. Kısaca farklı networklerin birbirleriyle haberleşmek için hangi yolu kullanması gerektiğinin hesaplanması ya da seçilmesi işlemidir. Bunun için iki yöntemden yani iki komut setinden bahsedeceğim ilk olarak NETSH ve sonrasında ROUTE komutu.
+Herhangi makinada birden fazla **NIC** dahi olsa network kon gurasyonları için birden fazla **gateway**(geçityolu) adresi giremiyoruz. Bu gibi durumlarda herhagi bir ayar yada oluşturulan tunellemelerde istenilen network’ü istenilen gateway’e yönlendirmek için route’leme işlemi kullanılır. Kısaca farklı networklerin birbirleriyle haberleşmek için hangi yolu kullanması gerektiğinin hesaplanması ya da seçilmesi işlemidir. Bunun için iki yöntemden yani iki komut setinden bahsedeceğim ilk olarak **NETSH** ve sonrasında **ROUTE** komutu.
 
 **NETSH komutunu kullanarak route eklemek**
 
 Komut satırını admin modda açtıktan sonra(admin modda açılmazsa hata verecektir) aşağıdaki komutları çalıştırın.
 
-![Crepe](assets/img/wraar/winrouadd01.png)
+![Crepe](/assets/img/wraar/winrouadd01.png)
 
 İlk önce intefaceleri(NIC) listeleyelim. Ben tüm işlemler için “Ethernet0” interface’yi kullanacağım.
 
@@ -24,7 +24,7 @@ Komut satırını admin modda açtıktan sonra(admin modda açılmazsa hata vere
 netsh interface ipv4 show interface
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd02.png)
+![Crepe](/assets/img/wraar/winrouadd02.png)
 
 Route ekleyelim, test için adresleri tamamen atıyorum.
 
@@ -32,7 +32,7 @@ Route ekleyelim, test için adresleri tamamen atıyorum.
 netsh interface ipv4 add route ‘subnet’ “İnterfaceADI” ‘gateway’
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd03.png)
+![Crepe](/assets/img/wraar/winrouadd03.png)
 
 Ardından route tablosunu görmek için aşağıdaki komutu kullanabilirsiniz.
 
@@ -40,7 +40,7 @@ Ardından route tablosunu görmek için aşağıdaki komutu kullanabilirsiniz.
 netsh interface ipv4 show route
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd04.png)
+![Crepe](/assets/img/wraar/winrouadd04.png)
 
 Ben aşağıdaki komutu kullanıyorum.
 
@@ -48,7 +48,7 @@ Ben aşağıdaki komutu kullanıyorum.
 route print
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd05.png)
+![Crepe](/assets/img/wraar/winrouadd05.png)
 
 Yapılan işlemleri geri almak yani silmek için aşağıdaki komutu kullanabilirsiniz.
 
@@ -56,13 +56,13 @@ Yapılan işlemleri geri almak yani silmek için aşağıdaki komutu kullanabili
 netsh interface ipv4 delete route ‘subnet’ “İnterfaceADI” ‘gateway’
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd06.png)
+![Crepe](/assets/img/wraar/winrouadd06.png)
 
 **ROUTE komutunu kullanarak route eklemek**
 
 Komut satırını admin modda açtıktan sonra(admin modda açılmazsa hata verecektir) aşağıdaki komutları çalıştırın.
 
-![Crepe](assets/img/wraar/winrouadd01.png)
+![Crepe](/assets/img/wraar/winrouadd01.png)
 
 Route ekleyelim, test için adresleri tamamen atıyorum. Yalnız burda bir püf nokta var komutun sonuna ‘-p’ parametresini eklemezseniz yaptığının routing işlemi makina yeniden başladıktan sonra kaybolacaktır. Kalıcı olması için ‘-p’ parametresini kullanmalısınız. Opsiyonel olarak kullanabileceğiniz parametleri route yazarak görebilirsiniz.
 
@@ -70,18 +70,18 @@ Route ekleyelim, test için adresleri tamamen atıyorum. Yalnız burda bir püf 
 route add subnet MASK 255.255.255.0 gateway
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd07.png)
+![Crepe](/assets/img/wraar/winrouadd07.png)
 
 ~~~
 route print
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd08.png)
+![Crepe](/assets/img/wraar/winrouadd08.png)
 
 ~~~
 route delete subnet MASK 255.255.255.0 gateway
 ~~~
 
-![Crepe](assets/img/wraar/winrouadd09.png)
+![Crepe](/assets/img/wraar/winrouadd09.png)
 
 

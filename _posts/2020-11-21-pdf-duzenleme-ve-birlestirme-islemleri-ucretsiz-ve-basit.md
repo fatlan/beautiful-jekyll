@@ -28,5 +28,5 @@ pdfunite le1.pdf le2.pdf ... leN.pdf merged.pdf
 convert le1.pdf le2.pdf ... leN.pdf merged.pdf
 ~~~
 
-![Crepe](assets/img/pdfconv/pdfconv01.png)
+![Crepe](/assets/img/pdfconv/pdfconv01.png)
 

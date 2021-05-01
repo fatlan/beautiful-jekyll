@@ -20,7 +20,7 @@ wget http://prdownloads.sourceforge.net/webadmin/webmin-1.791-1.noarch.rpm
 
 Daha sonra aşağıdaki ‘**rpm -U webmin-1.791-1.noarch.rpm**’ komut ile kurulumu yapıp sonlandıralım. Fakat şöyle ki ben **CentOS7** üzerinde kurulum gerçekleştiriyorum. O yüzden bu ’**rpm -U webmin-1.791-1.noarch.rpm**’ komutu direk çalıştırırsam hata dönecektir ‘**Header V3 DSA/SHA1 Signature key id 11f63c51 NOKEY**‘ ve hatanın screenshot çıktısı aşağıdaki gibidir.
 
-![Crepe](assets/img/centos6-7-webmin/webmin01.png)
+![Crepe](/assets/img/centos6-7-webmin/webmin01.png)
 
 **CentOS7**’de bu hatayı almamak için aşağıdaki komutu çalıştırıyorum.
 
@@ -38,6 +38,6 @@ Ve kurulum tamamlandı. **/usr/libexec/webmin** dizininde klasör oluşacaktır.
 
 **CentOS** internal firewall **10000 port**una izin vermek için (**iptables -I INPUT -p tcp --dport 10000 -j ACCEPT yada rewall-cmd --add-port=10000/tcp**) komutlarını çalıştırabilirsiniz.
 
-![Crepe](assets/img/centos6-7-webmin/webmin02.png)
+![Crepe](/assets/img/centos6-7-webmin/webmin02.png)
 
-![Crepe](assets/img/centos6-7-webmin/webmin03.png)
+![Crepe](/assets/img/centos6-7-webmin/webmin03.png)

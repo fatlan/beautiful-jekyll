@@ -18,7 +18,7 @@ Kurulumu başlatmak için aşağıdaki komutu çalıştırın. Komutla **SNMP** 
 yum -y install net-snmp net-snmp-utils
 ~~~
 
-![Crepe](assets/img/snmp-cent7/snmp-cent701.png)
+![Crepe](/assets/img/snmp-cent7/snmp-cent701.png)
 
 Daha sonra vi editörünü kullanarak aşağıdaki komutla SNMP’yi kon güre edebilirsiniz.
 
@@ -46,7 +46,7 @@ Ardından servisi yeniden başlatın.
 service snmpd restart
 ~~~
 
-![Crepe](assets/img/snmp-cent7/snmp-cent702.png)
+![Crepe](/assets/img/snmp-cent7/snmp-cent702.png)
 
 Yani **yanlış metot** kullanıyorsun aşağıdaki yöntemle o komutun yapacağı işi yapabilirsin diyor. Yani o komut CentOS 7’nin altındaki sürümlerde o şekilde çalışır.
 
@@ -60,7 +60,7 @@ Daha sonra servisin sürekli çalışır durumda olması için aşağıdaki komu
 chkconfig snmpd on
 ~~~
 
-![Crepe](assets/img/snmp-cent7/snmp-cent703.png)
+![Crepe](/assets/img/snmp-cent7/snmp-cent703.png)
 
 Aşağıdaki şekilde tamamlanacaktır.
 

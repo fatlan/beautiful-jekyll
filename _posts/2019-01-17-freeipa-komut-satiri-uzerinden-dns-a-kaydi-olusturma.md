@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [freeipa, ipa, centos, redhat, ldap, dns]
 comments: true
 ---
-![Crepe](assets/img/fipa-cli-adns/freipa-cliadns01.png)
+![Crepe](/assets/img/fipa-cli-adns/freipa-cliadns01.png)
 
 Şimdi **DNS**’e **A** kaydı gireceğiz. Bu işlemi **GUI**’de basit bir şekilde de yapabilirsiniz ki ilerde bir makale ile bu konuya da değinebiliriz, şimdi ise aşağıdaki komut yardımıyla bu işlemi komut satırıcı üzerinden gerçekleştirebiliriz.
 İlk önce **kinit admin**e login olun(**GUI** ekranında login olduğunuz **admin** ve **şifresi**).

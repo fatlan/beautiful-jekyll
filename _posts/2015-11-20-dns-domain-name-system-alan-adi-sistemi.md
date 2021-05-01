@@ -15,9 +15,9 @@ ve sayfayı karşımıza getirir. İşte bu işlemleri yapan arkadaş **DNS**’
 
 Adres-isim tanımlamalarını içeren **HOSTS.TXT** dosyası **SRI** tarafından **SRI-NIC(Stanford Research Institute – Network Information Center)** adında bir bilgisayar üzerinde tutulmaktaydı. Bu dosya her adrese bir isim karşılık gelecek şekilde düzenlenmişti. **Arpanet** üzerindeki yeni isim tanımlamaları ve değişiklikleri **SRI**’ya gönderilen e-postalar arcılığı ile yapılıyor ve **HOSTS.TXT**’in kopyası **FTP(File Transfer Protocol)** ile alınıyordu.
 
-![Crepe](assets/img/dns01/dnsb01.png)
+![Crepe](/assets/img/dns01/dnsb01.png)
 
-![Crepe](assets/img/dns01/dnsb02.png)
+![Crepe](/assets/img/dns01/dnsb02.png)
 
 **İsim Çözümleme ve Sırası**
 
@@ -27,7 +27,7 @@ DNS sistemlerinde harhangi bir nesnenin Hostname’ine karşılık gelecek ip ad
 ping duckduckgo.com
 ~~~
 
-![Crepe](assets/img/dns01/dnsb03.png)
+![Crepe](/assets/img/dns01/dnsb03.png)
 
 **İsim çözümleme sırası ise;**
 
@@ -41,17 +41,17 @@ ping duckduckgo.com
 
 Malum **DNS** çözümlemeleri için bir trafik oluşur ve bu işlem vakit alabilir. Buna çözüm olarakta cache’leme olayını geliştirmişler. Girilen siteler yada **HOST** dosyasına eklenen veriler daha hızlı erişim için cache’lenir. Tabi bu belli bir süreye bağlanmıştır yoksa kullanılan linklerdeki son değişiklikler gözlemlenemez. Bu süreye **TTL(Time To Live-Yaşam Süresi)** denir. Bu süreyi DNS tarafında düzenleyebilirsiniz.
 
-![Crepe](assets/img/dns01/dnsb04.png)
+![Crepe](/assets/img/dns01/dnsb04.png)
 
 Aşağıdaki **CMD** çıktısındada bu değeri görebilirsiniz. **Client resolver Cache- DNS cache**’lerini görmek için komut satırından aşağıdaki komutu kullanabilirsiniz. Ben **HOST** dosyasına kayıt ekliyorum onuda görebileceğim.
 
-![Crepe](assets/img/dns01/dnsb05.png)
+![Crepe](/assets/img/dns01/dnsb05.png)
 
 ~~~
 ipconfig /displaydns
 ~~~
 
-![Crepe](assets/img/dns01/dnsb06.png)
+![Crepe](/assets/img/dns01/dnsb06.png)
 
 **Client resolver Cache -DNS cache**’lerini temizlemek için ise,
 ~~~

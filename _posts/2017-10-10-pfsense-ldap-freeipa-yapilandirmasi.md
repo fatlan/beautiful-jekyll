@@ -12,14 +12,14 @@ comments: true
 ---
 **System/User Manager/Authentication Servers** menüsünden aşağıdaki gibi **Add** butonuna basıyoruz.
 
-![Crepe](assets/img/pfse-ldp-confi/pf-ldpconf01.png)
+![Crepe](/assets/img/pfse-ldp-confi/pf-ldpconf01.png)
 
 Ardından **Descriptive name**, **Type**, **Hostname** or **IP Address**, **Port value**, **Base DN**, bilgileri aşağıdaki screenshottaki gibi yapılandırın.
 
-![Crepe](assets/img/pfse-ldp-confi/pf-ldpconf02.png)
+![Crepe](/assets/img/pfse-ldp-confi/pf-ldpconf02.png)
 
 Daha sonra sayfanın alt kısmında kalan **uid**, **cn**, **dc**, **bind user** ve şifre kısmını yine aşağıdaki gibi yapılandırıp **Save** tıklayın.
 
-![Crepe](assets/img/pfse-ldp-confi/pf-ldpconf03.png)
+![Crepe](/assets/img/pfse-ldp-confi/pf-ldpconf03.png)
 
 Artık **Pfsense** ile başta **vpn** olmak üzere **Authentication** için kullanabileceğiniz bir **Authentication Server**’ınız oldu.

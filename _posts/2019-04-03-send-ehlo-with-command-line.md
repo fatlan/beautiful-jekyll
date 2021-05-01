@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ehlo, mail, telnet, linux]
 comments: true
 ---
-![Crepe](assets/img/ehlo-with-telnet/ehlo-tl01.png)
+![Crepe](/assets/img/ehlo-with-telnet/ehlo-tl01.png)
 
 ilk olarak mail server’a **telnet** ile **25** portu üzerinde bağlanalım.
 
@@ -25,5 +25,5 @@ subject: test
 . #nokta işareti mailimiz tamam oldu, gönder manasına gelmektedir
 ~~~
 
-![Crepe](assets/img/ehlo-with-telnet/ehlo-tl02.png)
+![Crepe](/assets/img/ehlo-with-telnet/ehlo-tl02.png)
 

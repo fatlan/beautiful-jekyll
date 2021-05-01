@@ -26,7 +26,7 @@ comments: true
 
 Senaryomuz aşağıda şekildeki gibi,
 
-![Crepe](assets/img/red-ceos-lacp-con/lacp-rc01.png)
+![Crepe](/assets/img/red-ceos-lacp-con/lacp-rc01.png)
 
 1- **LACP** ile **Bonding** yapılandırması, **cd** komutu ile “**/etc/syscon g/network-scripts/**” **directory**'sine gidin. Ardından **vi** yada başka bir editör aracılığı ile **uplink** gelen “**ifcfg-eth0 ve ifcfg-eth1**” konfig dosyalarının içini aşağıdaki gibi yapılandırın.
 
@@ -90,7 +90,7 @@ systemctl restart network.service
 
 Ardından “**ip a**” komutu ile yapılan işlemleri kontrol edebilirsiniz.
 
-![Crepe](assets/img/red-ceos-lacp-con/lacp-rc02.png)
+![Crepe](/assets/img/red-ceos-lacp-con/lacp-rc02.png)
 
 Ayrıca **Bonding** yapılandırmalarına ait detayları aşağıdaki komutla elde edebilirsiniz.
 

@@ -22,14 +22,14 @@ Testi “**nmap**” komutu ile yapacağım.
 sudo nmap -sU -p 53 -sV -P0 --script=dns-recursion "ip_address"
 ~~~
 
-![Crepe](assets/img/bind-recursion-of/bind-rec-of01.png)
+![Crepe](/assets/img/bind-recursion-of/bind-rec-of01.png)
 
 Yukarıdaki ss den de anlaşılacağı üzere **DNS Recursion** özelliği açık ve **DNS Amplification Attack** larına karşı savunmasız durumda. Şimdi **Recursion** özelliğini “**/etc/named.conf**” dosyasından **disable** edelim.,
 
 **Recursion** özelliğini **disable** etmek için “**/etc/named.conf**” dosyasının “**options**” bölümüne “**recursion no;**” satırı eklenmelidir. Aşağıda ss ile de gösterilmiştir.
 
-![Crepe](assets/img/bind-recursion-of/bind-rec-of02.png)
+![Crepe](/assets/img/bind-recursion-of/bind-rec-of02.png)
 
 Şimdi tekrar “**nmap**” komutumuzla test yapalım ve **recursion** anlaşılacağı üzere pasif durumda.
 
-![Crepe](assets/img/bind-recursion-of/bind-rec-of03.png)
+![Crepe](/assets/img/bind-recursion-of/bind-rec-of03.png)

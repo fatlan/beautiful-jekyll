@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [docker, linux, container, registry]
 comments: true
 ---
-![Crepe](assets/img/l-doc-regis/dock-reg01.png)
+![Crepe](/assets/img/l-doc-regis/dock-reg01.png)
 
 **Docker registry docker images**’larının depolandığı sistemdir. **Docker images**’larını **pull** ile çekip, **push** ile de gönderip paylaştığımız sistemdir. Hali hazırda **docker** resmi olarak [https://hub.docker.com/](https://hub.docker.com/) dan binlerce özel yada genel, kullanıma açtığı **images**’lar bulunmaktadır. Bizlerde bu sistemi kullanmaktayız. Özellikle **docker**'ın **image**'lere **pull rate limit**'i koymasıyla [https://docs.docker.com/docker-hub/download-rate-limit/](https://docs.docker.com/docker-hub/download-rate-limit/) **yerel registry** kullanımı daha da elzem olmuştur.
 
@@ -44,7 +44,7 @@ docker run -d -p 80:8080 --restart=always --name registry-browser -e DOCKER_REGI
 
 Registry container’ımızın çalıştığını “sudo docker ps -a” komutu ile kontrol edelim.
 
-![Crepe](assets/img/l-doc-regis/dock-reg02.png)
+![Crepe](/assets/img/l-doc-regis/dock-reg02.png)
 
 Şimdi kurulumu doğrulamak için **pull** ve **push** yöntemlerini de dahil ederek test edelim. Ayrıca **https://docker.fatlan.com/v2/_catalog** ve **http://docker.fatlan.com** adresinden de kontrol edebilirsiniz, tabi siz kendi belirlediğiniz **domain name**‘i girmelisiniz.
 

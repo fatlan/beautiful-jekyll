@@ -14,7 +14,7 @@ comments: true
 
 **Hata** : “**bringing up interface eth0 device eth0 does not seem to be present delaying initialization**”
 
-![Crepe](assets/img/cen6-clone-after/cent-clon-a01.png)
+![Crepe](/assets/img/cen6-clone-after/cent-clon-a01.png)
 
 Yapılması gerekenler ise;
 
@@ -36,10 +36,10 @@ vi /etc/syscon g/network-scripts/ifcfg-eth0
 
 3- Sunucunuzun **hostname**‘ini değiştirin
 
-![Crepe](assets/img/cen6-clone-after/cent-clon-a02.png)
+![Crepe](/assets/img/cen6-clone-after/cent-clon-a02.png)
 
 Tüm bu işlemleri yaptıktan sonra sunucuyu **reboot** edin ve işlem tamamdır ve ayrıca hata da kaybolacaktır. Tabi **clone** sunucuda ip vs. değiştirdiğinizi kabul ediyorum. =)
 
 **VirtualBox** kullananlar varsa eğer, **clone** alırken aşağıdaki gibi “**Reinitialize the MAC address of all network cards**” seçeneğini **check**(aktif) ederse **mac** adresi, **clone** sunucu için otomatik olarak değişecektir ve yukarıdaki **1** seçenek otomatik olarak yapılmış olacaktır. **VirtualBox** için **2** ve **3** seçeneği yapıp **restart** edebilirsiniz.
 
-![Crepe](assets/img/cen6-clone-after/cent-clon-a03.png)
+![Crepe](/assets/img/cen6-clone-after/cent-clon-a03.png)

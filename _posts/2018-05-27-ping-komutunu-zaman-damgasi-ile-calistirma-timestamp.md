@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ping, timestamp, linux]
 comments: true
 ---
-![Crepe](assets/img/ping-wth-timestamp/ping-timespm01.png)
+![Crepe](/assets/img/ping-wth-timestamp/ping-timespm01.png)
 
 **Ping** komutunu **dakika/saniye** hatta tarih cinsinden akışını takip etmek isteyebilirsiniz. Bunun için aşağıdaki şekilde time stamp ekleyerek çalıştırmalısınız.
 

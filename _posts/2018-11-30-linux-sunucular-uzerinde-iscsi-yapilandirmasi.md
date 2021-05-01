@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [linux, iscsi, lun, disk]
 comments: true
 ---
-![Crepe](assets/img/lin-iscsi-ad/icsi-liad01.png)
+![Crepe](/assets/img/lin-iscsi-ad/icsi-liad01.png)
 
 **iscsi**(**Internet Small Computer Systems Interface**), **ağ**(network) üzerinden **veri depolama**(storage) ünitelerine **tcp/ip** protokolünü kullanarak **blok** düzeyinde erişim sağlayan yöntemdir.
 

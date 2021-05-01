@@ -10,11 +10,11 @@ gh-badge: [star, follow]
 tags: [freeipa, linux, idm, redhat]
 comments: true
 ---
-![Crepe](assets/img/freeipa-kerb-creden/fi-k-er01.png)
+![Crepe](/assets/img/freeipa-kerb-creden/fi-k-er01.png)
 
 **İpa** komutunu aşağıdaki gibi komut satırı aracılığı ile **DNS A** kaydı girerken yada user ları listelemek isterken aşağıdaki gibi “**ipa: ERROR: did not receive Kerberos credentials**” hatasını alabilirsiniz.
 
-![Crepe](assets/img/freeipa-kerb-creden/fi-k-er02.png)
+![Crepe](/assets/img/freeipa-kerb-creden/fi-k-er02.png)
 
 Bu hatadan sıyrılabilmek için **kinit** ile **admin user**’a komut satırında login(**GUI** deki login olduğunuz **admin** kullanıcısı ve şifre) olmanız gerekiyor. Komut aşağıdaki gibidir.
 
@@ -22,6 +22,6 @@ Bu hatadan sıyrılabilmek için **kinit** ile **admin user**’a komut satırı
 kinit admin
 ~~~
 
-![Crepe](assets/img/freeipa-kerb-creden/fi-k-er03.png)
+![Crepe](/assets/img/freeipa-kerb-creden/fi-k-er03.png)
 
 Şimdi komutlarınız sorunsuz çalışacaktır.

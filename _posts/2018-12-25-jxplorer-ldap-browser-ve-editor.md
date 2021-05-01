@@ -24,5 +24,5 @@ Ardından çalıştırın ve kurulumunu yapın.
 
 Şimdi uygulamayı çalıştırdıktan ve aşağıdaki şekilde bağlandıktan sonra **LDAP** bilgilerini elde edeceksiniz.
 
-![Crepe](assets/img/jxplorer-ldap-b/jx-ldp-b01.png)
+![Crepe](/assets/img/jxplorer-ldap-b/jx-ldp-b01.png)
 

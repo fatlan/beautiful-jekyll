@@ -32,10 +32,10 @@ Yukarıdaki yapılandırmada **100** ve **200** **ip**’leri sunuculara yöneti
 
 **Settings** kısmından **Cluster** sekmesine geçin,
 
-![Crepe](assets/img/zen-cluster-bolum5/zen-clus-b501.png)
+![Crepe](/assets/img/zen-cluster-bolum5/zen-clus-b501.png)
 
 Aşağıdaki gibi **Cluster Virtual IP 10.10.10.5 Local** ve **Remote Hostname roo**t şifresini(**RSA** iletişimi için) ve **IP** bilgileri girip, “**cluster type**” olarak **loadbalancer master** and l**oadbalancer02 backup automatic failback** seçip **Save** deyin, ardından **Test Connection** ile işlemleri kontrol edebilirsiniz.
 
-![Crepe](assets/img/zen-cluster-bolum5/zen-clus-b502.png)
+![Crepe](/assets/img/zen-cluster-bolum5/zen-clus-b502.png)
 
 Detaylı : Zen -> [Zevenet](https://www.zevenet.com/knowledge-base/community-edition/community-edition-v3-05-administration-guide/community-edition-v3-05-settings-cluster/#prettyPhoto)

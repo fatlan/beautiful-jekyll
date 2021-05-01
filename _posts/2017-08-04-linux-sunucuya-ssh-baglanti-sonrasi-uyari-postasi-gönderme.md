@@ -38,7 +38,7 @@ echo 'ALERT - Root Shell Access (ServerName) on:' `date` `who` | mail -s "Alert:
 ls -la
 ~~~
 
-![Crepe](assets/img/mail-send-after-ssh/ms-assh01.png)
+![Crepe](/assets/img/mail-send-after-ssh/ms-assh01.png)
 
 ~~~
 vi .bashrc
@@ -46,11 +46,11 @@ vi .bashrc
 
 En alt satıra ekledim.
 
-![Crepe](assets/img/mail-send-after-ssh/ms-assh02.png)
+![Crepe](/assets/img/mail-send-after-ssh/ms-assh02.png)
 
 Test edelim ve root ile ssh bağlantısı gerçekleştirelim. Ardından uyarı mailinin geldiğini göreceksiniz.
 
-![Crepe](assets/img/mail-send-after-ssh/ms-assh03.png)
+![Crepe](/assets/img/mail-send-after-ssh/ms-assh03.png)
 
 **NoT** : Ev kullanıcıları için **mail** gönderimi gerçekleşmiyecektir çünkü **mailing** yani **spam** önünü alabilmek için **25** portu dışarı kapalıdır. Ayrıca **PTR** kaydı fln gerekiyor derken son kısımda muhtemelen işlem gerçekleşmeyecektir. Yoksa buraya kadar yapılan tüm işlemler doğru.
 

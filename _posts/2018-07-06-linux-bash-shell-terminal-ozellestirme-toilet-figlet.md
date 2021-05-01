@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [toilet, figlet, linux, bahs, terminal]
 comments: true
 ---
-![Crepe](assets/img/toilet-figlet/tandfi01.png)
+![Crepe](/assets/img/toilet-figlet/tandfi01.png)
 
 **Linux terminal**’ini açılışta isim soyisim yada ünvan yada reklam gibi yazılar yazdırmak ve bunu her açılışta otomatik yaptırmak gibi bir fantazi isterseniz aşağıdaki adımları izleyebilirsiniz.
 

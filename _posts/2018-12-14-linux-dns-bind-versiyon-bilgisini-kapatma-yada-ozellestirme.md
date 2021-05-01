@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [linux, dns, bind]
 comments: true
 ---
-![Crepe](assets/img/bind-verinf-ch/dns-vi-ch01.png)
+![Crepe](/assets/img/bind-verinf-ch/dns-vi-ch01.png)
 
 Hacker mantalitesinin ilk adımlarından olan, servis/servisleri keşfetmek, bu keş yaparken versiyon bilgisini almaktır. Daha sonra bu versiyonların barındırdıkları zafiyetleri kullanarak içeri sızmaktır.
 

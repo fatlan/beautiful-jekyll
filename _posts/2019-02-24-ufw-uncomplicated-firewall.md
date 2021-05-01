@@ -20,7 +20,7 @@ comments: true
 sudo ufw enable
 ~~~
 
-![Crepe](assets/img/ub-ufw/ufw01.png)
+![Crepe](/assets/img/ub-ufw/ufw01.png)
 
 Tekrar **inactive mode**’ye getirmek için,
 
@@ -28,7 +28,7 @@ Tekrar **inactive mode**’ye getirmek için,
 sudo ufw disable
 ~~~
 
-![Crepe](assets/img/ub-ufw/ufw02.png)
+![Crepe](/assets/img/ub-ufw/ufw02.png)
 
 Aslında her güvenlik duvarı yönetiminde işleri kolaylaştıracak ve güvenliği sağlayacak ilk hareket içerden dışarı çıkışları serbest hale getirmek, dışardan içeri girişleri ise engellemektir.
 
@@ -40,7 +40,7 @@ Dışardan içeri gelen paketleri engellemek için,
 sudo ufw default deny incoming
 ~~~
 
-![Crepe](assets/img/ub-ufw/ufw03.png)
+![Crepe](/assets/img/ub-ufw/ufw03.png)
 
 İçerden dışarı çıkan paketlere izin vermek için,
 
@@ -48,7 +48,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ~~~
 
-![Crepe](assets/img/ub-ufw/ufw04.png)
+![Crepe](/assets/img/ub-ufw/ufw04.png)
 
 Servis bazında; **ssh** servisine izin vermek için,
 
@@ -119,7 +119,7 @@ sudo ufw delete deny 1500:2500/tcp
 
 Şimdi “**sudo ufw status numbered**” komutu ile yapılan kurallar listelenecektir.
 
-![Crepe](assets/img/ub-ufw/ufw05.png)
+![Crepe](/assets/img/ub-ufw/ufw05.png)
 
 Yukarıda numbered parametresi ile görüntülenen kurallar aşağıdaki gibi sıra numarasına göre de silinebilir.
 
@@ -139,7 +139,7 @@ Tüm kuralları sıfırlamak yani **ufw**’yu varsayılana, **default**(fabrika
 sudo ufw reset
 ~~~
 
-![Crepe](assets/img/ub-ufw/ufw06.png)
+![Crepe](/assets/img/ub-ufw/ufw06.png)
 
 Ayrıca **ufw** güvenlik duvarı için **log**‘lamayı **aktif/pasif** etmek için aşağıdaki komutu kullanabilirsiniz. Log takibini ise “**/var/log/syslog**” dosyası üzerinden yapabilirsiniz.
 

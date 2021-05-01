@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ssh, ssh-keygen, linux, keyfile]
 comments: true
 ---
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid01.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid01.png)
 
 Normalde client makinenizden linux sunuculara ssh bağlantısı için komut satırana **ssh kullanıcıadı@remoteip** tıkladıktan sonra şifre istenir ve şifreyi girdikten sonra sunucuya başarılı bir şekilde login olabilirsiniz.
 
@@ -20,15 +20,15 @@ Bunun için ilk önce Client makinemizde aşağıdaki gibi **ssh-keygen** komutu
 
 **NOT**: **ssh-keygen** direk çalıştırdığınızda oluşturulan şifreleme yöntemi **RSA**’dir. **DSA** oluşturmak için komutu “**ssh-keygen -t dsa**” olarak kullanmalısınız. Arasındaki fark ise kabaca **RSA(v1)**, **DSA(v2)**’dir.
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid02.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid02.png)
 
 Oluşan dosyayı **ls** kontol edelim ve kullanıcının **home** dizininde olduğunu keşfedelim.
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid03.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid03.png)
 
 Birde isim vermeden oluşturdum, onunda **.ssh/** dizini altında oluştuğunu görelim.
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid04.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid04.png)
 
 Tabi ben hiyerarşiyi bozmamak adına **LinuxSunucum** dosyalarını **mv** komutu ile **.ssh/** dinizi altına atıyorum ve son görünüm aşağıdaki gibidir.
 
@@ -36,7 +36,7 @@ Tabi ben hiyerarşiyi bozmamak adına **LinuxSunucum** dosyalarını **mv** komu
 mv LinuxSunucum* .ssh/
 ~~~
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid05.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid05.png)
 
 Şimdi oluşturduğumuz public key’i aşağıdaki komut aracılığı ile sunucuya kopyalıyoruz, kopyalama sırasında bir kereye mahsus şifreyi girip başarılı bir şekilde key’i kopyaladığımızı görüyoruz.
 
@@ -44,7 +44,7 @@ mv LinuxSunucum* .ssh/
 ssh-copy-id -i ~/.ssh/LinuxSunucum.pub root@192.168.2.146
 ~~~
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid06.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid06.png)
 
 Şimdi **SSH** ile sunucuya bağlanıp şifresiz olarak bağlandığımızı görelim.
 
@@ -52,7 +52,7 @@ ssh-copy-id -i ~/.ssh/LinuxSunucum.pub root@192.168.2.146
 ssh root@192.168.2.146
 ~~~
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid07.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid07.png)
 
 Sunucu tarafına attığımız **key** dosyasını görmek ve sağlamasını yapmak için aşağıdaki adımları gerçekleştirebiliriz.
 
@@ -60,7 +60,7 @@ Sunucu tarafına attığımız **key** dosyasını görmek ve sağlamasını yap
 ls -lash .ssh/
 ~~~
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid08.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid08.png)
 
 **authorized_keys** dosyasını okursak eğer **root@bt public key** bilgileri görmemiz gerekir ki aşağıdaki gibi görebiliyoruz.
 
@@ -68,7 +68,7 @@ ls -lash .ssh/
 cat .ssh/authorized_keys
 ~~~
 
-![Crepe](assets/img/linux-ssh-copyid/lin-ssh-cid09.png)
+![Crepe](/assets/img/linux-ssh-copyid/lin-ssh-cid09.png)
 
 **MacBook** bir cihaz üzerinden **Linux** sunuculara erişim sağlayacaksanız, **brew** paket yöneticisi ile **ssh-copy-id** paketini kurup yukardaki işlemler ile yapabilirsiniz.
 

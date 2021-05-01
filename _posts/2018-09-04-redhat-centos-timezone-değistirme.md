@@ -12,7 +12,7 @@ comments: true
 ---
 İlk önce “**date**” komutunu çalıştırıp, şuan ki saat bilgilerimizi görelim.
 
-![Crepe](assets/img/redhat-timezone-c/red-tzc01.png)
+![Crepe](/assets/img/redhat-timezone-c/red-tzc01.png)
 
 İlk önce “**cp**” komutu ile “**localtime**” dosyasının yedeğini alalım.
 
@@ -40,4 +40,4 @@ ln -s /usr/share/zoneinfo/Europa/Istanbul /etc/localtime
 
 Son olarak “**date**” komutunu tekrar çalıştırıp, Türkiye **timezone**’nin geldiğini görelim.
 
-![Crepe](assets/img/redhat-timezone-c/red-tzc02.png)
+![Crepe](/assets/img/redhat-timezone-c/red-tzc02.png)

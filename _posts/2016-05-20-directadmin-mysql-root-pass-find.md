@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [directadmin, mysql, database, pass, root, linux]
 comments: true
 ---
-![Crepe](assets/img/directadmin-mysql-root-pass/da-mysql-root-p01.png)
+![Crepe](/assets/img/directadmin-mysql-root-pass/da-mysql-root-p01.png)
 
 **DirectAdmin** sunucunuzda **phpmyadmine** yada **db** ye bağlanacaksınız ama **MySQL** **root** parolasını unutmuş yada bilmiyor olabilirsiniz. Fakat sunucuya **login** olabiliyorsanız **MySQL** şifresini elde edebilirsiniz.
 

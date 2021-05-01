@@ -20,7 +20,7 @@ Aşağıdaki komutla tüm yapılandırmalara ait detaylar görüntülünebilir. 
 firewall-cmd --list-all
 ~~~
 
-![Crepe](assets/img/firewalld19/lfd01.png)
+![Crepe](/assets/img/firewalld19/lfd01.png)
 
 Aşağıdaki komut ile de mevcuttaki tüm **zone**(bölge)’leri listeleyebilirsiniz.
 
@@ -28,7 +28,7 @@ Aşağıdaki komut ile de mevcuttaki tüm **zone**(bölge)’leri listeleyebilir
 firewall-cmd --get-zones
 ~~~
 
-![Crepe](assets/img/firewalld19/lfd02.png)
+![Crepe](/assets/img/firewalld19/lfd02.png)
 
 Aşağıdaki komutlar ile de **default**(fabrika ayarı)’ta kullanılan **zone**(bölge)’yi görüntüleyebilirsiniz.
 
@@ -41,7 +41,7 @@ ya da
 firewall-cmd --get-active-zones
 ~~~
 
-![Crepe](assets/img/firewalld19/lfd03.png)
+![Crepe](/assets/img/firewalld19/lfd03.png)
 
 Aşağıdaki komut ise default **zone**(fabrika çıkışı bölge)’yi değiştirebilirsiniz.
 **NoT1** : **Firewalld**’de kurallar oluşturduktan sonra makineyi yeniden başlatmadan geçerli olması için “**firewall-cmd --reload**” komutu çalıştırmalısınız.
@@ -104,5 +104,5 @@ firewall-cmd --list-rich-rules
 
 Şimdi şu ana kadar yapılan tüm kurallar “**firewall-cmd --list-all**” komutu ile görüntülenebilir.
 
-![Crepe](assets/img/firewalld19/lfd04.png)
+![Crepe](/assets/img/firewalld19/lfd04.png)
 

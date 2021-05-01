@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ovirt, rhev, linux, virtualization]
 comments: true
 ---
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins01.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins01.png)
 
 RHEV(Red Hat Enterprise Virtualization) yada Ovirt Açık Kaynak Kodlu KVM temelinde hypervisor olarak kullanılan, ölçeklenebilen sanallaştırma platformudur. İki ürünün temeli aynı fakat Ovirt [https://ovirt.org/](https://ovirt.org/) RHEV’in forklanmış hali olup tamamen ücretsizdir.
 
@@ -38,11 +38,11 @@ Manual kurulum linkleri :
 
 İso dosyasını **host**’lara mount ettikten sonra aşağıdaki karşılama ekranından “**Install oVirt Node**” diyerek işleme devam edelim.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins02.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins02.png)
 
 Aşağıda görüldüğü üzere normal **CentOS** kurulum gibi Anaconda ekranı, o yüzden buranın üzerinde fazla durmayacağım. Bu bölümün kurulumunu yapıp sunucuyu **reboot** edin.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins03.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins03.png)
 
 **NoT1** : Kurulum bittikten sonra gerekli erişimler için hostların **network** yapılandırmasını yapmalısınız. **Update**’ni geçebilirsiniz. Bu arada “**yum**” ile paket kurmak istediğinizde hata alabilirsiniz. Çünkü **repolar** **Ovirt** için özelliştirilmiş olacaktır. Onun dışındaki **repolar disable** gelecektir. Bu yüzden paketlerde kurulum yapamazsanız “**yum**” komutunu aşağıdaki gibi kullanabilirsiniz. Tek seferlik paket kurulumu için **enable modu**.
 
@@ -103,13 +103,13 @@ Kurulum ekranında **network** kısmında management için verdiğiniz ip’yi t
 
 Bu ekran hostun yönetimi için açılan web panelidir. Sunucuyu konsol yerine burdan **UI** üzerinden rahatça yönetebilirsiniz. Biz **HostedEngine** kurulumunu bu ekrandan yapacağız. Bu ekrana sunucuya verilen kullanıcı adı ve şifresi ile login olacaksınız.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins04.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins04.png)
 
 Aslında bu **GUI** ekranında terminalde yaptığınız birçok işlemi gerek kalmadan görsel ekranda da yapabilirsiniz. **Iscsi** bağlantınızı **host**’larda gerçekleştirdikten sonra bu ekranda da görünecektir, etkileşimli olarak yapılan işlemler yansıyacaktır.
 
 **Ovirt node**’ye **login** olduktan sonra **Storage** ile çalışacağımız için **Virtualization - Hosted Engine** sekmesine gidip **start** veriyoruz. **Hyperconverged** sekmesi ile şuan ilgilenmiyoruz çünkü bu kısım **internal diskler** ile **glusterfs** le sistemi yedekli **node**’ler ile kullanmaktadır. **Gluster** için; **OS**'in disklerini **Raid 1**, **Gluster**‘ın kullanacağı disklerini **Raid 5** olarak iki **Raid** grup yapabilirsiniz.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins05.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins05.png)
 
 Bu kısmda hosted engine için yukarıda belirdediğimiz ip’ye karşılık gelen domaini dns sunucumuzda daha önceden tanımlamıştık. Örnek bulut.fatlan.com gibi.
 
@@ -121,31 +121,31 @@ Belirlenen ip’yi **dhcp**’den ya da **static** olarak verip, **gateway** ve 
 
 En son olarak **virtual CPU** ve **Memory** kısımların da **default**’ta bırakıp **Next** ile devam edelim.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins06.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins06.png)
 
 Bu kısımda ki **Engine Credentials** kısmı önemli. Çünkü Bu kısımdan **HostedEngine login** olabileceğiniz şifreyi belirliyorsunuz.
 
 **Notification** kısmı şuan için çok zaruri değil, **defaultta** bırakabilirsiniz daha sonra da değiştirebilirsiniz.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins07.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins07.png)
 
 Ardından **config**’ler hazır halde **Prepare VM** demenizi beklemektedir. Tıklayıp devam edin.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins08.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins08.png)
 
 **NoT4** : **HostedEngine** atadığınız ip **gateway**’ine **ping** atabilmelidir ve **network**’sel erişimde kısıtlı olmamalıdır aksi halde aşağıdaki ss’lerden belirttiğim hataları alırsınız ve çok sizi çok uğraştırır.
 
 **Terminalde;**
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins09.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins09.png)
 
 **GUI’de;**
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins10.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins10.png)
 
 **Prepare VM** dedikten sonra aşağıdaki gibi başarılı bir kurulum uyarısı alacaksınız, **Next** ile devam edin.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins11.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins11.png)
 
 Şimdi **Engine**’nin barınacağı **datastore** için **iscsi** ayarlarını yapmamız gerekiyor. Diğer **store**’leri **engine** kurulduktan sonra yapacağız.
 
@@ -155,25 +155,25 @@ Portal ip address kısmına **iscsi** hedefimizin ip adresini yazıyoruz, eğer 
 
 **Ardından Retrieve Target List** butonuna tıklayın.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins12.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins12.png)
 
 **Retrieve Target List** butonuna bastıktan sonra aşağıdaki gibi hede eriniz gelecektir. Seçiminizi yapıp **Next** ile devam edin.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins13.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins13.png)
 
 Ardından aşağıdaki gibi yeşil **Finish** ekranı sizi karşılıyorsa **Hosted Engine** kurulumu başarılı bir şekilde gerçekleştirildi demektir.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins14.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins14.png)
 
 Tekrar **Hosted Engine deploy** ettiğimiz **Ovirt Node** ekranına dönecek olursak aşağıdaki gibi **deploy** işleminin başarılı ve sunucunun çalıştığını anlayabiliriz.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins15.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins15.png)
 
 Şimdi kurduğumuz **hosted engine login** olalım. **Default** kullanıcı adı “**admin**”, **password**'de **deploy** sırasında verdiğiniz şifre olacak.
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins16.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins16.png)
 
-![Crepe](assets/img/ovirt42-hosted-engine/ovir-he-ins17.png)
+![Crepe](/assets/img/ovirt42-hosted-engine/ovir-he-ins17.png)
 
 
 Artık bundan sonra ki işlemlerimize **hosted engine**’de devam edeceğiz. **Datacenter** ekleme, **Cluster** ekleme, **Host** ekleme, **Storage** ekleme, **Vm** oluşturma gibi vesaire işlemleri bu ekranda yapacağız.

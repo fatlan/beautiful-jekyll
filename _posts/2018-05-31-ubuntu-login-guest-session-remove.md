@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ubuntu, session, guest, login]
 comments: true
 ---
-![Crepe](assets/img/ubuntu-log-guest-session/ulgsession-r01.png)
+![Crepe](/assets/img/ubuntu-log-guest-session/ulgsession-r01.png)
 
 **Ubuntu** açılış ekranında oluşturduğunuz kullanıcı dışında **default** olarak gelen **Guest Session** oturumuda bulunmaktadır ve bu kullanıcı ile şifresiz olarak **login** olabilirsiniz. Bu kullanıcı oldukça kısıtlı haklara sahip olmasına rağmen güvenlik endileşelerinden dolayı(hak yükseltme saldırılarına karşın) yada bir çok farklı olabilecek sebepten dolayı kaldırmak isteyebilirsiniz. Şimdi aşağıdaki yöntemle bu işlemi nasıl yapacağımıza bir göz atalım.
 
@@ -28,10 +28,10 @@ Daha sonra aşağıdaki satırı ekleyip kaydedip çıkın.
 allow-guest=false
 ~~~
 
-![Crepe](assets/img/ubuntu-log-guest-session/ulgsession-r02.png)
+![Crepe](/assets/img/ubuntu-log-guest-session/ulgsession-r02.png)
 
 Ardından makinayı **reboot** edin.
 
 Ve **Login** ekranının son hali.
 
-![Crepe](assets/img/ubuntu-log-guest-session/ulgsession-r03.png)
+![Crepe](/assets/img/ubuntu-log-guest-session/ulgsession-r03.png)

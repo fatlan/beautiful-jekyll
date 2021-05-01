@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [redhat, centos, linuz]
 comments: true
 ---
-![Crepe](assets/img/red-with-yum-enab/red-yum-en01.png)
+![Crepe](/assets/img/red-with-yum-enab/red-yum-en01.png)
 
 Genelde özelliştirilmiş **CentOS** sunucularda ilgili servis/hizmet dışında olan repolar(**/etc/yum.repos.d**) buna **CentOS**’un Base reposu dahil varsayılan olarak “**enable=0**” olarak ayarlandığında yani bu repo **disabled** moda çekildiğinde “**yum**” ile Base de var olan paketleri kurmak istediğiniz de hata alacaksınız ve kuramayacaksınız. Bu durumda repodan “**enable=1**” yapmalısınız ya da bu ayarın böyle kalması gerekiyorsa “**yum**” paket yöneticisini tek seferlik **enable** modda kullanarak bu sorunu aşıp, paketi kurabilirsiniz.
 

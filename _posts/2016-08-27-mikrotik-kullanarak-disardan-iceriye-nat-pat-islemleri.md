@@ -20,15 +20,15 @@ Bu yazımızda ise **NAT-PAT** hakkında bilgi sahibi olacağız ve **Mikrotik**
 
 Teknik olarak işlemlere başlamadan önce **default**’ta gelen **Mikrotik**’in Kon gürayon erişiminin sağlandığı **80** servisini Servisler kısmından aşağıdaki gibi kapatalım.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat01.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat01.png)
 
 Ardından **IP-Firewall-NAT** sekmesinden **+** işaretine basın ve aşağıdaki gibi **konfigüre** edin.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat02.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat02.png)
 
 Daha sonra görünüm bu şekilde olacak.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat03.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat03.png)
 
 **Telnet** yada **Ssh** üzerinden de aşağıdaki komutu çalıştırarak yapabilirsiniz.
 
@@ -38,19 +38,19 @@ ip rewall nat add chain=dstnat in-interface=pppoe-out1 protocol=tcp dst-port=80 
 
 Şimdi **Mikrotik**’in **dış** bacağına sorgu göndererek, **test** edip başarılı bir şekilde sonuç aldığımızı görelim.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat04.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat04.png)
 
 Şimdi **RDP** senaryosunu gerçekleşrirelim. **IIS** senaryosuyla aynı olmakla beraber tek farkı **RDP portu 3389** değil **3344** olarak hizmet verecek. Yani dışardan sorgu gelince **3389** olarak alacağız fakat **RDP** hizmetini veren sunucuya **3344** olarak ileteceğiz. Geri dönüş olarak aynı işlemleri tersi olarak hizmet verecek.
 
 Bunun için sunucu üzerinde ki default **RDP portunu 3344** ile değiştirmeniz gerekli. Bu işlemi yaptıktan sonra tekrar **Mikrotik’te IP-Firewall-NAT** sekmesinden **+** işaretine basın ve aşağıdaki gibi konfigüre edin. Buradaki fark gördüğünüz gibi **3389** ile gelen **port** isteğini arkada hizmeti veren sunucu için **3344** olarak belirleyip yönlendiriyoruz.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat05.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat05.png)
 
 Ve kurallar tablosundaki son görünüm aşağıdaki gibi olacaktır.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat06.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat06.png)
 
 Şimdi **Mikrotik**’in dış bacağına **RDP** için sorgu göndererek, **test** edip başarılı bir şekilde sonuç aldığımızı görelim.
 
-![Crepe](assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat07.png)
+![Crepe](/assets/img/mikrotik-ingress-nat-pat/mikrotik-natpat07.png)
 

@@ -18,7 +18,7 @@ Bunun için kontrol etmemiz gereken değişken **query logging** parametresidir.
 rndc status
 ~~~
 
-![Crepe](assets/img/bind-na-ak-pasi/named-akpa01.png)
+![Crepe](/assets/img/bind-na-ak-pasi/named-akpa01.png)
 
 Aktif etmek için, yani log’ları alabilmek için **rndc querylog** komutunu çalıştırıyoruz.
 
@@ -32,7 +32,7 @@ Tekrar **rndc status** ile durum kontrolü yapalım ve aşağıdaki gibi **ON** 
 rndc status
 ~~~
 
-![Crepe](assets/img/bind-na-ak-pasi/named-akpa02.png)
+![Crepe](/assets/img/bind-na-ak-pasi/named-akpa02.png)
 
 Tail komutu ile de çıktıyı alıp teyit edelim.
 
@@ -40,6 +40,6 @@ Tail komutu ile de çıktıyı alıp teyit edelim.
 tail -f /var/log/messages
 ~~~
 
-![Crepe](assets/img/bind-na-ak-pasi/named-akpa03.png)
+![Crepe](/assets/img/bind-na-ak-pasi/named-akpa03.png)
 
 **Burada tekrar OFF yapmak için rndc querylog yada (rndc querylog OFF)komutunu çalıştırabilirsiniz. Bu komutu her çalıştığında durumunu tersine çevirir. OFF ise ON, ON ise OFF yapar.**

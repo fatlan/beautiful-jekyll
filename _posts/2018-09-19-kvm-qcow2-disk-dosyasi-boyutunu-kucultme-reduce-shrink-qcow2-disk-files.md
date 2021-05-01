@@ -24,7 +24,7 @@ comments: true
 du -ha
 ~~~
 
-![Crepe](assets/img/kvm-qcow2-shrink/kvm-qsh01.png)
+![Crepe](/assets/img/kvm-qcow2-shrink/kvm-qsh01.png)
 
 Ardından “**virt-sparsify**” komutu ile istediğimiz küçültme işlemini gerçekleştirelim.
 
@@ -32,11 +32,11 @@ Ardından “**virt-sparsify**” komutu ile istediğimiz küçültme işlemini 
 virt-sparsify --in-place diskdosyanız.qcow2
 ~~~
 
-![Crepe](assets/img/kvm-qcow2-shrink/kvm-qsh02.png)
+![Crepe](/assets/img/kvm-qcow2-shrink/kvm-qsh02.png)
 
 Daha sonra tekrar “**du -ha**” komutunu çalıştıralım ve boyuttaki azalmayı görelim.
 
-![Crepe](assets/img/kvm-qcow2-shrink/kvm-qsh03.png)
+![Crepe](/assets/img/kvm-qcow2-shrink/kvm-qsh03.png)
 
 **Ikinci yöntem olarak gene “virt-sparsify” komutunu convert yöntemi ile kullanalım.**
 
@@ -44,11 +44,11 @@ Daha sonra tekrar “**du -ha**” komutunu çalıştıralım ve boyuttaki azalm
 virt-sparsify diskdosyanız.qcow2 --convert qcow2 yeniisimdiskdosyanız.qcow2
 ~~~
 
-![Crepe](assets/img/kvm-qcow2-shrink/kvm-qsh04.png)
+![Crepe](/assets/img/kvm-qcow2-shrink/kvm-qsh04.png)
 
 Sonra “**du -ha**” komutu
 
-![Crepe](assets/img/kvm-qcow2-shrink/kvm-qsh05.png)
+![Crepe](/assets/img/kvm-qcow2-shrink/kvm-qsh05.png)
 
 **Son olarak üçüncü yöntem ise**,
 

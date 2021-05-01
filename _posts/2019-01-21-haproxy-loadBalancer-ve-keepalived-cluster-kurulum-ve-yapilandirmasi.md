@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [haproxy, linux, keepalived, loadbalancer]
 comments: true
 ---
-![Crepe](assets/img/ha-ka-clus/hapkeep01.png)
+![Crepe](/assets/img/ha-ka-clus/hapkeep01.png)
 
 **HAProxy**, yüksek erişilebilirliğe(high availability) sahip yük dengeleyici(load balancing) ile **TCP** ve **HTTP** tabanlı uygulamalar için **proxy** sunucusu hizmeti veren açık kaynak kodlu bir yazılımdır.
 

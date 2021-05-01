@@ -27,7 +27,7 @@ lsblk -do name,rota
 
 Sanal makina, **ROTA** değeri **1** döndüğünden anladık ki bu **HDD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd01.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd01.png)
 
 ~~~
 lsblk -do name,rota yada lsblk -d -o name,rota
@@ -35,7 +35,7 @@ lsblk -do name,rota yada lsblk -d -o name,rota
 
 Gerçek makina, **ROTA** değeri **0** döndüğünden anladık ki bu **SSD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd02.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd02.png)
 
 **İkinci yöntem** :
 
@@ -47,7 +47,7 @@ lsblk -t
 
 Sanal makina, **ROTA** değeri **1** döndüğünden anladık ki bu **HDD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd03.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd03.png)
 
 ~~~
 lsblk -t
@@ -55,7 +55,7 @@ lsblk -t
 
 Gerçek makina, **ROTA** değeri **0** döndüğünden anladık ki bu **SSD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd04.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd04.png)
 
 **Üçüncü yöntem** :
 
@@ -67,7 +67,7 @@ smartctl -a /dev/sda
 
 Sanal makina, **Rotation Rate** karşılık ibare bulunmuyor, **SSD** DEĞİL
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd05.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd05.png)
 
 ~~~
 smartctl -a /dev/sda
@@ -75,7 +75,7 @@ smartctl -a /dev/sda
 
 Gerçek makina, **Rotation Rate** karşılık ibare var ve disk **SSD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd06.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd06.png)
 
 **Dördüncü yöntem** :
 
@@ -87,7 +87,7 @@ cat /sys/block/sda
 
 Sanal makina, **rotational** değeri **1** döndüğünden anladık ki bu **HDD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd07.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd07.png)
 
 ~~~
 cat /sys/block/sda
@@ -95,5 +95,5 @@ cat /sys/block/sda
 
 Gerçek makina, **rotational** değeri **0** döndüğünden anladık ki bu **SSD**
 
-![Crepe](assets/img/linux-ssd-hdd/lin-ssd-hd08.png)
+![Crepe](/assets/img/linux-ssd-hdd/lin-ssd-hd08.png)
 

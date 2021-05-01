@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [systemd, blame, linux, command]
 comments: true
 ---
-![Crepe](assets/img/syst-analyz-blame/sys-anl-blame01.png)
+![Crepe](/assets/img/syst-analyz-blame/sys-anl-blame01.png)
 
 Bu makalemde çok hoş bir şekilde deneyimsellediğim bir durum ve komuttan bahsedeceğim. Bir komut nedir.? Diyebilirsiniz. Fakat sistem yöneticileri için özellikle de Linux Admin’leri için bir komut bile yeri geldi mi can kurtarıcı bir duruma dönüşebilir. Uzun süredir bakmadığınız ya da başkası tarafından kurulup çalışan, sonradan yönetimi devraldığınız bir sunucuda yaşayabileceğiniz bir durum olabilir. Bende böyle bir durum oluştu ve **RedHat Enterprise Linux 7** de açılışta bir problem yaşadım. Neydi bu problem?
 
@@ -26,12 +26,12 @@ Sistemi bir kere açmayı başarınca **system-analyze blame** komutunu çalış
 system-analyze blame
 ~~~
 
-![Crepe](assets/img/syst-analyz-blame/sys-anl-blame02.png)
+![Crepe](/assets/img/syst-analyz-blame/sys-anl-blame02.png)
 
 Ardından “**/etc/fstab**” dosyasını incelemeye aldım. Zaten açılışta bu problemin olması ve sistem **boot** olduğundan **fstab** dosyasını okuması şüpheyi kendi üzerine çekmeye yetiyordu. Ve en son satırda bir makinadan **mount** işleminin olduğunu gördüm. Tabi ki sistem **boot** olduğunda **fstab** dosyasını okuyup **mount** ediyor ve o hedefteki ip’li makinayı bulamadığı için açılış problemi olduğunu netti.
 
-![Crepe](assets/img/syst-analyz-blame/sys-anl-blame03.png)
+![Crepe](/assets/img/syst-analyz-blame/sys-anl-blame03.png)
 
 **İnsert mod**da bu satırın başına **# **işareti koyup, kaydedip çıktım. Böylelikle o satırı yorum satırı olarak algılamasını sağladık. Ve sistemi **reboot** ettiğimde problemin çözüldüğünü gözlemledim.
 
-![Crepe](assets/img/syst-analyz-blame/sys-anl-blame04.png)
+![Crepe](/assets/img/syst-analyz-blame/sys-anl-blame04.png)

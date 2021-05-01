@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ovirt, ubuntu, virtualization, rhev, linux]
 comments: true
 ---
-![Crepe](assets/img/ovirt-ubuntu16-agent/u16o-ga01.png)
+![Crepe](/assets/img/ovirt-ubuntu16-agent/u16o-ga01.png)
 
 **oVirt** ortamına kurduğunuz **Debian/Ubuntu** makineler için aşağıdaki komutu çalıştırarak **ovirt-guest-agent** servisini kurabilirsiniz.
 
@@ -20,7 +20,7 @@ sudo apt install ovirt-guest-agent -y
 
 Fakat servis durumunu kontrol ettiğinizde aşağıdaki gibi hata aldığınızı göreceksiniz.
 
-![Crepe](assets/img/ovirt-ubuntu16-agent/u16o-ga02.png)
+![Crepe](/assets/img/ovirt-ubuntu16-agent/u16o-ga02.png)
 
 Aşağıdaki yönergeleri izleyerek hataları giderip, servisi sağlıklı bir şekilde çalıştırabilirsiniz. İlk önce “**ovirt-guest-agent.service**” servis dosyasını edit edip, “**User=root**” olarak değiştirelim(servisin root haklarında çalışmasının, güvenlik tarafındaki oluşturabileceği sıkıntılara şimdilik değinmiyorum)
 
@@ -42,7 +42,7 @@ Akabinde aşağıdaki komutla device’leri listeleyebilirsiniz. Çünkü “**o
 ll /dev/virtio-ports/
 ~~~
 
-![Crepe](assets/img/ovirt-ubuntu16-agent/u16o-ga03.png)
+![Crepe](/assets/img/ovirt-ubuntu16-agent/u16o-ga03.png)
 
 Şimdi “**ovirt-guest-agent.conf**” dosyasını aşağıdaki gibi yapılandıralım.
 

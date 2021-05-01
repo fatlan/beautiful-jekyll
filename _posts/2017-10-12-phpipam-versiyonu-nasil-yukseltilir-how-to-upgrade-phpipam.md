@@ -24,7 +24,7 @@ Daha sonra **git** komutu ile hali hazırdaki **phpipam** versiyonunu kontrol ed
 git describe --tags
 ~~~
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg01.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg01.png)
 
 Ardından versiyonu yükseltmek için **checkout** yapıyoruz fakat aşağıdaki gibi uyarı aldık.
 
@@ -32,7 +32,7 @@ Ardından versiyonu yükseltmek için **checkout** yapıyoruz fakat aşağıdaki
 git checkout 1.3
 ~~~
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg02.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg02.png)
 
 İşlemi gerçekleştirmek için **f (force)** parametresini kullanıyoruz.
 
@@ -40,7 +40,7 @@ git checkout 1.3
 git checkout -f 1.3
 ~~~
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg03.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg03.png)
 
 Daha sonra tekrar versiyon kontrolü yapıp teyit ediyoruz.
 
@@ -48,19 +48,19 @@ Daha sonra tekrar versiyon kontrolü yapıp teyit ediyoruz.
 git describe --tags
 ~~~
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg04.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg04.png)
 
 Ardından **panele** bağlanıp işlemleri olgunlaştırıp bitirelim. **Upgrade PhpIpam Database** tıklıyoruz.
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg05.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg05.png)
 
 En son olarak işlemler başarılı olunca aşağıdaki gibi **Dashboard** tıklayıp yeni vesiyonlu sisteme **login** oluyoruz.
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg06.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg06.png)
 
 Ve versiyonumuzu **1.3** e yükselttik.
 
-![Crepe](assets/img/phpipam-uprade-c/ipam-upg07.png)
+![Crepe](/assets/img/phpipam-uprade-c/ipam-upg07.png)
 
 
 Kaynak : [https://phpipam.net/documents/upgrade/](https://phpipam.net/documents/upgrade/)

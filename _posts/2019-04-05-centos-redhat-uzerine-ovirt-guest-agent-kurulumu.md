@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [centos, linux, ovirt]
 comments: true
 ---
-![Crepe](assets/img/c-r-o-a-ints/cos-ovirt-agent01.png)
+![Crepe](/assets/img/c-r-o-a-ints/cos-ovirt-agent01.png)
 
 İlk önce epel reposu kurulur.
 

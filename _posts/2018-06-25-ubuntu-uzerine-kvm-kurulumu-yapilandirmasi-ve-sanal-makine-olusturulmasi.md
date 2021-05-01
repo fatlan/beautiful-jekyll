@@ -42,7 +42,7 @@ Yukarıdaki kurulum komutundan sonra sorunsuz bir kurulum gerçekleştiğini, a�
 kvm-ok
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac01.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac01.png)
 
 Ardından sunucuyu **reboot** edin.
 
@@ -50,7 +50,7 @@ Ardından sunucuyu **reboot** edin.
 brctl show komutuyla da sonradan gelen sanal interface(NIC) i görüntüleyebilirsiniz.
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac02.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac02.png)
 
 **Default**’ta **Virtual Machine(qcow2)** lerin saklandığı dizindir.
 
@@ -62,7 +62,7 @@ brctl show komutuyla da sonradan gelen sanal interface(NIC) i görüntüleyebili
 virsh domblklist Ubuntu18
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac03.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac03.png)
 
 **Default**’ta **Virtual Machine images**'lar için, kurulum **iso** larının saklandığı dizindir.
 
@@ -90,7 +90,7 @@ ya da
 virsh list --all
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac04.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac04.png)
 
 **Virtual Machine** lerinizi **GUI** olarak yönetmek, oluşturma ve silme gibi işlemler için **virt** arayüzünü kullanabilirsiniz. Komut aşağıdaki gibidir.
 
@@ -102,7 +102,7 @@ virsh list --all
 sudo virt-manager
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac05.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac05.png)
 
 Yada sunucuya ait konsolu direk olarak aşağıdaki komutla alabilirsiniz.
 
@@ -112,7 +112,7 @@ Yada sunucuya ait konsolu direk olarak aşağıdaki komutla alabilirsiniz.
 sudo virt-viewer -c qemu:///system Ubuntu18
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac06.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac06.png)
 
 Komutlar aracılığı ile sunucuyu yönetimi için aşağıda bir kaç komut paylaşacağım.
 
@@ -158,7 +158,7 @@ virsh autostart --disable Ubuntu18
 sudo virt-install --virt-type=kvm --name ubuntu-cli --ram 2048 --vcpus=2 --os-variant=Ubuntu16.04 --cdrom=/var/lib/libvirt/boot/ubuntu-18.04-live-server-amd64.iso --network=bridge=eth0,model=virtio --graphics spice --disk path=/var/lib/libvirt/images/ubuntu-cli.qcow2,size=40,bus=virtio,format=qcow2
 ~~~
 
-![Crepe](assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac07.png)
+![Crepe](/assets/img/ubun16-kvm-ins-a-conf/u16-kvm-iac07.png)
 
 Şimdi de “**virt-clone**” komutundan bahsedelim. Adında da anlaşılacağı üzere **clone** almak için kullanılan komuttur. Kullanımı aşağıdaki gibidir. Fakat **vm** kapalı durumda iken clone alabilirsiniz, yoksa uyarı verecektir. “**Clone ‘Ubuntu18.clone’ created successfully.**” uyarısını almalısınız.
 

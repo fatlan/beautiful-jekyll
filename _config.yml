@@ -26,6 +26,7 @@ navbar-links:
      - Medium: "https://medium.com/@aslanfatih" 
      - Dev.to: "https://dev.to/aslanfatih"
   #Author's home: "https://fatlan.com"
+  About Me: "https://github.com/fatlan"
 
 # --- Logo --- #
 
@@ -203,7 +204,7 @@ timezone: "Europe/Istanbul"
 markdown: kramdown
 highlighter: rouge
 permalink: /:day-:month-:year-:title/
-paginate: 10
+paginate: 12
 
 kramdown:
   input: GFM

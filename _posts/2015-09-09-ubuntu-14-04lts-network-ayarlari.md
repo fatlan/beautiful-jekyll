@@ -29,7 +29,7 @@ iface eth0 inet static
     dns-nameservers 8.8.8.8
 ~~~
 
-![Crepe](assets/img/ubuntu14-net-conf/u14nc01.png)
+![Crepe](/assets/img/ubuntu14-net-conf/u14nc01.png)
 
 Daha sonra servisi restart edelim.
 

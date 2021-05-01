@@ -14,15 +14,15 @@ comments: true
 
 Hemen yapılandırma ve kullanımına girmeliyiz. Ortamda Sunucu ve İstemci modeli ile çalışacağız. Yani Hem Server tarafında yapmamız gerekenler var hemde bunu client'ların kullanabilmesi için yapmamamız gerekenler var. Bunun için sanal ortamımı oluşturdum aşağıdaki gibi.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c01.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c01.png)
 
 **NFS Server**’ımın ip bilgisi aşağıdaki gibidir.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c02.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c02.png)
 
 **NFS Client** için de ip bilgisi aşağıdaki gibidir.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c03.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c03.png)
 
 Herşeyden evvel genelde sunucular minimal kurulum yapıldığından NFS paketlerini kurmak gerek.
 
@@ -38,9 +38,9 @@ Daha sonra servisin durumuna aşağıdaki komut ile bakın ve servisin hem çal�
 systemctl status nfs-server.service
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c04.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c04.png)
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c05.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c05.png)
 
 Şimdi servisi alttaki komutla çalıştırın.
 
@@ -54,15 +54,15 @@ Daha sonra enabled durumuna çekin.
 systemctl enable nfs-server.service
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c06.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c06.png)
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c07.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c07.png)
 
 Şimdi son duruma bakalım ve bu kısımın sağlıklı bir şekilde tamamlandığını görelim.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c08.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c08.png)
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c09.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c09.png)
 
 ***Server – Sunucu tarafı**
 
@@ -74,11 +74,11 @@ systemctl enable nfs-server.service
 mkdir MePaylasNFS
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c10.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c10.png)
 
 Paylaşım yapılandırmayı “**/etc/exports**” **config** dosyası yardımıyla gerçekleştireceğiz. Herhangi bir editör yardımıyla buraya girip oluşturduğumuz **MePaylasNFS** klasörünü herkes için(**“*”** işareti herkes bağlanıp kullanabilir manasına gelir, eğer belirli makinalar için yapacaksanız “*****” yerine makinanın ip’ni girmelisiniz). Ardından **nfs** servisini yeniden başlatın.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c11.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c11.png)
 
 ~~~
 systemctl restart nfs-server.service
@@ -90,11 +90,11 @@ systemctl restart nfs-server.service
 exportfs
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c12.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c12.png)
 
 Birde “**showmount -e localhost**” komutunu çalıştırıp, burdan da paylaşımları gözlemleyelim.
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c13.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c13.png)
 
 ***Client – Kullanıcı tarafı**
 
@@ -116,7 +116,7 @@ Direk **mount** komutu ile durumu gözlemleyebilirsiniz. Ayrıca **NFS** servisi
 mount
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c14.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c14.png)
 
 **df -h** komutu ile gözlemleyelim.
 
@@ -124,7 +124,7 @@ mount
 df -h
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c15.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c15.png)
 
 Paylaşım noktasını **ls -l** ile listeleyelim, verileri kullanabildiğimizi gözlemleyelim. Bu bilgiler aslında sunucuda.
 
@@ -132,7 +132,7 @@ Paylaşım noktasını **ls -l** ile listeleyelim, verileri kullanabildiğimizi 
 ls -l /NFSKullan
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c16.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c16.png)
 
 Son kontrol amacı ile “**showmount -e 192.168.2.250(Server ip bilgisi)**” komutunu çalıştırıp değişimi gözlemleyelim.
 
@@ -140,7 +140,7 @@ Son kontrol amacı ile “**showmount -e 192.168.2.250(Server ip bilgisi)**” k
 showmount -e 192.168.2.250
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c17.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c17.png)
 
 Herşey bittimi.? Tabi ki HAYIR.! Çünkü bu kullanıcı makinası **reboot** olduğunda **mount** bilgisi kaybolacak ve **NFS** paylaşımını kullanamayacak. Bunu sabit kılmak ve sürekli kullanıcı makinası **reboot** olsa da kullanabilir yapmak için “**/etc/fstab**” dosyasına **mount** noktasını yazacağız. Herhangi bir editör yardımıyla bu yapılandırma dosyasına girelim ve aşağıdaki şekilde yapılandıralım(boşluklar **tab** tuşuyla oluşturuldu), kaydedip çıkalım.
 
@@ -148,4 +148,4 @@ Herşey bittimi.? Tabi ki HAYIR.! Çünkü bu kullanıcı makinası **reboot** o
 # 192.168.2.250:/MePaylasNFS    /NFSKullan  nfs4    rw,sync 0 0
 ~~~
 
-![Crepe](assets/img/lin-nfs-con/lin-nfs-c18.png)
+![Crepe](/assets/img/lin-nfs-con/lin-nfs-c18.png)

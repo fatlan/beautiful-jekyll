@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [linux, redhat, ubuntu, bash]
 comments: true
 ---
-![Crepe](assets/img/bash-completion/bash-ac01.png)
+![Crepe](/assets/img/bash-completion/bash-ac01.png)
 
 Bash (Bourne Again Shell) şüphesiz en popüler Linux Shell olma özelliği ile beraber şuan için varsayılan shell olarak Linux yönetiminde top level seviyesindedir.
 

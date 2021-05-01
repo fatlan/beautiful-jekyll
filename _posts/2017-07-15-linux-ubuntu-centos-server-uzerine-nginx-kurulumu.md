@@ -32,7 +32,7 @@ sudo apt install nginx
 systemctl status nginx.service
 ~~~
 
-![Crepe](assets/img/c7u16-nginx-inst/nginx-int01.png)
+![Crepe](/assets/img/c7u16-nginx-inst/nginx-int01.png)
 
 Servisimiz çalışıyor ve etkin durumdadır.
 

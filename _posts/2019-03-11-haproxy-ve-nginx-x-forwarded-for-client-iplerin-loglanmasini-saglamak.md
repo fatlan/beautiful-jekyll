@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [haproxy, nginx, linux, loadbalancer]
 comments: true
 ---
-![Crepe](assets/img/ha-nix-forwarder/x-forwarder-for-ha-nix01.png)
+![Crepe](/assets/img/ha-nix-forwarder/x-forwarder-for-ha-nix01.png)
 
 HAProxy(haproxy.cfg) için herbir backend yapılandırmanızda aşağıdaki satır bulunmalıdır.
 

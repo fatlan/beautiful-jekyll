@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [netcat, network, linux]
 comments: true
 ---
-![Crepe](assets/img/netcat-veri-trans/netcat-tran01.png)
+![Crepe](/assets/img/netcat-veri-trans/netcat-tran01.png)
 
 **Netcat** ile iki bilgisayarlar arası veri transferi nasıl yapılır ona bakacağız. Bu işlemi makineler arasında **port** açarak gerçekleştireceğiz.
 Alıcı bilgisayar(**receive**)’da aşağıdaki komut çalıştırılarak **port**(**3434**) aktif edilip **dosyam.txt** için tünel açılır.

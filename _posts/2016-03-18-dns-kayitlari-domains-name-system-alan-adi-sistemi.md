@@ -16,11 +16,11 @@ comments: true
 
 **Domaini register** ettiğim tafafta **NS** yönlendirmesi aşağıdaki gibi,
 
-![Crepe](assets/img/dns-bol2/dns-do-b01.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b01.png)
 
 **DNS** kayıtları tarafında da karşılık gelecek **NS** bilgisi,
 
-![Crepe](assets/img/dns-bol2/dns-do-b02.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b02.png)
 
 **SOA(Start Of Authhority)** kaydı = **Zone**’deki ilk başlangıç ve **DNS server**’ın **zone**’den sorumlu olduğunu gösteren kayıttır. Yetkili birincil **DNS** sunucunun parametlerini tutan kayıttır.
 
@@ -32,7 +32,7 @@ ya da
 
 **ftp A 1.1.1.1** kaydı girildiğinde, **ftp.fatihaslan.tr** gibi gibi...
 
-![Crepe](assets/img/dns-bol2/dns-do-b03.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b03.png)
 
 **MX(Mail Exchanger)** kaydı = Herhangi bir alan adının **mail** trafiğini, söz konusu olan kullanıcı hesaplarının barındığı **mail** sunucusuna yönlediren kayıttır.
 
@@ -56,7 +56,7 @@ Burda **10** ve **20** değerleri **Priority** değeridir. Yani yapınızın yo�
 
 **aslan.fatih.tr CNAME fatlan.tr** gibi... Yani bir ip adresi kullanmadan yönlendirme işlemidir.
 
-![Crepe](assets/img/dns-bol2/dns-do-b04.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b04.png)
 
 **PTR(Pointer record)** kaydı = **RDNS(Reverse)** kaydı olarakta bilinen ters isim kaydıdır. **ISP(İnternet Servis Sağlayıcı)** servisleri tarafından girilen bir kayıttır. Bu kaydın kullanabilmesi için **IP**’nin sabit olması gerekmekte.
 
@@ -70,7 +70,7 @@ Ayrıca bu linki kontrol edebilirsiniz. [https://ulakbim.tubitak.gov.tr/sites/im
 
 v=spf1 a mx ip4:192.168.1.1 ~all
 
-![Crepe](assets/img/dns-bol2/dns-do-b05.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b05.png)
 
 **SRV (Service Locator)** kaydı = Özel bir servisin hangi **IP** üzerinden verildiğini tutan kayıt olarak, bu kayıt ile o servise yönlendirme yapılabilir. **Internel DNS** kayıtlarında **Active Directory** bu kaydı kullanarak **LDAP** ve **Kerberos** servislerine ulaşır. Dışarda da kullanılan bir özel servis için yönlendirme yapılabilir.
 
@@ -78,23 +78,23 @@ v=spf1 a mx ip4:192.168.1.1 ~all
 
 **SRV** istek kayıt tablosu...
 
-![Crepe](assets/img/dns-bol2/dns-do-b06.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b06.png)
 
 Başka bir **SRV DNS** kayıt girdisi...
 
-![Crepe](assets/img/dns-bol2/dns-do-b07.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b07.png)
 
 **DKIM (DomainKeys Identified Mail)** kaydı = Sunucu tarafından şifreleme sistemi kullanılarak gönderilen her emailin barkodlanması denebilir. Yahoo tarafından ilk olarak **DomainKeys** tasarlanmıştır. **DKIM** Türkçe karşılığı ile Alan adı anahtarıyla e-posta kimlik doğrulaması; **phishing spoofing** (sahtekarlık, kimlik hırsızlığı) gibi kötü niyetli aksiyonların ve email sahtekarlığının önüne geçmek için kullanılan domain adı ile emaili eşleştirme yöntemdir. Bu yöntemle kişi veya organizasyon emailin gerçekten kendisi tarafından gönderildiğini doğrulatır.
 
 Email gönderen kişi veya organizasyon, kendisi tarafından gönderilen her emaili dijital (**kriptografik**) olarak imzalar, böylelikle emailin kendisi tarafından gönderildiğini teyit eder. Bu imzanın doğrulanmasında **Private** ve **Public** olmak üzere 2 anahtar kullanılır. **Private key** gönderilen emaili imzalamak için kullanılır ve gizli olması gerekir. **Public key** sadece bu imzayı doğrulamak için kullanılacağı için açık olarak kullanılabilir. Emaili gönderen sunucu tarafında bir **Private key** tanımlanır. Bu anahtar, her gönderilen email başlığına (**Internet Headers**) eklenir. **Public key DNS** sunucuya **TXT** kaydı olarak eklenir. Alıcıya gelen email deki **DKIM** imzası DNS kaydı ile kontrol edilir. Bu eşleşmenin sağlanması durumunda gönderen güvenli olarak sını andırılır.
 
-![Crepe](assets/img/dns-bol2/dns-do-b08.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b08.png)
 
 **NOT : DNS KAYITLARININ DOĞRU ÇALIŞMASI YANİ KARŞILIK GELEN İP Yİ ÇÖZEBİLMESİ İÇİN; PANELDEN PANELE DEĞİŞİKLİK GÖSTEREBİLİR (Örnekler DirectAdmin üzerinden gösterilmiştir), GİRİLEN KAYDI SONLANDIRMA ANLAMINA GELEN ‘.’ nokta İŞERETİNİ KOYMAYI UNUTMAYIN**
 
 Daha Sonrasında girilen **DNS** kayıtlarını localden ‘**nslookup**‘ komutu ile sorgulayabilirsiniz.
 
-![Crepe](assets/img/dns-bol2/dns-do-b09.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b09.png)
 
 Online olarakta;
 
@@ -104,9 +104,9 @@ Online olarakta;
 
 **Extrenal DNS** örnek kayıt girdileri,
 
-![Crepe](assets/img/dns-bol2/dns-do-b10.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b10.png)
 
 **Internal DNS** örnek kayıt girdileri,
 
-![Crepe](assets/img/dns-bol2/dns-do-b11.png)
+![Crepe](/assets/img/dns-bol2/dns-do-b11.png)
 

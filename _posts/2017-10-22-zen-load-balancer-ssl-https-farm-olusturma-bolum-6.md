@@ -14,20 +14,20 @@ comments: true
 
 İlk olarak **Manage-Certificates** sekmesine geliyoruz.
 
-![Crepe](assets/img/zen-ssl-https-bolum6/ze-ssl-https-b601.png)
+![Crepe](/assets/img/zen-ssl-https-bolum6/ze-ssl-https-b601.png)
 
 Ardından aşağıdaki gibi **upload** ***.pem**(pem sertifikanın **bundle** edilmiş hali, yani o dosya içeriğinde domain sertifika cer’i, orta kök cer’i, sertifikanın key’i nin hiyerarşik yapıda bulundurduğu hali) **certificate** kısmını tıklayıp, sektifikayı **load balancer** sunucusuna ekliyoruz.
 
-![Crepe](assets/img/zen-ssl-https-bolum6/ze-ssl-https-b602.png)
+![Crepe](/assets/img/zen-ssl-https-bolum6/ze-ssl-https-b602.png)
 
 Sertifikayı ekledikten sonra **https farm** oluşturma kısmına geçiyoruz. **Manage-Farm** sekmesine geçtikten sonra **Add new Farm** butonuna tıklıyoruz. **Farm**’a isim verip **Save** ve **continue**’yi tıklayıp devam ediyoruz.
 
-![Crepe](assets/img/zen-ssl-https-bolum6/ze-ssl-https-b603.png)
+![Crepe](/assets/img/zen-ssl-https-bolum6/ze-ssl-https-b603.png)
 
 Akabinde burada önemli kısımlar aşağıdaki gibi **Farm-Listener HTTPS** seçilecek, **HTTPS Certificat**e kısmında yüklediğiniz sertifikayı seçin, **Virtual IP** kısmında İsteği alacak **ip** ve dinleyeceği **port** bilgisini **https(443)** girin.
 
-![Crepe](assets/img/zen-ssl-https-bolum6/ze-ssl-https-b604.png)
+![Crepe](/assets/img/zen-ssl-https-bolum6/ze-ssl-https-b604.png)
 
 Alt kısımda bir önemli bölüm daha olan **HTTPS Backends** seçeneğini aktif edip, **farm** oluşturmayı tamamlıyoruz.
 
-![Crepe](assets/img/zen-ssl-https-bolum6/ze-ssl-https-b605.png)
+![Crepe](/assets/img/zen-ssl-https-bolum6/ze-ssl-https-b605.png)

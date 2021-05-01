@@ -52,7 +52,7 @@ Http servisi için etiketi görüntülendiğinde.
 ls -Zd /etc/httpd/
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux01.png)
+![Crepe](/assets/img/selinux-sel/selinux01.png)
 
 Alt klasörlerle beraber listelemek,
 
@@ -60,25 +60,25 @@ Alt klasörlerle beraber listelemek,
 ls -Z /etc/httpd/
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux02.png)
+![Crepe](/assets/img/selinux-sel/selinux02.png)
 
 **NoT** : Her dosyanın etiketi, üstündeki klasörün etiketi neyse onu çekmektedir.
 
 Şimdi “**/var/www/html/**” dizinin içine **index.html** dosyası oluşturulup, içine de **Fatih ASLAN** yazılacaktır ve alacağı etiket “**httpd_sys_content_t**” olacaktır çünkü “**/var/www/html/**” dizininin etiketi “**httpd_sys_content_t**”dir.
 
-![Crepe](assets/img/selinux-sel/selinux03.png)
+![Crepe](/assets/img/selinux-sel/selinux03.png)
 
 ~~~
 ls -Zd /var/www/html/index.html
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux04.png)
+![Crepe](/assets/img/selinux-sel/selinux04.png)
 
 **NoT** : “**cp**” komutu ile kopyalanan dosyanın etiketi hedef dizininin etiketi olacaktır fakat “**mv**” komutu ile dosya taşınırsa kaynak dizinin etiketi kalmaya devam edecektir. Aşağıdaki görüntüden de anlaşılabilir.
 
 Bu bilgiler ışığında sistem de anormal sorunlar çıktığında ve kullanıcı, dosya izinlerinde de sorun yoksa Selinux kısmını da bakılmalıdır ki etiket kısmında sorun olabileceğinden **Selinux** erişim sorunu çıkaracaktır.
 
-![Crepe](assets/img/selinux-sel/selinux05.png)
+![Crepe](/assets/img/selinux-sel/selinux05.png)
 
 Hazır yeri gelmişken bir konudan daha bahsetmek gerekmektedir. Yukarıdan da anlaşılacağı üzere herhangi sebepten ya da dosyanın taşınmasından ötürü etiketi bozulmuş olan dosyaları bulunduğu dizindeki etikete taşımamak için “restorecon” komutunu kullanılabilir. Aşağıda örnek gösterilmiştir.
 
@@ -94,7 +94,7 @@ semanage user -l
 
 Çıktı aşağıdaki gibidir.
 
-![Crepe](assets/img/selinux-sel/selinux06.png)
+![Crepe](/assets/img/selinux-sel/selinux06.png)
 
 Hatta tüm portlara atanan **Selinux** etiketlerini de “**semanage**” komutu ile görüntülenebilir. Fakat aşağıdaki örnekte sadece **httpd** servisi için atanan portlardaki etiketler görüntülenecektir.
 
@@ -102,7 +102,7 @@ Hatta tüm portlara atanan **Selinux** etiketlerini de “**semanage**” komutu
 semanage port -l | egrep ^http_port_t
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux07.png)
+![Crepe](/assets/img/selinux-sel/selinux07.png)
 
 Süreçlere(process) ait etiketleri aşağıdaki komut ile elde edilebilir.
 
@@ -116,11 +116,11 @@ ps -eZ
 id -Z
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux08.png)
+![Crepe](/assets/img/selinux-sel/selinux08.png)
 
 Bu aşamadan sonra **Selinux**’un çalışma mod’larına bakıp, yukarıdaki teknik bilgiler ışığında hangi çalışma durumunda kalmasını da aktardıktan sonra **Selinux** kısmı noktalanacaktır. Öncesinde “**/etc/selinux/config**” **cat** ile okutalım, ardından **SELINUX** ve **SELINUXTYPE** parametlerinden rahatlıkla bahsedebilelim.
 
-![Crepe](assets/img/selinux-sel/selinux09.png)
+![Crepe](/assets/img/selinux-sel/selinux09.png)
 
     **SELINUX**=enforcing, Selinux ilkelerine dayalı kurallarının geçerli olduğu yani aktif çalıştığı mod’dur.
     **SELINUX**=permissive, Selinux politikası uygulanmaz fakat log tuttuğu mod’dur.
@@ -134,7 +134,7 @@ Bu aşamadan sonra **Selinux**’un çalışma mod’larına bakıp, yukarıdaki
 getenforce
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux10.png)
+![Crepe](/assets/img/selinux-sel/selinux10.png)
 
 Daha ayrıntılı görmek için aşağıdaki komut kullanılabilir.
 
@@ -142,11 +142,11 @@ Daha ayrıntılı görmek için aşağıdaki komut kullanılabilir.
 sestatus
 ~~~
 
-![Crepe](assets/img/selinux-sel/selinux11.png)
+![Crepe](/assets/img/selinux-sel/selinux11.png)
 
 **Mod**’lar arsında geçişi direk “**/etc/selinux/config**” dosyasından düzenleyerek yapabilir ya da “**setenforce**” komutu kullanabilir. Aşağıdaki görselde durum daha net anlaşılacaktır.
 
-![Crepe](assets/img/selinux-sel/selinux12.png)
+![Crepe](/assets/img/selinux-sel/selinux12.png)
 
 
 
