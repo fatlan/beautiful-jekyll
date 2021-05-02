@@ -20,6 +20,7 @@ navbar-links:
   #  - Docker: "https://docker.fatlan.com/"
   #  - Kubernetes: "https://kubernetes.fatlan.com/"
   Blog: "/"
+  Tags: "/tags"
   Url's:
      - Linkedn: "https://www.linkedin.com/in/fafatihaslan"
      - Github: "https://github.com/fatlan"
