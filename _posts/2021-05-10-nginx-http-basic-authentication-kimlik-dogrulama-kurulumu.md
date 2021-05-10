@@ -16,19 +16,19 @@ comments: true
 Aşağıdaki paketlerin kurulumunu gerçekleştirin.
 
 Ubuntu;
-~~~javascript
+~~~
 sudo apt install nginx apache2-utils
 ~~~
 
 Redhat/CentOS;
-~~~javascript
+~~~
 yum install epel-release nginx httpd-tools
 ~~~
 
 Nginx “**/etc/nginx/sites-available/sites.conf**” altındaki kaynak konfig dosyası “**/etc/nginx/sites-enabled/sites.conf**” altında link’li olduğunu düşünerek, Yapılandırma şekli aşağıdaki gibi yapılabilir.
 
 İlk önce aşağıdaki komutları yürütün,
-```javascript
+```
 - mkdir /www/sites/indexpage
 - mkdir /www/sites/files
 - mkdir /www/sites/files/exclude
@@ -37,8 +37,8 @@ Nginx “**/etc/nginx/sites-available/sites.conf**” altındaki kaynak konfig d
 
 Ardından **sites.conf** aşağıdaki gibi yapılandırın.
 
-~~~javascript
-server {					###Şifresiz olarak index sayfası gelmesi için yapılan konfigürasyon
+~~~
+server {			     ###Şifresiz olarak index sayfası gelmesi için yapılan konfigürasyon
         listen 80 default_server;
         server_name "";
 
@@ -47,7 +47,7 @@ server {					###Şifresiz olarak index sayfası gelmesi için yapılan konfigür
             index index.html index.htm;
         }
 
-	location /files {			###/www/sites/files içerisine kullanıcı ve şifre ile erişim sağlamak için yapılan konfigürasyon
+	location /files {		###/www/sites/files içerisine kullanıcı ve şifre ile erişim sağlamak için yapılan konfigürasyon
 	    satisfy all;
 
 	    root /www/sites/;
@@ -64,16 +64,16 @@ server {					###Şifresiz olarak index sayfası gelmesi için yapılan konfigür
 ~~~
 
 **Basic auth** için kullanıcı ve şifre oluşturma(kullanıcı adı **fatlan**)
-~~~javascript
+~~~
 sudo htpasswd /etc/nginx/.htpasswd fatlan
 ~~~
 
  Kullanıcıları görmek için(şifreler hash’li görüntülenecektir),
-~~~javascript
+~~~
 cat /etc/nginx/.htpasswd
 ~~~
 
 Son olarak yapılan konfig'lerin geçerli olması için;
-~~~javascript
+~~~
 sudo systemctl reload nginx
 ~~~
