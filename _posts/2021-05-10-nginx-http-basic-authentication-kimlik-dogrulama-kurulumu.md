@@ -7,7 +7,7 @@ gh-badge: [star, follow]
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
-tags: [pdf, linux]
+tags: [nginx, linux, http, authentication]
 comments: true
 ---
 
