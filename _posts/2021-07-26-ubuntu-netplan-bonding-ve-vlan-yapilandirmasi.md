@@ -74,4 +74,5 @@ Her ihtimale karşı ubuntu linux için sunucuyu reboot etmek her zaman iyidir
 sudo reboot
 ~~~
 
+<br>
 rf: [1](https://netplan.io/examples/)|[2](https://www.snel.com/support/how-to-set-up-lacp-bonding-on-ubuntu-18-04-with-netplan/)
