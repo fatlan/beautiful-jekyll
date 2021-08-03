@@ -1,5 +1,6 @@
 ## Unreleased version
 
+- Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
 - Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
 - Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
@@ -9,6 +10,8 @@
 - Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
 - Fixed bug where special characters in the title led to broken share tags (#744)
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
+- Added support for Cloudflare Analytics (#797)
+- Added Reddit in share options of posts (#815)
 
 ## v5.0.0 (2020-09-15)
 
