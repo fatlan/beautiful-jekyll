@@ -16,45 +16,36 @@ comments: true
 
 ~~~yaml
 network:
-
-        bonds:
-                bond0:
-                        dhcp4: no
-                        interfaces:
-                                - ens1f0
-                                - ens2f0
-                        parameters :
-                                lacp-rate : fast
-                                mode : 802.3ad
-                                transmit-hash-policy : layer2
-                                mii-monitor-interval: 100
-
-        ethernets:
-                ens1f0 : {}
-                ens2f0 : {}
-                eno1 :   {}
-
-        version: 2
-        vlans :
-                bond0.13 :
-                         id : 13
-                         link : bond0
-                         mtu: 9000
-                         addresses :
-                         - 10.1.13.99/24
-
-                bond0.14 :
-                         id : 14
-                         link: bond0
-                         addresses :
-                                    - 10.1.14.99/24
-                         gateway4  : 10.1.14.1
-                         nameservers :
-                                  search:
-                                   - fatlan.com
-                                  addresses :
-                                   - 10.1.14.150
-                                   - 10.1.14.250
+  version: 2
+  bonds:
+    bond0:
+      dhcp4: no
+      interfaces: [ens1f0, ens2f0]
+      mtu: 9000
+      parameters:
+        lacp-rate: fast
+        mode: 802.3ad
+        transmit-hash-policy: layer2
+        mii-monitor-interval: 100
+  ethernets:
+    ens1f0: {}
+    ens2f0: {}
+    eno1: {}
+  vlans:
+    bond0.13:
+      id: 13
+      link: bond0
+      mtu: 9000
+      addresses: [ "10.1.13.99/24" ]
+    bond0.14:
+      id: 14
+      link: bond0
+      mtu: 1500
+      addresses: [ "10.1.14.99/24" ]
+      gateway4: 10.1.14.1
+      nameservers:
+        search: [fatlan.com]
+        addresses: [ "10.1.150.150", "10.1.160.160" ]
 ~~~
 
 Akabinde yapılandırmanın geçerli olması için
