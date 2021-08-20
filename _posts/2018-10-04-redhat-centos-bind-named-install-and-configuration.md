@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Redhat_Centos 7 Üzerine DNS Server Kurulumu ve Yapılandırması – BİND(NAMED), NS(NAMESERVER) – Public DNS or Private DNS
+title: Redhat/Centos 7 Üzerine DNS Server Kurulumu ve Yapılandırması – BİND(NAMED), NS(NAMESERVER) – Public DNS or Private DNS
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
