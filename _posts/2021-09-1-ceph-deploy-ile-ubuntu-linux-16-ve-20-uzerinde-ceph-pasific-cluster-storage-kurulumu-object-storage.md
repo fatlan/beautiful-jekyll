@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 tags: [ceph, storage, linux, ubuntu, cluster, sds, object]
 comments: true
 ---
-**Ceph is the future of storage** : Açık kaynak kodlu, dağıtık, yazılım tabanlı storage sistemidir. **Object**, **block** ve **file-level **storage desteklemektedir. Geleneksel depolama sistemlerinin kısıtlarına karşın Ceph **ölçeklenebilir**, **esnek** ve d**onanım bağımsız**lığı sayesinde **ekonomik**liliğide beraberinde getirir. Ayrıca dağıtık yapıda çalışması sayesinde olası bir arızayı karşın otomatik onarım işlemlerini başlatması, exabyte seviyelerine kadar çıkabilmesi ve **3-in-1 protokol** desteği Ceph'i bu denli zevkle kullanılabilir ve göz bebeği haline getirmiştir.
+**Ceph is the future of storage** : Açık kaynak kodlu, dağıtık, yazılım tabanlı storage sistemidir. **Object**, **block** ve **file-level** storage desteklemektedir. Geleneksel depolama sistemlerinin kısıtlarına karşın Ceph **ölçeklenebilir**, **esnek** ve **donanım bağımsız**lığı sayesinde **ekonomik**liliğide beraberinde getirir. Ayrıca dağıtık yapıda çalışması sayesinde olası bir arızayı karşın otomatik onarım işlemlerini başlatması, exabyte seviyelerine kadar çıkabilmesi ve **3-in-1 protokol** desteği Ceph'i bu denli zevkle kullanılabilir ve göz bebeği haline getirmiştir.
 
 Yapımız kısaca aşağıdaki gibi;
 1 node Ceph servisleri(**Monitör**, **Management**, **Rados Gateway**, **Admin client**) + 3 OSD node toplam 4 node.
