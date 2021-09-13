@@ -45,6 +45,7 @@ sudo sed -i 's/pool 2.debian.pool.ntp.org offline iburst/server $NTP_ADDRESS ibu
 sudo systemctl restart chrony.service
 ~~~
 
+
 ~~~
 sudo useradd -d /home/cephuser -m cephuser
 sudo passwd cephuser
@@ -52,6 +53,7 @@ sudo passwd cephuser
 echo "cephuser ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/cephuser
 sudo chmod 0440 /etc/sudoers.d/cephuser
 ~~~
+
 
 ~~~
 sudo vi /etc/hosts
@@ -72,6 +74,7 @@ ssh-copy-id cephuser@ceph-stgy
 ssh-copy-id cephuser@ceph-stgz
 ~~~
 
+
 ~~~
 sudo vi ~/.ssh/config
 
@@ -88,6 +91,7 @@ Host ceph-stgz
    Hostname ceph-stgz
    User cephuser
 ~~~
+
 
 ~~~
 #ubuntu 16
@@ -116,6 +120,7 @@ cd mycluster
 ceph-deploy new ceph-ops
 ~~~
 
+
 ~~~
 vi ceph.conf
 
@@ -129,6 +134,7 @@ rgw_override_bucket_index_max_shards = 500
 mon_pg_warn_max_object_skew = 0
 ~~~
 
+
 ~~~
 ceph-deploy install ceph-ops ceph-stgx ceph-stgy ceph-stgz
 ceph-deploy mon create-initial
@@ -136,6 +142,7 @@ ceph-deploy admin ceph-ops
 ceph-deploy mgr create ceph-ops
 ceph-deploy rgw create ceph-ops
 ~~~
+
 
 ~~~
 #Fiziksel osd'lerde öncesinde yapılandırlmış LVM varsa tespit edilip, temizlenmelidir.
@@ -152,6 +159,7 @@ ceph-deploy osd create ceph-stgz --data /dev/sdc
 ceph-deploy osd create ceph-stgz --data /dev/sdd
 ~~~
 
+
 ~~~
 #Ceph kurulumlarında OSD başına 50 ila 100 arasında PG düşmeli, bundan dolayı OSD sayısıyla 50 ve 100 çarpılarak minumum ve maksimum PG değerleri elde edilir.
 #Örnek olarak 9 OSD'li bir kurulumda açılacak pool'ların PG değerlerinin toplamı 9x50=450 ile 9x100=900 arasında olmalıdır.
@@ -159,6 +167,7 @@ ceph-deploy osd create ceph-stgz --data /dev/sdd
 
 sudo ceph osd pool create default.rgw.buckets.data 512 512 replicated replicated_rule 20000000
 ~~~
+
 
 ~~~
 #Swift user oluşturuyorum, siz isterseniz s3 user oluşturabilirsiniz.
@@ -202,6 +211,7 @@ sudo ceph health detail
 sudo ceph -s
 ~~~
 
+
 ~~~
   cluster:
     id:     9c2bdf0d-528a-47c0-b466-4ed3b404162c
@@ -222,5 +232,6 @@ sudo ceph -s
     pgs:     137 active+clean
 
 ~~~
+
 
 ![Crepe](/assets/img/cph-dply-u/cph-octps01.png)

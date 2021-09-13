@@ -23,6 +23,7 @@ Oluşturacağımız **forward zone** ve **reverse zone** bu dosya içerisinde be
 cd /etc/bind
 ~~~
 
+
 ~~~
 sudo vi named.conf.options
 ~~~
@@ -43,6 +44,7 @@ Aşağıdaki yapılandırma satırlarını ortamınıza göre şekillendirebilir
         };
 
 ~~~
+
 
 ~~~
 sudo vi named.conf.local
@@ -76,6 +78,7 @@ sudo cp db.local  fatlan.com
 sudo cp db.127  reverse.fatlan.com
 ~~~
 
+
 ~~~
 sudo vi fatlan.com
 ~~~
@@ -99,6 +102,7 @@ $TTL    604800
 ns      IN      A       127.0.0.1
 ~~~
 
+
 ~~~
 sudo vi reverse.fatlan.com
 ~~~
@@ -121,12 +125,15 @@ NS      IN      A       127.0.0.1
 1       IN      PTR     ns.fatlan.com.
 ~~~
 
+
 ~~~
 sudo named-checkconf
 ~~~
+
 ~~~
 sudo named-checkzone fatlan.com /etc/bind/fatlan.com
 ~~~
+
 ~~~
 sudo named-checkzone reverse.fatlan.com /etc/bind/reverse.fatlan.com
 ~~~
@@ -151,6 +158,7 @@ sudo netstat -plnta | egrep -i named
 
 **NoT:** Her kayıt eklendiğinde mutlaka **Serial** kısmı arttırılmalıdır.
 
+
 **fatlan.com** için örnek kayıtlar...
 ~~~
 fatlan.com.   IN     MX   10   mail.fatlan.com.
@@ -160,6 +168,7 @@ mail    IN       A      127.0.0.1
 
 ftp     IN      CNAME   www.fatlan.com.
 ~~~
+
 
 **reverse.fatlan.com** için örnek kayıtlar...
 ~~~
