@@ -290,6 +290,8 @@ Yukarıda örnek **HAProxy** yapılandırmalarından bahsettim, ben kendi yapıl
 
 Şimdi **Keepalived** yapılandrımasını yapalım. **Keepalived** için **3 sunucuda** da **kısmi olarak farklı** parametrik ayarlar mecvut olacak. Bunun için “**/etc/keepalived/keepalived.conf**” dosyasını oluşturup, yapılandıracağız. Bu arada “**priority**” yüksek olan önceliklidir.
 
+**NoT1:** **Keepalived** diğer **peer**'leri ile arasında **multicast** haberleşir ve bu yolla **master** **backup** belirlenir.
+
 **1. Sunucu(HAProxy+Keepalived)**
 ~~~
 vrrp_sync_group haproxy {
@@ -309,6 +311,7 @@ vrrp_script haproxy_check_script {
 vrrp_instance VI_01 {
   state MASTER
   interface ens3
+  ### 61 id'sini degistirin, diger peer'lerde de aynı olacak
   virtual_router_id 61
   priority 103
      authentication {
@@ -336,6 +339,26 @@ vrrp_instance VI_01 {
 ~~~
   state BACKUP
   priority 101
+~~~
+
+**NoT2**: Eğer sunucular arasında **multicast** haberleşmenin mümkün olmadığı durumlarda(ör: kvm, cloud ortamlar vs) **unicast** haberleşme kullanarak config etmeniz gerekir aksi halde zaten çalışmayacaktır.
+
+**Unicast Config:** aşağıdaki gibi yapılandırmanın arasına eklenebilir.
+~~~
+###Her sunucu için diğer eşneliği(peer) ip olarak belirtilmelidir(yazılır)
+
+...
+#Virtual interface
+...
+
+  unicast_peer {
+    <anaother_peer_ip>
+    <anaother_peer_ip>
+  }
+
+# Virtual ip address – floating ip
+...
+
 ~~~
 
 Yapılandırmalar bu kadar, tüm suncularda HAProxy sorunsuz çalışır vaziyette olmalı aynı zaman keepalived servisi de. Sunucularda yada servislerde herhangi bir kesintide çalışan diğer sunucudan loadbalancer hizmet vermeye devam edecektir.
