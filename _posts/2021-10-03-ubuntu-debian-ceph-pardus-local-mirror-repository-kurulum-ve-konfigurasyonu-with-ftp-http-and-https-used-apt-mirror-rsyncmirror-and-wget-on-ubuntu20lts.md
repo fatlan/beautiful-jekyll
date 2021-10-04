@@ -5,7 +5,7 @@ title: Ubuntu/Debian/Ceph/Pardus Local Mirror, Repository Kurulum ve Konfigüras
 gh-repo: fatlan
 gh-badge: [star, follow]
 #cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/25-26-20-uelinuxegitim/25-26-20le05.png
+thumbnail-img: /assets/img/umirrepo/umirrepo01.png
 #share-img: /assets/img/path.jpg
 tags: [repo, mirror, apt, linux, ubuntu, yansı, proftp, apache2, rsync, deb, repository, httpd]
 comments: true
@@ -27,7 +27,7 @@ Bu işlem için ilgili makinede yeterince disk alanı(TB olması tavsiye edilir)
 sudo apt install apt-mirror proftpd-basic apache2 rsync wget git
 ~~~
 
-####With apt-mirror
+#### With apt-mirror
 
 Konuya girmeden önce, **default**ta yüklenen **apt-mirror** paketinde bazı sorunlar mevcut bu yüzden aşağıdaki ilgili repodaki **apt-mirror**’u kendinize indirin ve **default** **apt-mirror** yerine aşğıdaki gibi güncelleyin.
 ~~~
@@ -149,7 +149,7 @@ sudo vi /etc/apache2/sites-enabled/000-default.conf
 </VirtualHost>
 ~~~
 
-####With rsync
+#### With rsync
 
 Sadece **apt-mirror** yerinei dosyaları indirmek ve güncel tutmak için **rsync**’yi kullanacağız. **Proftp** ve **apache2** aynı kalacak, sadece dizin yolunu değiştirmeniz gerekebilir.
 
@@ -168,7 +168,7 @@ crontab -e
 0 2 * * * /usr/local/bin/sync-ubuntu-mirror.sh > /dev/null 2> /dev/null
 ~~~
 
-####With wget
+#### With wget
 
 ~~~
 sudo mkdir -p /data/apt-mirror/ubuntu
@@ -180,7 +180,7 @@ wget -r -nH --no-parent http://archive.ubuntu.com/ubuntu/
 
 Ama hem **repo**yu güncel tutmak için ve hem de her seferinde indirmeleri başa sarmamak(**bandwidth**’ten yememek) için yukardaki **mirror script**ini kullamalısınız.
 
-###CLİENT TARAFI
+### CLİENT TARAFI
 
 ~~~
 sudo vi /etc/apt/sources.list
