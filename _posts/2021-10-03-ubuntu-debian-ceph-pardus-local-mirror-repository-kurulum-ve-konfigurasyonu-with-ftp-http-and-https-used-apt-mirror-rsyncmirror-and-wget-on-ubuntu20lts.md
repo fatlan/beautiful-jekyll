@@ -115,7 +115,8 @@ sudo mount --bind /opt/apt-mirror/mirror/depo.pardus.org.tr/  /srv/ftp/pardus/
 
 “**mount**” ve “**df -h**” komutlarıyla durumu gözlemleyebilirsiniz.
 
-Şimdi **crontab**’ı yapılandıralım
+Şimdi **crontab**’ı yapılandıralım,
+**NoT:** **@reboot**'lar **cron** tarafında çalışmayabilir, **fstab** kullanabilirsiniz ya da kalıcı dizinleri en başından seçip işaret tüm servislerde edebilirsiniz ya da systemd unit file ile servis yazabilirsiniz.
 ~~~
 crontab -e
 ~~~
