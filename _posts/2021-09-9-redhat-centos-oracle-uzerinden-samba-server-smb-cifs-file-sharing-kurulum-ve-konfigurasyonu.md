@@ -79,6 +79,30 @@ server min protocol = LANMAN1
         inherit acls = Yes
 ~~~
 
+**NoT:** Belli dosyaların yüklenmesini engellemek(kısıtlamak), ip bloklarını kısıtlamak yada izin vermek için aşağıdaki parametreleri ekleyebilirsiniz.
+~~~
+#tüm paylaşımlar için global,
+[global]
+veto files = /*.avi/*.mp3/
+delete veto files = yes
+
+#belirli paylaşımlar için,
+[share]
+path = /path/share
+veto files = /*.avi/*.mp3/
+delete veto files = yes
+
+#ip blokları kısıtlamak ya da izin vermek
+[share]
+  hosts allow = 192.168.2. 127.0.0.1
+  hosts deny = router.sweet.home
+
+#disable anonymous and guest
+[share]
+  restrict anonymous = 2
+  usershare allow guests = no
+~~~
+
 Servisler yeniden başlatılır
 ~~~
 systemctl restart smb.service

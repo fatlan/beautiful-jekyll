@@ -40,7 +40,7 @@ cp apt-mirror /usr/bin/apt-mirror
 sudo vi /etc/apt/mirror.list
 ~~~
 
-Aşağıdaki satırları değiştiriyorum, verileri saklayacağı yeri **data**’nın altında ayarlıyorum ayrıca **Ubuntu 20** ve **Ceph** repolarını aşağıdaiki gibi ekliyorum.
+Aşağıdaki satırları değiştiriyorum, verileri saklayacağı yeri **data**’nın altında ayarlıyorum ayrıca **Ubuntu 20** ve **Ceph** repolarını aşağıdaki gibi ekliyorum.
 ~~~
 set base_path    /data/apt-mirror
 
@@ -63,7 +63,7 @@ Ve **mirror**’lamayı başlatıyoruz.
 sudo apt-mirror
 ~~~
 
-İşlem bitiminde ls ile kontrol edelim.
+İşlem bitiminde **ls** ile kontrol edelim.
 ~~~
 fatlan@u20-repo:~$ ls /data/apt-mirror/mirror/
 archive.canonical.com  archive.ubuntu.com  download.ceph.com
@@ -153,7 +153,7 @@ sudo vi /etc/apache2/sites-enabled/000-default.conf
 
 #### With rsync
 
-Sadece **apt-mirror** yerinei dosyaları indirmek ve güncel tutmak için **rsync**’yi kullanacağız. **Proftp** ve **apache2** aynı kalacak, sadece dizin yolunu değiştirmeniz gerekebilir.
+Sadece **apt-mirror** yerine dosyaları indirmek ve güncel tutmak için **rsync**’yi kullanacağız. **Proftp** ve **apache2** aynı kalacak, sadece dizin yolunu değiştirmeniz gerekebilir.
 
 ~~~
 sudo mkdir -p /data/apt-mirror/ubuntu
