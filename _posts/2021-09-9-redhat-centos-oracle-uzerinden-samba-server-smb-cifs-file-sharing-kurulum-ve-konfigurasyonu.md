@@ -94,8 +94,8 @@ delete veto files = yes
 
 #ip blokları kısıtlamak ya da izin vermek
 [share]
-  hosts allow = 192.168.2. 127.0.0.1
-  hosts deny = router.sweet.home
+  hosts allow = 172.16.24.0/24
+  hosts deny = 172.16.25.0/24
 
 #disable anonymous and guest
 [share]
