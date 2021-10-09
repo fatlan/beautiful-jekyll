@@ -37,7 +37,7 @@ sudo apt update
 #ubuntu 16
 sudo apt install chrony python-minimal -y
 #ubuntu 20
-sudo apt install chrony  python3-pip -y
+sudo apt install chrony  python3-pip ca-certificates -y
 ~~~
 
 ~~~
@@ -101,7 +101,8 @@ echo deb https://download.ceph.com/debian-mimic/ $(lsb_release -sc) main | sudo 
 #ubuntu 20
 #NoT: U20 için repoya source'ye eklerken sources.list.d'ye eklemek yerine direkt olarak "/etc/apt/source.list" altına eklemeniz daha uygun olabilir.
 #Çünkü özellikle bu kurulum sırasında pasific kurmak isterken ceph sources.list.d'nin altındaki ceph.list source'sini octopus'a çekiyor.
-#Fakat source.list altına eklediğinizde, burda yetkisi olmadığından ve değiştiremediğinden pacific versiyonunda kurulum sağlayabiliyorsunuz. "deb https://download.ceph.com/debian-pacific/ focal main"
+#Fakat source.list altına eklediğinizde, burda yetkisi olmadığından ve değiştiremediğinden pacific versiyonunda kurulum sağlayabiliyorsunuz.
+# "deb https://download.ceph.com/debian-pacific/ focal main" tüm makinlerde eklemeniz gerekebilir, tabi beraberinde release.asc'de.
 
 wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -
 echo deb https://download.ceph.com/debian-octopus/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
