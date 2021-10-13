@@ -19,7 +19,7 @@ Bunun yerine doğrulanmış, satın alınmış **ssl**’inizle değiştirebilir
 Satın alınmış **ssl ca**'yı “**/etc/pki/ca-trust/source/anchors/**” dizine kopyalayalım ve **update certificate** edelim.
 
 ~~~
-cp /tmp/ssl/certi cate.ca certi cate.pem
+cp /tmp/ssl/certificate.ca certificate.pem
 update-ca-trust
 ~~~
 
@@ -32,7 +32,7 @@ rm /etc/pki/ovirt-engine/apache-ca.pem
 Satın alınmış **ssl ca**'yı “**/etc/pki/ovirt-engine/**” dizinine de kopyalayalım.
 
 ~~~
-cp /tmp/ssl/certi cate.ca /etc/pki/ovirt-engine/apache-ca.pem
+cp /tmp/ssl/certificate.ca /etc/pki/ovirt-engine/apache-ca.pem
 ~~~
 
 Eski **selfsign** sertifikalarının yedeğini alalım.
@@ -45,13 +45,13 @@ cp /etc/pki/ovirt-engine/certs/apache.cer /etc/pki/ovirt-engine/certs/apache.cer
 Satın alınmış **ssl key** sertifikasını “**/etc/pki/ovirt-engine/keys/**” dizinine atalım.
 
 ~~~
-cp /tmp/ssl/certi cate.key /etc/pki/ovirt-engine/keys/apache.key.nopass
+cp /tmp/ssl/certificate.key /etc/pki/ovirt-engine/keys/apache.key.nopass
 ~~~
 
 Aynı şekilde satın alınmış **ssl crt** dosyamızıda “**/etc/pki/ovirt-engine/certs/**” dizinine atalım.
 
 ~~~
-cp /tmp/ssl/certi cate.crt /etc/pki/ovirt-engine/certs/apache.cer
+cp /tmp/ssl/certificate.crt /etc/pki/ovirt-engine/certs/apache.cer
 ~~~
 
 Apache servisini yeniden başlatalım.
@@ -69,7 +69,7 @@ systemctl restart httpd.service
 - ENGINE_HTTPS_PKI_TRUST_STORE_PASSWORD=””
 ~~~
 
-“vi /etc/ovirt-engine/ovirt-websocket-proxy.conf.d/10-setup.conf” dosyasını da edit‘leyin ve aşağıdaki satırları ekleyin.
+“**vi /etc/ovirt-engine/ovirt-websocket-proxy.conf.d/10-setup.conf**” dosyasını da edit‘leyin ve aşağıdaki satırları ekleyin.
 
 ~~~
 - PROXY_PORT=6100
@@ -86,6 +86,8 @@ Son olarak aşağıdaki servisleri yeniden başlatın.
 ~~~
 systemctl restart ovirt-provider-ovn.service
 systemctl restart ovirt-engine.service
+systemctl restart ovirt-websocket-proxy.service
+systemctl restart ovirt-imageio-proxy.service
 ~~~
 
 Ve görünüm aşağıdaki gibidir.
