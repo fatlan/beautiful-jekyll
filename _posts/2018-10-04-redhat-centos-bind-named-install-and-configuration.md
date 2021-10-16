@@ -75,7 +75,7 @@ touch 100.34.203.revzone
 
 Son olarak herhangi bir editör aracılığı ile “**fatlan.com.zone**” ve “**203.34.100.revzone**” zone dosyalarının içeriğini aşağıdaki ss görüldiği gibi dns kayıtlarını giriyorum.
 
-**Reverse zone** kısmında ip adresi terten ve son okted olmadan yazılmalıdır, bu yüzden ss ler hatalıdır(**203.34.100.in-addr.arpa**).
+**Reverse zone** kısmında ip adresi tersten ve son okted olmadan yazılmalıdır, bu yüzden ss ler hatalıdır(**203.34.100.in-addr.arpa**).
 
 **NoT** : **A**, **CNAME** ve **PTR** kayıtlarını örnek olsun diye ekledim. Diğer yapılandırma şekilleri önemli, **zone** ve **revzone** da farklı olmasının sebebi her iki türlü de olabildiğine örnek olması için ekledim.
 
