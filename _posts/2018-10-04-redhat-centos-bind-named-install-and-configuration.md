@@ -54,7 +54,7 @@ Eklenecek satırlar;
     -fatlan.com’a ait zone ve reverse zone bilgileri bu dosyada belirtilir.
 ~~~
 
-Son ekran görüntüsü aşağıdaki gibidir.
+Son ekran görüntüsü aşağıdaki gibidir. (**203.34.100.in-addr.arpa**) ss ler hatalıdır.
 
 ![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c02.png)
 
@@ -73,7 +73,9 @@ touch fatlan.com.zone
 touch 100.34.203.revzone
 ~~~
 
-Son olarak herhangi bir editör aracılığı ile “**fatlan.com.zone**” ve “**100.34.203.revzone**” zone dosyalarının içeriğini aşağıdaki ss görüldiği gibi dns kayıtlarını giriyorum.
+Son olarak herhangi bir editör aracılığı ile “**fatlan.com.zone**” ve “**203.34.100.revzone**” zone dosyalarının içeriğini aşağıdaki ss görüldiği gibi dns kayıtlarını giriyorum.
+
+**Reverse zone** kısmında ip adresi terten ve son okted olmadan yazılmalıdır, bu yüzden ss ler hatalıdır(**203.34.100.in-addr.arpa**).
 
 **NoT** : **A**, **CNAME** ve **PTR** kayıtlarını örnek olsun diye ekledim. Diğer yapılandırma şekilleri önemli, **zone** ve **revzone** da farklı olmasının sebebi her iki türlü de olabildiğine örnek olması için ekledim.
 
@@ -81,7 +83,7 @@ Son olarak herhangi bir editör aracılığı ile “**fatlan.com.zone**” ve �
 
 ![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c03.png)
 
-**100.34.203.revzone;**
+**203.34.100.revzone;**
 
 ![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c04.png)
 
@@ -101,7 +103,7 @@ named-checkzone fatlan.com /var/named/fatlan.com.zone
 
 ![Crepe](/assets/img/re-ce-named-insandconf/named-insta-c05.png)
 
-Son olarakta **100.34.203.revzone** dosyasını kontrol edelim.
+Son olarakta **203.34.100.revzone** dosyasını kontrol edelim.
 
 ~~~
 named-checkzone 100.34.203.in-addr.arpa /var/named/100.34.203.revzone
