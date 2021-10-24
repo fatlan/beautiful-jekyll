@@ -143,6 +143,7 @@ kubectl get nodes -o wide
 
 **Node'ler reboot olduktan sonra eğer swap alanı kullanılıyorsa, .profile ya da .bashrc düzenleyebilirsiniz**
 **ve node'ler reboot olunca cron or rc.local ya da systemd servis script dosyası oluşturabilirsiniz**
+
 **Tüm NODE**
 ~~~
 swapoff -a
