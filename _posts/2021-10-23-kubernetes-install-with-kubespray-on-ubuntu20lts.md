@@ -23,13 +23,14 @@ kube-worker01   Ready    <none>                 5h50m   v1.22.2   10.10.10.194  
 kube-worker02   Ready    <none>                 5h50m   v1.22.2   10.10.10.195  <none>        Ubuntu 20.04.3 LTS   5.4.0-89-generic   docker://20.10.9
 ~~~
 
-##### Tüm hostlarda çalıştırılır
-##### $USER aktif kullanıcı ile değiştirilir
+
+**Tüm hostlarda çalıştırılır**
+**$USER aktif kullanıcı ile değiştirilir**
 ~~~
 sudo echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$USER
 ~~~
 
-##### Ansible client çalıştırılmalı(10.10.10.191)
+**Ansible client çalıştırılmalı(10.10.10.191)**
 ~~~
 ssh-keygen
 ssh-copy-id $USER@10.10.10.191
@@ -59,7 +60,8 @@ declare -a IPS=(10.10.10.191 10.10.10.192 10.10.10.193 10.10.10.194 10.10.10.195
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 ~~~
 
-##### Aşağıdaki hostname'leri kendi yapınıza göre değiştirebilirsiniz
+
+**Aşağıdaki hostname'leri kendi yapınıza göre değiştirebilirsiniz**
 ~~~
 vi kubespray/inventory/mycluster/hosts.yaml
 ~~~
@@ -126,7 +128,7 @@ ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root c
 # playbook'u sadece tek makinede çalıştırmak için bu parametreyi kullanabilirsiniz, --limit <hostname or ip>
 ~~~
 
-##### $USER aktif kullanıcı ile değiştirilir
+**$USER aktif kullanıcı ile değiştirilir**
 ~~~
 mkdir -p .kube
 
@@ -139,14 +141,14 @@ export KUBECONFIG=$PWD/.kube/admin.conf
 kubectl get nodes -o wide
 ~~~
 
-##### Node'ler reboot olduktan sonra eğer swap alanı kullanılıyorsa, .profile ya da .bashrc düzenleyebilirsiniz
-##### ve node'ler reboot olunca cron or rc.local ya da systemd servis script dosyası oluşturabilirsiniz
-##### Tüm NODE
+**Node'ler reboot olduktan sonra eğer swap alanı kullanılıyorsa, .profile ya da .bashrc düzenleyebilirsiniz**
+**ve node'ler reboot olunca cron or rc.local ya da systemd servis script dosyası oluşturabilirsiniz**
+**Tüm NODE**
 ~~~
 swapoff -a
 export LC_ALL=C
 ~~~
-##### Sadece MASTER/S NODE
+**Sadece MASTER/S NODE**
 ~~~
 swapoff -a
 export KUBECONFIG=$PWD/.kube/admin.conf
