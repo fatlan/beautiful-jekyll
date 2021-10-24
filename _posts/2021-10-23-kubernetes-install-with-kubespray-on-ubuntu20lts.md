@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes Install With Kubespray on Ubuntu20LTS
+title: Kubernetes Install(5Node=3Master+2Worker) With Kubespray on Ubuntu20LTS
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
@@ -30,7 +30,7 @@ kube-worker02   Ready    <none>                 5h50m   v1.22.2   10.10.10.195  
 sudo echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$USER
 ~~~
 
-**Ansible client çalıştırılmalı(10.10.10.191)**
+**Ansible client makinesinde çalıştırılmalı(10.10.10.191)**
 ~~~
 ssh-keygen
 ssh-copy-id $USER@10.10.10.191
@@ -125,7 +125,7 @@ cat kubespray/inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml
 ~~~
 ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
 
-# playbook'u sadece tek makinede çalıştırmak için bu parametreyi kullanabilirsiniz, --limit <hostname or ip>
+#Sadece tek makinede çalıştırmak için parametreyi kullanabilirsiniz, --limit <hostname or ip>
 ~~~
 
 **$USER aktif kullanıcı ile değiştirilir**
@@ -142,7 +142,7 @@ kubectl get nodes -o wide
 ~~~
 
 **Node'ler reboot olduktan sonra eğer swap alanı kullanılıyorsa, .profile ya da .bashrc düzenleyebilirsiniz**
-**ve node'ler reboot olunca cron or rc.local ya da systemd servis script dosyası oluşturabilirsiniz**
+**ve node'ler reboot olunca cron ya da rc.local ya da systemd servis script dosyası oluşturabilirsiniz**
 
 **Tüm NODE**
 ~~~
