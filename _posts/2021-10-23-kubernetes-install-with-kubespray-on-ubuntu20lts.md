@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes Install(5Node=3Master+2Worker) With Kubespray on Ubuntu20LTS
+title: Kubernetes Install (5Node=3Master+2Worker) With Kubespray on Ubuntu20LTS
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
