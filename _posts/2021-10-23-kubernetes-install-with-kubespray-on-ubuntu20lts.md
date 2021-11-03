@@ -114,6 +114,8 @@ all:
       hosts: {}
 ~~~
 
+**Aşağıda cat ettiiğimiz dosyaları edit edip, parametrik değerleri değiştirebilirsiniz**
+**Network plugin, pod subneti, domain, container runtime vs. gibi bilgiler değiştirebilirsiniz**
 ~~~
 cat kubespray/inventory/mycluster/group_vars/all/all.yml
 
@@ -122,6 +124,7 @@ cat kubespray/cluster.yml
 cat kubespray/inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml
 ~~~
 
+**Kurulumu başlatalım**
 ~~~
 ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
 
