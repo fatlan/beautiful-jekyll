@@ -1,4 +1,4 @@
-# ---
+---
 layout: post
 title: Multi Node Kafka Cluster Installation, Configuration and Test(Java, zookeeper, kafka, cmak) on Ubuntu20
 #subtitle: Each post also has a subtitle
