@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi Node Kafka Cluster Installation, Configuration and Test(Java, zookeeper, kafka, cmak) on Ubuntu20
+title: Multi Node Kafka Cluster Installation, Configuration and Test (Java, zookeeper, kafka, cmak) on Ubuntu20
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
@@ -10,8 +10,9 @@ gh-badge: [star, follow]
 tags: [kafka, zookeeper, cmak, linux, ubuntu, cluster, java]
 comments: true
 ---
+**Kafka Broker** kısaca gerçek zamanlı akan verilerin işlenmesi için birleşik, yüksek verimlilik ve düşük gecikmelilik amaçlamış, akış işleme platformudur.
 
-**Hosts** dosyasını **edit**'leyin.
+**Hosts** dosyasını kendi yapınıza göre **tüm host**larda **edit**'leyin.
 ~~~
 10.10.10.181 kafka01
 10.10.10.51  kafka02
