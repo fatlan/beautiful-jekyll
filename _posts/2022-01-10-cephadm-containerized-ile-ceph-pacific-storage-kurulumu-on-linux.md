@@ -245,7 +245,7 @@ sudo radosgw-admin user info --uid=ceph-demo
     mon: 4 daemons, quorum ceph-yonetici,ceph-osdx,ceph-osdy,ceph-osdz (age 19h)
     mgr: ceph-yonetici.uwijtu(active, since 19h), standbys: ceph-osdx.znrgdv
     osd: 9 osds: 9 up (since 13h), 9 in (since 13h)
-    rgw: 1 daemons active (2 hosts, 1 zones)
+    rgw: 1 daemons active (1 hosts, 1 zones)
 
   data:
     pools:   6 pools, 137 pgs
