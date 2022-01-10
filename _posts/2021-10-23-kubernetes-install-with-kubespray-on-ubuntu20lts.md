@@ -47,7 +47,7 @@ git clone https://github.com/kubernetes-sigs/kubespray.git
 ~~~
 cd kubespray/
 
-sudo apt install python3-pip
+sudo apt update && sudo apt install python3-pip
 
 cat requirements.txt
 
