@@ -12,7 +12,7 @@ comments: true
 ---
 
 oVirt Unlock Virtual Disks, VM and Snapshot
-****
+
 Beklenmedik durumlarda **oVirt** üzerinden **vm**'ler ya da **disk**'ler ya da **snap**'ler **lock** duruma düşebilir. Bu durumu **cockpit** üzerinden gözlemleyebilirsiniz fakat çözüm için **HostedEngine** makinesine **SSH** atıp **unlock_entity.sh** scriptini kullanabilirsiniz.
 
 **Lock** durumdaki **vm**, **disk** yada **snapshot**'ları aşağıdaki yöntemle **consol** üzerinden de tespit edebilirsiniz.
@@ -45,8 +45,8 @@ updates images set imagestatus = 1 where image_guid = '';
 ~~~
 
 ref:<br>
-Helper Utilities: https://www.ovirt.org/develop/developer-guide/db-issues/helperutilities.html<br>
-oVirt: Unlock Virtual Disks: https://angrysysadmins.tech/index.php/2018/10/grassyloki/ovirt-unlock-virtual-disks/<br>
-Unlock Virtual Disks list: https://bugzilla.redhat.com/show_bug.cgi?id=1678234<br>
-How to solve snapshots state ‘LOCKED’ in on Postgres DB: https://noeschanga.wordpress.com/2018/02/09/how-to-solve-snapshots-state-locked-in-ovirt-4-1/<br>
-PostgreSql in oVirt(psql enable Ovirt): https://lists.ovirt.org/pipermail/users/2018-April/088432.html
+Helper Utilities: [https://www.ovirt.org/develop/developer-guide/db-issues/helperutilities.html](https://www.ovirt.org/develop/developer-guide/db-issues/helperutilities.html)<br>
+oVirt: Unlock Virtual Disks: [https://angrysysadmins.tech/index.php/2018/10/grassyloki/ovirt-unlock-virtual-disks/](https://angrysysadmins.tech/index.php/2018/10/grassyloki/ovirt-unlock-virtual-disks/)<br>
+Unlock Virtual Disks list: [https://bugzilla.redhat.com/show_bug.cgi?id=1678234](https://bugzilla.redhat.com/show_bug.cgi?id=1678234)<br>
+How to solve snapshots state ‘LOCKED’ in on Postgres DB: [https://noeschanga.wordpress.com/2018/02/09/how-to-solve-snapshots-state-locked-in-ovirt-4-1](https://noeschanga.wordpress.com/2018/02/09/how-to-solve-snapshots-state-locked-in-ovirt-4-1)/<br>
+PostgreSql in oVirt(psql enable Ovirt): [https://lists.ovirt.org/pipermail/users/2018-April/088432.html](https://lists.ovirt.org/pipermail/users/2018-April/088432.html)
