@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes Install (3Node=1Master+2Worker) with Kubeadm on Ubuntu20LTS
+title: Kubeadm ile Kubernetes Cluster Install (3Node=1Master+2Worker) on Ubuntu20LTS
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
@@ -10,6 +10,7 @@ gh-badge: [star, follow]
 tags: [kubeadm, linux, virtualization, container, containerd, kubernetes, ubuntu, kubectl]
 comments: true
 ---
+**Kubeadm** ile **Kubernetes Cluster** kurulumu...
 
 ~~~
 NAME                STATUS   ROLES                  AGE    VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
@@ -204,10 +205,10 @@ export KUBECONFIG=.kube/config
 
 **NoT** : Ek bilgi
 
-**kubeadm init parametreleri**:
-**--control-plane-endpoint** :  set the shared endpoint for all control-plane nodes. Can be DNS/IP
-**--pod-network-cidr** : Used to set a Pod network add-on CIDR
-**--cri-socket** : Use if have more than one container runtime to set runtime socket path
+**kubeadm init parametreleri**:<br>
+**--control-plane-endpoint** :  set the shared endpoint for all control-plane nodes. Can be DNS/IP<br>
+**--pod-network-cidr** : Used to set a Pod network add-on CIDR<br>
+**--cri-socket** : Use if have more than one container runtime to set runtime socket path<br>
 **--apiserver-advertise-address** : Set advertise address for this particular control-plane node's API server
 
 Örnek olarak **3** ya da daha fazla **Master Node**'yi **Haproxy** ve **Keepalived** aracılığı ile eklemek isterseniz **kubeadm init**'i aşağıdaki gibi çalıştırmalısınız.
