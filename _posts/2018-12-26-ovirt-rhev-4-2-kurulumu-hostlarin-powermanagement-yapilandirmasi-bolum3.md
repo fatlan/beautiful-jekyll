@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovirt/RHEV 4.2 Kurulumu Hostların PowerManagement Yapılandırması - Bölüm 3
+title: oVirt - RHEV 4.2 Kurulumu Hostların PowerManagement Yapılandırması - Bölüm 3
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

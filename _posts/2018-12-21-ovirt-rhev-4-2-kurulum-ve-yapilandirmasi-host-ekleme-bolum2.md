@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OVİRT(RHEV) 4.2 Kurulum ve Yapılandırması - Host Ekleme - Bölüm 2
+title: oVirt - RHEV 4.2 Kurulum ve Yapılandırması - Host Ekleme - Bölüm 2
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

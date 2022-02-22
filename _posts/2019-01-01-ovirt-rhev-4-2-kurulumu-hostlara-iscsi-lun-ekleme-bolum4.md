@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovirt/RHEV 4.2 Kurulumu Hostlara ISCSI LUN Ekleme - Bölüm 4
+title: oVirt - RHEV 4.2 Kurulumu Hostlara ISCSI LUN Ekleme - Bölüm 4
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovirt/RHEV 4.2 Engine Network(NIC) Infrastructure Ekleme ve Yapılandırma - Bölüm 6
+title: oVirt - RHEV 4.2 Engine Network(NIC) Infrastructure Ekleme ve Yapılandırma - Bölüm 6
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

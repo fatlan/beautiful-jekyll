@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovirt Internal Admin Şifresini değiştirme - Changing the Password for admin@internal(ovirt admin@internal password change)
+title: oVirt Internal Admin Şifresini değiştirme - Changing the Password for admin@internal(ovirt admin@internal password change)
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

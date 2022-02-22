@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OVİRT(RHEV) 4.2 Kurulumu, Yapılandırması ve HOSTED ENGINE Kurulumu - Bölüm 1
+title: oVirt - RHEV 4.2 Kurulumu, Yapılandırması ve HOSTED ENGINE Kurulumu - Bölüm 1
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

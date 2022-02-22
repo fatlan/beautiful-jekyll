@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ovirt_RHEV 4.2 Engine SSL Yapılandırma – Bölüm 8
+title: oVirt - RHEV 4.2 Engine SSL Yapılandırma – Bölüm 8
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

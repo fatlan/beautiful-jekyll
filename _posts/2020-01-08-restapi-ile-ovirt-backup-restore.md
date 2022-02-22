@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RestAPI ile Ovirt(Open Virtualization Manager)’da Snapshot Tabanında Otomatik Backup/Restore Operasyonu
+title: RestAPI ile oVirt - Open Virtualization Manager’da Snapshot Tabanında Otomatik Backup/Restore Operasyonu
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
