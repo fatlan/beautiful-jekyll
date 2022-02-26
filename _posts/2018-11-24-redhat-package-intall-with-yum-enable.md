@@ -7,7 +7,7 @@ gh-badge: [star, follow]
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
-tags: [redhat, centos, linuz]
+tags: [redhat, centos, linux]
 comments: true
 ---
 ![Crepe](/assets/img/red-with-yum-enab/red-yum-en01.png)
