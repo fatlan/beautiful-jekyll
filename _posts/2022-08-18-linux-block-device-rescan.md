@@ -10,8 +10,7 @@ gh-badge: [star, follow]
 tags: [block, rescan, device, disk]
 comments: true
 ---
-
-
+Block aygıtları listeleyelim,
 ~~~
 ls -l /sys/class/scsi_device/*/device/block
 ~~~
@@ -42,9 +41,9 @@ total 0
 drwxr-xr-x 8 root root 0 Aug 18 15:30 sdf
 ~~~
 
-Örnek olarak sde disk rescan yapalım;
+Örnek olarak **sde** disk **rescan** yapalım;
 ~~~
 echo 1 > /sys/class/scsi_device/6:0:0:0/device/rescan
 ~~~
 
-`dmesg` ile logları kontrol edebilirsiniz.
+`**dmesg**` ile logları kontrol edebilirsiniz.
