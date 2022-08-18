@@ -47,4 +47,4 @@ drwxr-xr-x 8 root root 0 Aug 18 15:30 sdf
 echo 1 > /sys/class/scsi_device/6:0:0:0/device/rescan
 ~~~
 
-`dmesg` ile logları kontrol edebilirsiniz.
+dmesg ile logları kontrol edebilirsiniz.
