@@ -103,6 +103,8 @@ docker pull harbor.fatlan.com/library/weaveworks-scope
 ~~~
 helm create fatihcharts (after changed)
 
+tree fatihcharts
+
 touch index.yaml
 
 helm repo index . --url https://harbor.fatlan.com/mycharts
@@ -116,3 +118,24 @@ helm push fatihcharts-0.1.0.tgz oci://harbor.fatlan.com/mycharts/
 helm pull oci://harbor.fatlan.com/mycharts/fatihcharts
 ~~~
 
+ya da
+
+~~~
+helm plugin install https://github.com/chartmuseum/helm-push
+
+helm repo add fatlan-harbor https://harbor.fatlan.com/mycharts/fatihcharts --username=robot\$my-robot --password=secret_key [--insecure-skip-tls-verify]
+
+helm repo update
+
+helm repo list
+
+helm create fatihcharts
+
+tree fatihcharts
+
+helm package fatihcharts {yada cd fatihcharts, helm package .}
+
+helm cm-push fatihcharts-0.1.0.tgz fatlan-harbor [--insecure]
+
+helm search repo fatihcharts
+~~~
