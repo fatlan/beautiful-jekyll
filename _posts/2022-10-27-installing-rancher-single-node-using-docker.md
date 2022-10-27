@@ -17,7 +17,7 @@ Ortamda **docker container** kurulumunun yapıldığını var sayarak aşağıda
 
 **NoT**: **cert.pem** **full chain** olarak ele almayı unutmayın yani hem domain sertifikanın hemde **root** ve varsa **ara root** sertifikalarınız aynı dosyada **bundle** olması gerekmektedir.
 
-Aslında ayrı **volume**(-v /<CERT_DIRECTORY>/<CA_CERTS.pem>:/etc/rancher/ssl/cacerts.pem) kullanarak da ayrı dosya olarak **up** edebilirsiniz.
+Aslında ayrı **volume** `-v /<CERT_DIRECTORY>/<CA_CERTS.pem>:/etc/rancher/ssl/cacerts.pem` kullanarak da ayrı dosya olarak **up** edebilirsiniz.
 
 Biz **bundle** olarak ele aldık.
 
