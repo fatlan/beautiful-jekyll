@@ -11,7 +11,7 @@ tags: [ubuntu, log, rsyslog, syslog, linux]
 comments: true
 ---
 
-Ubuntu server üzerinde kurulu herhangi bir servis ya da uygulamamızın belirli bir path'de mevcut olan log dosyasını siem(10.10.10.99) server'a yönlendirdiğimizi varsayalım.
+Ubuntu server üzerinde kurulu herhangi bir servis ya da uygulamamızın belirli bir **path**'de mevcut olan **log** dosyasını **siem**(**10.10.10.99**) **server**'a yönlendirdiğimizi varsayalım.
 
 ~~~
 sudo vi/etc/rsyslog.d/my-service.conf
@@ -35,12 +35,12 @@ Ardından servisi yeniden başlatın.
 sudo systemctl restart rsyslog.service
 ~~~
 
-Durumu netleştirmek adına yönlenen log akışını aşağıdaki komutla izleyebilirsiniz.
+Durumu netleştirmek adına yönlenen **log** akışını **tcpdump** ile izleyebilirsiniz.
 ~~~
 sudo tcpdump -i ens3 -annXX host 10.10.10.99
 ~~~
 
-Bu arada default sistem log'larını(/var/log/syslog) yönlendirmek için, aşağıdaki gibi yapmanız yeterli.
+Bu arada **default sistem log**'larını(**/var/log/syslog**) yönlendirmek için, aşağıdaki gibi yapmanız yeterli.
 ~~~
 sudo vi /etc/rsyslog.conf
 ~~~
@@ -52,7 +52,7 @@ sudo vi /etc/rsyslog.conf
 sudo systemctl restart rsyslog.service
 ~~~
 
-Konumuz dışı ama ek olarak çalıştığınız sunucunun log alabilmesi için, aşağıdaki gibi ayarlayabilir ardından bu server'a da log yönlendirebilirsiniz.
+Konumuz dışı ama ek olarak çalıştığınız sunucunun **log** alabilmesi için, aşağıdaki gibi ayarlayabilir ardından bu **server**'a da **log** yönlendirebilirsiniz.
 ~~~
 sudo vi /etc/rsyslog.conf
 ~~~
@@ -68,13 +68,14 @@ input(type="imtcp" port="514")
 ~~~
 sudo systemctl restart rsyslog.service
 ~~~
+
 Teyit,
 ~~~
 sudo ss -plnt | grep 514
 ~~~
 ~~~
-LISTEN     0      25           *:514                      *:*                   users:(("rsyslogd",pid=7788,fd=7))
-LISTEN     0      25          :::514                     :::*                   users:(("rsyslogd",pid=7788,fd=8))
+LISTEN     0  25    *:514       *:*      users:(("rsyslogd",pid=7788,fd=7))
+LISTEN     0  25   :::514      :::*      users:(("rsyslogd",pid=7788,fd=8))
 ~~~
 
-ref: [serverfault](https://serverfault.com/questions/396136/how-to-forward-specific-log-file-outside-of-var-log-with-rsyslog-to-remote-serv) | [casesup](https://www.casesup.com/category/knowledgebase/howtos/how-to-forward-specific-log-file-to-a-remote-syslog-server)
+<br>ref: [serverfault](https://serverfault.com/questions/396136/how-to-forward-specific-log-file-outside-of-var-log-with-rsyslog-to-remote-serv) | [casesup](https://www.casesup.com/category/knowledgebase/howtos/how-to-forward-specific-log-file-to-a-remote-syslog-server)
