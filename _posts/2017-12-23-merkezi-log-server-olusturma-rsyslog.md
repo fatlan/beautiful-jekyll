@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merkezi Log Server Oluşturma - Rsyslog
+title: Merkezi Log Server Oluşturma - Rsyslog on CentOS
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]

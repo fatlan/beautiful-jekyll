@@ -31,7 +31,6 @@ Akabinde **rc** dosyasını oluşturup, yapılandıralım.
 vi openstack.rc
 ~~~
 ~~~
-bash
 # Ansible managed
 export LC_ALL=en_US.UTF-8
 
