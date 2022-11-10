@@ -78,4 +78,5 @@ LISTEN     0  25    *:514       *:*      users:(("rsyslogd",pid=7788,fd=7))
 LISTEN     0  25   :::514      :::*      users:(("rsyslogd",pid=7788,fd=8))
 ~~~
 
-<br>ref: [serverfault](https://serverfault.com/questions/396136/how-to-forward-specific-log-file-outside-of-var-log-with-rsyslog-to-remote-serv) | [casesup](https://www.casesup.com/category/knowledgebase/howtos/how-to-forward-specific-log-file-to-a-remote-syslog-server)
+<br>
+ref: [serverfault](https://serverfault.com/questions/396136/how-to-forward-specific-log-file-outside-of-var-log-with-rsyslog-to-remote-serv) | [casesup](https://www.casesup.com/category/knowledgebase/howtos/how-to-forward-specific-log-file-to-a-remote-syslog-server)
