@@ -140,4 +140,8 @@ helm cm-push fatihcharts-0.1.0.tgz fatlan-harbor [--insecure]
 helm search repo fatihcharts
 
 helm pull https://harbor.fatlan.com/mycharts/fatihcharts --untar
+
+cd fatihcharts
+
+helm install my-fatih-app -f values.yaml ./
 ~~~
