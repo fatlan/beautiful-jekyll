@@ -138,4 +138,6 @@ helm package fatihcharts {yada cd fatihcharts, helm package .}
 helm cm-push fatihcharts-0.1.0.tgz fatlan-harbor [--insecure]
 
 helm search repo fatihcharts
+
+helm pull https://harbor.fatlan.com/mycharts/fatihcharts --untar
 ~~~
