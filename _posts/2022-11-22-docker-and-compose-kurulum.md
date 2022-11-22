@@ -24,7 +24,7 @@ sudo vim /etc/docker/daemon.json
 ~~~
 
 
-###`Güncel Yöntem` <br>
+<h3>`Güncel Yöntem`</h3> <br>
 **Docker** ve **Docker Compose** kuralım,
 ~~~
 sudo apt install ca-certificates curl gnupg lsb-release -y
@@ -39,7 +39,7 @@ sudo apt update
 
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ~~~
-Güncel durumda "**docker-compose**" yöntemi lazım ise eğer aşağıdaki yönergeyi izleyebilirsiniz.
+Güncel durumda alışıla gelmiş "**docker-compose**" yöntemi lazım ise aşağıdaki yönergeyi izleyebilirsiniz. Bu arada seçtğiniz ilgili alias'ı `.bashrc` dosyasına yazmayı unutmayın.
 ~~~
 sudo usermod -aG docker $USER
 alias docker-compose="docker compose"
