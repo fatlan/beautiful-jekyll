@@ -24,7 +24,7 @@ sudo vim /etc/docker/daemon.json
 ~~~
 
 
-###`Güncel Yöntem`
+###`Güncel Yöntem` <br>
 **Docker** ve **Docker Compose** kuralım,
 ~~~
 sudo apt install ca-certificates curl gnupg lsb-release -y
@@ -50,7 +50,7 @@ alias sudo='sudo '
 alias docker-compose="docker compose"
 ~~~
 
-###`Eski Yöntem`
+###`Eski Yöntem` <br>
 **Docker** kuralım,
 ~~~
 sudo apt install ca-certificates curl gnupg lsb-release -y
