@@ -39,7 +39,7 @@ sudo apt update
 
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ~~~
-Güncel durumda alışıla gelmiş "**docker-compose**" yöntemi lazım ise aşağıdaki yönergeyi izleyebilirsiniz. Bu arada seçtğiniz ilgili alias'ı `**.bashrc**` dosyasına yazmayı unutmayın.
+Güncel durumda alışıla gelmiş "**docker-compose**" yöntemi lazım ise aşağıdaki yönergeyi izleyebilirsiniz. Bu arada seçtğiniz ilgili alias'ı `.bashrc` dosyasına yazmayı unutmayın.
 ~~~
 sudo usermod -aG docker $USER
 alias docker-compose="docker compose"
@@ -78,5 +78,5 @@ sudo usermod -aG docker $USER
 
 **`Son Yöntem - Genellikle Test ve Demolar için Tercih Edilebilir`**
 ~~~
-curl -fsSL https://get.docker.com -o get-docker.sh | sh
+curl -fsSL https://get.docker.com | sh
 ~~~
