@@ -133,8 +133,6 @@ ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root c
 
 **$USER aktif kullanıcı ile değiştirilir**
 ~~~
-sudo sed -i '/swap/ s/^\(.*\)$/#\1/g' /etc/fstab
-
 mkdir -p .kube
 
 sudo cp /etc/kubernetes/admin.conf .kube/
@@ -147,6 +145,7 @@ kubectl get nodes -o wide
 ~~~
 
 **Node’ler reboot olmadan önce eğer swap alanı kullanılıyorsa, .profile ya da .bashrc düzenleyebilirsiniz ve node’ler reboot olunca cron ya da rc.local ya da systemd servis script dosyası oluşturabilirsiniz**
+Ama en geçerli yöntem **swap**'sız makine kurulumudur.
 **ALL NODE**
 ~~~
 swapoff -a

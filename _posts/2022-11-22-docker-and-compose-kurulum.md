@@ -76,7 +76,7 @@ sudo usermod -aG docker $USER
 ~~~
 
 
-**`Son Yöntem - Genellikle Test ve Demolar için Tercih Edilebilir`**
+**`Son Yöntem` - Genellikle Test ve Demolar için Tercih Edilebilir**
 ~~~
 curl -fsSL https://get.docker.com | sh
 ~~~
