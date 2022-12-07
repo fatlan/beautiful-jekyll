@@ -73,15 +73,15 @@ EOF
 ~~~
 sudo sysctl --system
 
-sudo apt install -y containerd runc
+sudo apt install -y containerd
 
 sudo mkdir -p /etc/containerd
 
 sudo containerd config default | sudo tee /etc/containerd/config.toml
 
-sudo systemctl restart containerd.service
+sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
 
-#To use the systemd cgroup driver, "set plugins.cri.systemd_cgroup = true" in /etc/containerd/config.toml. When using kubeadm, manually configure the cgroup driver for kubelet
+sudo systemctl restart containerd.service
 ~~~
 
 Bu arada **container runtime Unix domain socket** yolları aşağıdaki gibidir.
@@ -93,13 +93,13 @@ Cri-o       > /var/run/crio/crio.sock
 
 Şimdi ise **kubernetes** paketlerini kuralım.
 ~~~
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 
-echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 sudo apt update
-sudo apt -y install kubelet kubeadm kubectl kubernetes-cni
-sudo apt-mark hold kubelet kubeadm kubectl kubernetes-cni
+sudo apt -y install kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
 kubectl version --client && kubeadm version
 ~~~
 
@@ -238,4 +238,13 @@ export KUBECONFIG=.kube/config
 Yani **--control-plane-endpoint** adresi belirlediğiniz **vrrp** olacak, **--apiserver-advertise-address** **ip**'si de ilk **master node**'nizin **ip**'sini yazabilirsiniz.
 ~~~
 sudo kubeadm init --control-plane-endpoint="10.10.10.200:6443" --apiserver-advertise-address=10.10.10.113 --pod-network-cidr=192.168.0.0/16 --upload-certs
+
+ya da
+
+sudo kubeadm init --control-plane-endpoint "LOAD_BALANCER_DNS:LOAD_BALANCER_PORT" --pod-network-cidr=192.168.0.0/16 --upload-certs
+~~~
+
+**Init** sürecinde herhangi bir hata almanız halinde aşağıdaki komutu yürüterek **init**'i tekrar başlatabilirsiniz.
+~~~
+sudo kubeadm init reset
 ~~~
