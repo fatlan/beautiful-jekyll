@@ -50,6 +50,7 @@ sudo apt update && sudo apt -y install curl apt-transport-https vim git wget gnu
 Akabinde **swap** alanını kapatalım ama her makine **reboot** olduğunda bu işlem gerekli, en geçerli yöntem **swap**'sız makine kurulumudur.
 ~~~
 sudo swapoff -a
+sudo sed -i '/swap/ s/^\(.*\)$/#\1/g' /etc/fstab
 ~~~
 
 Şimdi **container runtime** kurulumu yapacağız. Alternatifler **containerd**, **docker** ve **cri-o**'dur fakat **kubernetes dockershim deprecation** yaptığı için biz **containerd** yapacağız, zaten **default** olarak **containerd** geliyor.
@@ -100,6 +101,7 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://a
 sudo apt update
 sudo apt -y install kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+
 kubectl version --client && kubeadm version
 ~~~
 
