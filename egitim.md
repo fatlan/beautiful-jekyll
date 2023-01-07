@@ -5,7 +5,7 @@ subtitle: Bilgi Teknolojileri
 tags: [linux, ubuntu, Fatih ASLAN, egitim, redhat, centos, rocyk, opensource, almalinux, debian, fatihaslan, docker, kubernetes, container, rancher, cloud, oVirt, KVM, docker, containerd, container, ceph, minio ]
 ---
 
-## Kurumsal ve Kişisel(birebir)'de Sunduğum Eğitimler
+### Kurumsal ve Kişisel(birebir)'de Sunduğum Eğitimler
 
 Tüm Linux sistemleri yönetimde deneyim ve tecrübelerle birlikte, müfredatları harmanlayanarak hazırlamış olduğum içerikleri sunmaktayım.
 
@@ -15,7 +15,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 
 Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
 
-## * `Linux 101`(Linux Temelleri)
+### * `Linux 101`(Linux Temelleri)
 
 - Linux Temel Kavram ve Sistem Tasarımına Giriş
 - Booting İşlemi
@@ -26,7 +26,7 @@ Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
 - İş Süreç Yönetimi
 - Shell
 
-## * `Linux 102`(Linux Admin)
+### * `Linux 102`(Linux Admin)
 
 - Sistem Kavramlarına Giriş
 - Sistem Açılışı
@@ -38,35 +38,37 @@ Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
 - Log Sistemi
 - Sunucu Kurulum ve Konfigürasyon
 
-## * `Linux 103`(Linux İleri Seviye Admin)
+### * `Linux 103`(Linux İleri Seviye Admin)
 
 - yakında...
 
-## * `Shell Yetenekleri ve Kabuk Betikleri`(Bash Scripting)
+### * `Shell Yetenekleri ve Kabuk Betikleri`(Bash Scripting)
 
 - yakında...
 
-## * `Bulut ve Sanallaştırma`(KVM, oVirt, Proxmox, Openstack)
+### * `Bulut ve Sanallaştırma`(KVM, oVirt, Proxmox, Openstack)
 
 - yakında...
 
-## * `Ansible ve Terraform`(Automation)
+### * `Ansible ve Terraform`(Automation)
 
 - yakında...
 
-## * `Linux Container Technologies` (Lxd-Lxc, Containerd, Docker)
+### * `Linux Container Technologies` (Lxd-Lxc, Containerd, Docker)
 
 - yakında...
 
-## * `Kubernetes` (Container Orchestration)
+### * `Kubernetes` (Container Orchestration)
 
 - yakında...
 
-## * `Software Defined Storage` (Ceph, MinIO)
+### * `Software Defined Storage` (Ceph, MinIO)
 
 - yakında...
 
+-----
 <br>
-İletişim<br>
-**Fatih ASLAN** - fatlan.com<br>
+
+**İletişim**<br>
+Fatih ASLAN - fatlan.com<br>
 [![Linkedin Badge](https://img.shields.io/badge/fatihaslan-linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fafatihaslan) <br>
