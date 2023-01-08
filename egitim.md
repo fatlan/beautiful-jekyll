@@ -67,8 +67,6 @@ Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
 - yakında...
 
 -----
-<br>
-
 **İletişim**<br>
 Fatih ASLAN - fatlan.com<br>
 [![Linkedin Badge](https://img.shields.io/badge/fatihaslan-linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fafatihaslan) <br>
