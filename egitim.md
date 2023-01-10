@@ -69,4 +69,4 @@ Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
 -----
 **İletişim**<br>
 Fatih ASLAN - fatlan.com<br>
-[![Mail Badge](https://img.shields.io/badge/FATIHASLAN-MAIL-red?logo=linux)](fatih.aslan.34@outlook.com) | [![Linkedin Badge](https://img.shields.io/badge/fatihaslan-linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fafatihaslan) <br>
+[![Linkedin Badge](https://img.shields.io/badge/fatihaslan-linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/fafatihaslan) <br>
