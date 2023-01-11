@@ -13,7 +13,7 @@ Sektör çıktıları olarak sunduğum eğitimler, başta Redhat Enterprise Linu
 
 Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitimler sektör tecrübelerine dayalı olarak bilgi birikimini aktarmayı amaçlamış ve sizlerinde bu sökterde yer edinebilmenize odaklanmıştır.
 
-Almak istediğiniz eğitim için iletişime geçmeniz yeterli.
+`Almak istediğiniz eğitim için iletişime geçmeniz yeterli.`
 
 ### `Linux 101`(Linux Temelleri)
 

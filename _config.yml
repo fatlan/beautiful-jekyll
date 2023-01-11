@@ -15,7 +15,7 @@ author: Fatih ASLAN
 
 navbar-links:
   #About Me: "aboutme"
-  Verdiğim Eğitimler|Satın Al: "egitim"
+  Verdiğim Eğitimler: "egitim"
   #Eğitimler:
   #  - Linux: "https://linux.fatlan.com"
   #  - Docker: "https://docker.fatlan.com/"
