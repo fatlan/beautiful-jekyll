@@ -11,7 +11,10 @@ tags: [linux, bash, kubernetes, docker, container, kubeconfig, kubectl, multiple
 comments: true
 ---
 
+Let's start:)
+~~~
 mkdir -p $HOME/.kube
+~~~
 
 Copy **Cluster kube config files** in **client machine**(for example cluster1, cluster2)
 ~~~
@@ -31,6 +34,10 @@ kubectl config view --flatten > .kube/config
 **Set permission**
 ~~~
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+~~~
+
+~~~
+export KUBECONFIG=$HOME/.kube/config
 ~~~
 
 **Show active cluster**
@@ -61,5 +68,4 @@ kubectl get nodes
 ~~~
 
 <br>
-ref: 
-https://ahmet.im/blog/mastering-kubeconfig/
+ref: [mastering-kubeconfig](https://ahmet.im/blog/mastering-kubeconfig/)
