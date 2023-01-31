@@ -84,7 +84,7 @@ net.bridge.bridge-nf-call-ip6tables = 1
 EOF
 ~~~
 
-**Containerd**'yi güncel olması için(aksi takdirde daha **kubernetes** **image**'leri **pull** ederken versiyon uyumsuzluğundan hata alacaksınız(https://containerd.io/releases)[https://containerd.io/releases]) **docker reposu**nu kullanarak kuracağız, yanlış anlaşılmasın **docker** kurulumu yapmayacağız, isterseniz **manual** olarak da **containerd** ve **runc**'yi kurabilirsiniz. (https://github.com/containerd/containerd/blob/main/docs/getting-started.md)[https://github.com/containerd/containerd/blob/main/docs/getting-started.md] linkinden faydalanabilirsiniz.
+**Containerd**'yi güncel olması için(aksi takdirde daha **kubernetes** **image**'leri **pull** ederken versiyon uyumsuzluğundan hata alacaksınız[https://containerd.io/releases](https://containerd.io/releases)) **docker reposu**nu kullanarak kuracağız, yanlış anlaşılmasın **docker** kurulumu yapmayacağız, isterseniz **manual** olarak da **containerd** ve **runc**'yi kurabilirsiniz. [https://github.com/containerd/containerd/blob/main/docs/getting-started.md](https://github.com/containerd/containerd/blob/main/docs/getting-started.md) linkinden faydalanabilirsiniz.
 ~~~
 sudo sysctl --system
 
