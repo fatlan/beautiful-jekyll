@@ -26,7 +26,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - İş Süreç Yönetimi
 - Shell
 
-### `Linux 102`(Linux Admin)
+### `Linux 202`(Linux Admin)
 
 - Sistem Kavramlarına Giriş
 - Sistem Açılışı
@@ -38,7 +38,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - Log Sistemi
 - Sunucu Kurulum ve Konfigürasyon
 
-### `Linux 103`(Linux İleri Seviye Admin)
+### `Linux 303`(Linux İleri Seviye Admin)
 
 - yakında...
 
