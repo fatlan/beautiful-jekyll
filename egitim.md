@@ -15,7 +15,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 
 `Almak istediğiniz eğitim için iletişime geçmeniz yeterli.`
 
-### `Linux 101`(Linux Temelleri)(2 gün)
+### `Linux 101`(Linux Temelleri)
 
 - Linux Temel Kavram ve Sistem Tasarımına Giriş
 - Booting İşlemi
@@ -26,7 +26,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - İş Süreç Yönetimi
 - Shell
 
-### `Linux 202`(Linux Admin)(2 gün)
+### `Linux 202`(Linux Admin)
 
 - Sistem Kavramlarına Giriş
 - Sistem Açılışı
