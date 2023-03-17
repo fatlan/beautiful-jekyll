@@ -7,15 +7,15 @@ tags: [linux, ubuntu, Fatih ASLAN, egitim, redhat, centos, rocyk, opensource, al
 
 ### Kurumsal ve Kişisel(birebir)'de Sunduğum Eğitimler
 
-Tüm Linux sistemleri yönetimde deneyim ve tecrübelerle birlikte, müfredatları harmanlayanarak hazırlamış olduğum içerikleri sunmaktayım.
+Tüm Linux sistemleri yönetimde deneyim ve tecrübelerle birlikte, müfredatları harmanlayanarak hazırlamış olduğum içeriklerle benzersiz bir eğitim sunmaktayım.
 
 Sektör çıktıları olarak sunduğum eğitimler, başta Redhat Enterprise Linux olmak üzere Ubuntu ve tüm Linux sistemleri yönetmek için gerekli temel yetenek ve tecrübeleri kazandırmak için tasarlandı.
 
-Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitimler sektör tecrübelerine dayalı olarak bilgi birikimini aktarmayı amaçlamış ve sizlerinde bu sökterde yer edinebilmenize odaklanmıştır.
+Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitimler de sektör tecrübelerine dayalı olarak bilgi birikimini aktarmayı amaçlamış ve sizlerinde bu sökterde yer edinebilmenize odaklanılmıştır.
 
 `Almak istediğiniz eğitim için iletişime geçmeniz yeterli.`
 
-### `Linux 101`(Linux Temelleri)
+### `Linux 101`(Linux Temelleri)(2 gün)
 
 - Linux Temel Kavram ve Sistem Tasarımına Giriş
 - Booting İşlemi
@@ -26,7 +26,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - İş Süreç Yönetimi
 - Shell
 
-### `Linux 202`(Linux Admin)
+### `Linux 202`(Linux Admin)(2 gün)
 
 - Sistem Kavramlarına Giriş
 - Sistem Açılışı
