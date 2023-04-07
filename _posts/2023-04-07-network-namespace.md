@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Namespace
+title: Linux Namespaces(Network)
 #subtitle: Each post also has a subtitle
 gh-repo: fatlan
 gh-badge: [star, follow]
