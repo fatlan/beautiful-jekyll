@@ -38,7 +38,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - Log Sistemi
 - Sunucu Kurulum ve Konfigürasyon
 
-### `Docker ve Linux Container Technologies` (Lxd, Containerd, Docker)
+### `Docker ve Linux Container Technologies` (Lxd, Docker)
 
 - Geçmişten Günümüze Teknolojinin Evrimi
 - Hypervisor vs Contianer ve Container'ın Doğuşu
