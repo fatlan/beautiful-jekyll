@@ -15,8 +15,8 @@ Gerekli paketleri kuralım,
 ~~~
 sudo apt  install lxd-installer -y
 ~~~
-**
-**Bash completion'ı ayarlayalım,
+
+**Bash** completion'ı ayarlayalım,
 ~~~
 sudo ln -s /snap/lxd/current/etc/bash_completion.d/snap.lxd.lxc /etc/bash_completion.d/lxc
 ~~~
@@ -24,7 +24,7 @@ sudo ln -s /snap/lxd/current/etc/bash_completion.d/snap.lxd.lxc /etc/bash_comple
 Eğer kullanıcı **lxd** grubuna dahil değilse ekleyelim,
 ~~~
 sudo usermod -aG lxd $USER
-~~
+~~~
 
 ~~~
 sudo lxd init
