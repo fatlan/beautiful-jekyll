@@ -7,7 +7,7 @@ gh-badge: [star, follow]
 #cover-img: /assets/img/path.jpg
 #thumbnail-img: /assets/img/thumb.png
 #share-img: /assets/img/path.jpg
-tags: [linux, namespace, kubernetes, docker, container, cgroups, ns, isolation lxc, lxd]
+tags: [linux, namespace, kubernetes, docker, container, cgroups, ns, isolation, lxc, lxd]
 comments: true
 ---
 
