@@ -55,7 +55,7 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 - Docker Container Shell
 - Docker Networks
 - Docker Images
-- DockerFile
+- Dockerfile
 - Docker Volumes ve Bind Mounts
 - Docker Compose, YAML ve CLI
 - Docker Desktop
