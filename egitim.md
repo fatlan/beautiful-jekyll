@@ -75,9 +75,9 @@ Benzer şekilde Cloud, Virtualization, Containers, Kubernetes ve diğer eğitiml
 
 - yakında...
 
-### `Ansible ve Terraform`(Automation)
+<!--- ### `Ansible ve Terraform`(Automation)
 
-- yakında...
+- yakında... -->
 
 ### `Kubernetes` (Container Orchestration)
 
