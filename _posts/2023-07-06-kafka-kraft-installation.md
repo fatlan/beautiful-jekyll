@@ -37,7 +37,9 @@ sudo bin/kafka-server-start.sh config/kraft/server.properties
 ctrl+c
 ~~~
 
+~~~
 sudo vi /lib/systemd/system/kafka.service
+~~~
 ~~~
 [Unit]
 Description=Kafka Kraft Daemon
