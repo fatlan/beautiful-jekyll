@@ -26,7 +26,7 @@ echo $KAFKA_CLUSTER_ID
 ~~~
 sudo vi config/kraft/server.properties
 ~~~
-add below line
+add the following line
 ~~~
 controller.mode=kraft
 ~~~
